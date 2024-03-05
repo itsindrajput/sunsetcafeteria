@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunset Cafe | Home Page</title>
+
+  <meta name="description" content="Discover Culinary Elegance at Cafe Sunset: Where Every Sip and Bite Unveils a Symphony of Flavors and Moments.">
+  <meta name="keywords"  content="Sunset Cafe, Cafe with a View, itsindrajput, Sunset Dining, Ocean View Cafe">
+  <meta http-equiv="author" content="Rishabh Singh">
+  <meta http-equiv="pragma" content="nocache"/>
+
+  <!-- Favicons -->
+  <link href="images/sunset-cafe-tab-logo.png" rel="icon">
+  <link href="images/sunset-cafe-tab-logo.png" rel="touch-icon">
+
+  <!--Link Of Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+  <!-- Links Of External Css -->
+  <link rel="stylesheet" href="style/index-desktop.css" type="text/css">
+  <link rel="stylesheet" href="style/index-tablet.css" type="text/css">
+  <link rel="stylesheet" href="style/index-mobile.css" type="text/css">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-hamburger-container">
+        <div class="nav-logo"><a href="#">
+          <img src="images/sunset-cafe-logo.png" alt="Image contains the logo of Sunset Cafe"></a>
+        </div>
+        <!-- Hamburger icon and a search icon -->
+        <div class="nav-icons">
+          <div class="search-icon">
+            <a href="#"><i class="fa-solid fa-search"></i></a>
+          </div>
+          <div class="hamburger-icon" onclick="myHamburger()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-drawer" id="navDrawer">
+        <div class="close-btn" onclick="myHamburger()">Close ❌</div> 
+        <div class="nav-logo-in-text">
+          <h3>SUNSET</h3>
+          <h2>CAFE</h2>
+        </div>
+        <div class="nav-menu-list">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="user-info-container">
+          <div class="nav-user-info">
+            <ul>
+              <li><a href="html/signup.html">Sign Up</a></li> 
+              <li id="user-line">|</li>
+              <li><a href="html/login.html">Log In</a></li>
+              <li class="nav-account"><a href="#">Account</a></li>
+            </ul>
+          </div>
+          <div class="nav-cart-btn">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              <li class="my-cart">My Cart</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Html code for Content On Header Begins Here -->
+    <Section class="nav-hero-container">
+      <div class="nav-hero-content">
+        <h1>WELCOME</h1>
+        <p id="hero-paragraph1">
+          Discover Culinary Elegance at Café Sunset: Where Every Sip and Bite Unveils a Symphony of Flavors and Moments.
+        </p>
+        <h3>Gateway to Serenity, Culinary Delights,</h3>
+        <p id="hero-paragraph2">
+          Step into a World Where Ambiance, Flavor, and Warmth Converge—A Haven Where Every Visit Feels Like Coming Home.
+        </p>
+        <button type="button">Order Now</button>
+      </div>
+
+      <div class="wrapper">
+        <h1>We Are Known For :-</h1>
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+          <li class="card">
+            <div class="img">
+              <img src="images/menu-images/Chai-Infusion.jpg" alt="Image contains the picture of chai infusion." draggable="false">
+            </div>
+            <h3>Chai Infusion Dessert: Cardamom Chai Panna Cotta</h3>
+            <p>Experience the sweet finale of your meal with our Chai Infusion Dessert - Cardamom Chai Panna Cotta. <span>This delectable creation melds the velvety smoothness of Italian panna cotta with the aromatic allure of Indian chai.</span></p>
+            <h6>Find out more &#10141;</h6>
+          </li>
+
+          <li class="card">
+            <div class="img">
+              <img src="images/menu-images/Sizzling-Tandoori-Platter.jpg" alt="Image contains the picture of Sizzling Tandoori Platter." draggable="false">
+            </div>
+            <h3>Sizzling Tandoori Platter: A Feast for the Senses</h3>
+            <p>Transport your taste buds to the streets of India with our Sizzling Tandoori Platter. Succulent morsels of marinated.. <span>chicken, paneer, and lamb are grilled to perfection in our traditional tandoor, imparting a smoky flavor and tender texture.</span></p>
+            <h6>Find out more &#10141;</h6>
+          </li>
+
+          <li class="card">
+            <div class="img">
+              <img src="images/menu-images/Mango-Curry.jpg" alt="Image contains the picture of Mango Curry Chicken." draggable="false">
+            </div>
+            <h3>Mango Curry <br>Chicken</h3>
+            <p>Indulge in the rich flavors of our Seasonal Spice Delight - Mango Curry Chicken. A symphony of succulent chicken pieces bathed in a luscious curry <span>infused with the sweetness of ripe mangoes.</span></p>
+            <h6 style="padding-top: 15px;">Find out more &#10141;</h6>
+          </li>
+
+          <li class="card">
+            <div class="img">
+              <img src="images/menu-images/Spring-roll.jpg" alt="Image contains the picture of Spring Roll." draggable="false">
+            </div>
+            <h3>Exquisite Extravaganza of Gourmet Spring Rolls</h3>
+            <p>Embark on a delightful journey of flavors with our Spring Roll Sensation at Sunset Cafe. <span>Indulge in the crispiness of perfectly fried spring rolls, filled with a medley of fresh vegetables and your choice of succulent protein.</span> </p>
+            <h6>Find out more &#10141;</h6>
+          </li>
+
+          <li class="card">
+            <div class="img">
+              <img src="images/menu-images/Grilled-Chicken-Sandwich.jpeg" alt="Image contains the picture of Grilled Chicken Sandwich." draggable="false">
+            </div>
+            <h3>Grilled Chicken Bliss: Sunset Delight Sandwich</h3>
+            <p>Savor the essence of Sunset Cafe with our Grilled Chicken Bliss Sandwich. <span>Succulent grilled chicken, layered with crisp lettuce, juicy tomatoes, and a hint of zesty sauce, all embraced by soft, toasted bread. </span></p>
+            <h6 style="padding-top: 15px;">Find out more &#10141;</h6>
+          </li>
+
+          <li class="card">
+            <div class="img">
+              <img src="images/menu-images/noodle-soup.jpg" alt="Image contains the picture of Noodle Soup." draggable="false">
+            </div>
+            <h3>Noodle Soup Euphoria: Asian Fusion Elixir</h3>
+            <p>Warm your soul with the Noodle Soup Euphoria at Sunset Cafe. Immerse yourself in a bowl of steaming, <span>flavorful broth, generously filled with slurp-worthy noodles and an array of fresh vegetables.</span> </p>
+            <h6 style="padding-top: 15px;">Find out more &#10141;</h6>
+          </li>
+
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+    </Section>
+  </header>
+
+  <!--Html code for Mobile Card Carousel on Header Begins Here -->
+  <div class="wrapper" id="wrapper">
+    <h1>We Are Known For :-</h1>
+    <ul class="carousel">
+      <li class="card">
+        <div class="img">
+          <img src="images/menu-images/Chai-Infusion.jpg" alt="Image contains the picture of chai infusion." draggable="false">
+        </div>
+        <h3>Chai Infusion Dessert: Cardamom Chai Panna Cotta</h3>
+        <p>Experience the sweet finale of your meal with our Chai Infusion Dessert - Cardamom Chai Panna Cotta. <span>This delectable creation melds the velvety smoothness of Italian panna cotta with the aromatic allure of Indian chai.</span></p>
+        <h6>Find out more &#10141;</h6>
+      </li>
+
+      <li class="card">
+        <div class="img">
+          <img src="images/menu-images/Sizzling-Tandoori-Platter.jpg" alt="Image contains the picture of Sizzling Tandoori Platter." draggable="false">
+        </div>
+        <h3>Sizzling Tandoori Platter: A Feast for the Senses</h3>
+        <p>Transport your taste buds to the streets of India with our Sizzling Tandoori Platter. Succulent morsels of marinated.. <span>chicken, paneer, and lamb are grilled to perfection in our traditional tandoor, imparting a smoky flavor and tender texture.</span></p>
+        <h6>Find out more &#10141;</h6>
+      </li>
+
+      <li class="card">
+        <div class="img">
+          <img src="images/menu-images/Mango-Curry.jpg" alt="Image contains the picture of Mango Curry Chicken." draggable="false">
+        </div>
+        <h3>Mango Curry <br>Chicken</h3>
+        <p>Indulge in the rich flavors of our Seasonal Spice Delight - Mango Curry Chicken. A symphony of succulent chicken pieces bathed in a luscious curry <span>infused with the sweetness of ripe mangoes.</span></p>
+        <h6 class="find-out">Find out more &#10141;</h6>
+      </li>
+
+      <li class="card">
+        <div class="img">
+          <img src="images/menu-images/Spring-roll.jpg" alt="Image contains the picture of Spring Roll." draggable="false">
+        </div>
+        <h3>Exquisite Extravaganza of Gourmet Spring Rolls</h3>
+        <p>Embark on a delightful journey of flavors with our Spring Roll Sensation at Sunset Cafe. <span>Indulge in the crispiness of perfectly fried spring rolls, filled with a medley of fresh vegetables and your choice of succulent protein.</span> </p>
+        <h6>Find out more &#10141;</h6>
+      </li>
+
+      <li class="card">
+        <div class="img">
+          <img src="images/menu-images/Grilled-Chicken-Sandwich.jpeg" alt="Image contains the picture of Grilled Chicken Sandwich." draggable="false">
+        </div>
+        <h3>Grilled Chicken Bliss: Sunset Delight Sandwich</h3>
+        <p>Savor the essence of Sunset Cafe with our Grilled Chicken Bliss Sandwich. Succulent grilled chicken, layered with crisp <span>lettuce, juicy tomatoes, and a hint of zesty sauce, all embraced by soft, toasted bread. </span></p>
+        <h6 class="find-out">Find out more &#10141;</h6>
+      </li>
+
+      <li class="card">
+        <div class="img">
+          <img src="images/menu-images/noodle-soup.jpg" alt="Image contains the picture of Noodle Soup." draggable="false">
+        </div>
+        <h3>Noodle Soup Euphoria: Asian Fusion Elixir</h3>
+        <p>Warm your soul with the Noodle Soup Euphoria at Sunset Cafe. Immerse yourself in a bowl of steaming, <span>flavorful broth, generously filled with slurp-worthy noodles and an array of fresh vegetables.</span> </p>
+        <h6 class="find-out">Find out more &#10141;</h6>
+      </li>
+
+    </ul>
+  </div>
+
+
+  
+  <!-- Html code for about us section begins here -->
+  <div class="about-container">
+    <div id="about-div">
+      <div class="first-about-div">
+          <h2>ABOUT US</h2>
+          <h1>The story behind sunset.<span>..</span></h1>
+      </div>
+      <div id="about-img1"><img class="about-img" src="images/Chef.jpg" alt="Image Of Chef Andre" /></div>
+      <div class="second-about-div">
+          <p>Welcome to Sunset Café, where our journey began with Chef André's bold decision to depart from the world of haute cuisine and create a culinary sanctuary rooted in simplicity and heartfelt connection. </p>
+          <p><span>Inspired by a chance encounter with a charming café bathed in the warm glow of twilight, Chef André envisioned a place where genuine hospitality and exceptional flavors intertwine. At Sunset Café, each dish is a reflection of Chef André's dedication to crafting culinary experiences that nourish both body and soul.</span></p>
+          <button class="about-btn" type="button">READ MORE</button>
+      </div>
+    </div>
+    <div id="about-img2"><img class="about-img" src="images/Chef.jpg" alt="Image Of Chef Andre" /></div>
+  </div>
+  
+
+  <!-- Html code for Deals and Offers begins here -->
+    <div class="carousel-for-offer">
+      <legend>DEALS AND OFFERS</legend>
+      <div class="carousel__item">
+        <div class="carousel-item-container">
+          <div class="offer-card">
+            <div class="offer-text">
+              <h4>FLAT</h4>
+              <h2>₹75 <br /> OFF</h2>
+              <h3>ON ORDER ABOVE ₹399</h3>
+              <button class="offer-btn" type="button">
+                <span>Use Code</span> FGU87
+              </button>
+            </div>
+            <div class="offer-img">
+              <img src="images/offer-images/image1.png" alt="This is an image of Burger">
+            </div>
+          </div>
+
+          <div class="offer-card">
+            <div class="offer-text">
+              <h4>FLAT</h4>
+              <h2>₹100 <br /> OFF</h2>
+              <h3>ON ORDER ABOVE ₹599</h3>
+              <button class="offer-btn" type="button">
+                <span>Use Code</span> RTH23
+              </button>
+            </div>
+            <div class="offer-img">
+              <img src="images/offer-images/image2.png" alt="This is an image of Cheese Pizza">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="carousel__item">
+        <div class="carousel-item-container">
+          <div class="offer-card">
+            <div class="offer-text">
+              <h4>FLAT</h4>
+              <h2>₹50 <br /> OFF</h2>
+              <h3>ON ORDER ABOVE ₹299</h3>
+              <button class="offer-btn" type="button">
+                <span>Use Code</span> RKS12
+              </button>
+            </div>
+            <div class="offer-img">
+              <img src="images/offer-images/image3.png" alt="This is an image of Sandwich">
+            </div>
+          </div>
+
+          <div class="offer-card">
+            <div class="offer-text">
+              <h4>FLAT</h4>
+              <h2>₹100 <br /> OFF</h2>
+              <h3>ON ORDER ABOVE ₹499</h3>
+              <button class="offer-btn" type="button">
+                <span>Use Code</span> UPI57
+              </button>
+            </div>
+            <div class="offer-img">
+              <img src="images/offer-images/image4.png" alt="This is an image of Momos">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="carousel__item">
+        <div class="carousel-item-container">
+          <div class="offer-card">
+            <div class="offer-text">
+              <h4>FLAT</h4>
+              <h2>₹25 <br /> OFF</h2>
+              <h3>ON ORDER ABOVE ₹199</h3>
+              <button class="offer-btn" type="button">
+                <span>Use Code</span> VKS01
+              </button>
+            </div>
+            <div class="offer-img">
+              <img src="images/offer-images/image5.png" alt="This is an image of Chaumin">
+            </div>
+          </div>
+
+          <div class="offer-card">
+            <div class="offer-text">
+              <h4>FLAT</h4>
+              <h2>₹40 <br /> OFF</h2>
+              <h3>ON ORDER ABOVE ₹99</h3>
+              <button class="offer-btn" type="button">
+                <span>Use Code</span> FGU87
+              </button>
+            </div>
+            <div class="offer-img">
+              <img src="images/offer-images/image6.png" alt="This is an image of Microni">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="carousel__item">
+        <div class="carousel-item-container">
+          <div class="offer-card">
+            <div class="offer-text">
+              <h4>FLAT</h4>
+              <h2>₹65 <br /> OFF</h2>
+              <h3>ON ORDER ABOVE ₹599</h3>
+              <button class="offer-btn" type="button">
+                <span>Use Code</span> OKS36
+              </button>
+            </div>
+            <div class="offer-img">
+              <img src="images/offer-images/image7.png" alt="This is an image of Cold Coffee">
+            </div>
+          </div>
+          
+          <div class="offer-card">
+            <div class="offer-text">
+              <h4>FLAT</h4>
+              <h2>₹75 <br /> OFF</h2>
+              <h3>ON ORDER ABOVE ₹999</h3>
+              <button class="offer-btn" type="button">
+                <span>Use Code</span> RRD45
+              </button>
+            </div>
+            <div class="offer-img">
+              <img src="images/offer-images/image8.png" alt="This is an image of Ice-creem">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <!--Html code for reservation section begins here-->
+  <div class="reservation-container">
+    <div class="reservation-img">
+      <img src="images/menu-images/Book-a-table.jpg" alt="Image Of A Men And Women Seating On A Table">
+    </div>
+
+    <div class="reservation-form">
+      <form action="#" method="post" id="form">
+        <h3>Reservation</h3>
+        <legend>BOOK A TABLE ONLINE</legend>
+        <div class="input1">
+          <input type="text" name="name" placeholder="Your Name" required="required" />
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="input2">
+          <input type="datetime" name="datetime" placeholder="Date & Time" required />
+          <input type="number" name="number" placeholder="No. of people" required />
+        </div>
+        <textarea name="comment" placeholder="Special Request"></textarea> <br />
+        <button type="button" onclick="reservation()">BOOK NOW</button>
+      </form>
+    </div> 
+  </div>
+
+
+
+  <!--Html Code for Motivation and Subscription Section Begins Here!-->
+  <div class="motivation"> 
+    <div id="slider-container">
+      <h1>Motivation Being Our Hard Work</h1>
+        <div id="slider">
+            <div class="slide">
+              <span>&#10077;</span>
+              <p>
+                "I just had the best time at Sunset Cafe! It was so cozy and welcoming. The coffee smelled amazing, and the people there were so friendly. The food? Delicious! I can't wait to go back again and again. It's definitely my new favorite spot!"
+              </p>
+            </div>
+            <div class="slide">
+              <span>&#10077;</span>
+              <p>
+                “Character cannot be developed in ease and quiet. Only through experience of trial and suffering can the soul be strengthened, vision cleared, ambition inspired and success achieved.”
+              </p>
+            </div>
+            <div class="slide">
+              <span>&#10077;</span>
+              <p>
+              "You never know what's around the corner. It could be everything. Or it could be nothing. You keep putting one foot in front of the other, and then one day you look back and you've climbed a mountain."
+            </p>
+            </div>
+        </div>
+        <div id="prev">&#10094;</div>
+        <div id="next">&#10095;</div>
+        <div id="slider-nav-bar"></div>
+    </div>
+  
+    <div class="subscribe">
+      <h2>Subscribe To Newsletter,</h2>
+      <h2>And Get - 20% off</h2>
+      <p>
+        Your Gateway to Serenity, Culinary Delights, and Unforgettable Moments.
+      </p>
+      <input type="email" name="email" id="input-email" placeholder="Enter email address...">
+      <button class="submit-btn" type="submit">SUBSCRIBE</button>
+    </div>
+  </div> 
+  
+
+  <!-- Html code for footer section begins here -->
+  <footer>
+    <div class="footer">
+      <div class="address">
+        <address>
+          <h3>Address</h3>
+          <ul>
+            <li>Cafe</li>
+            <li>Plot No. 45, Street No.14</li>
+            <li>Marol MIDC Industry Estate,</li>
+            <li>Andheri East,Mumbai-400093</li>
+          </ul>
+        </address>
+      </div>
+
+      <div class="help-info">
+        <h3>Help & Info</h3>
+        <ul>
+          <li>About Cafe</li>
+          <li>Careers</li>
+          <li>FAQs</li>
+        </ul>
+      </div>
+
+      <div class="contact-us">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>1809-908-5647</li>
+          <li>Get in Touch</li>
+          <li>Chat With Us</li>
+        </ul>
+      </div>
+
+      <div class="useful-links">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Terms of Service</li>
+          <li>Payment Issues</li>
+          <li>Net Banking</li>
+          <li>Custom Order</li>
+        </ul>
+      </div>
+
+      <!--Html code for mobile view begins here-->
+      <div class="footer-dropdown-content">
+        <div class="footer-dropdown">
+          <legend>About Us <i class="fa-solid fa-angle-down"></i></legend>
+          <div class="dropdown-options">
+            <a href="#">About Cafe</a>
+            <a href="#">Careers</a>
+            <a href="#">FAQs</a>
+          </div>
+        </div>
+
+        <div class="footer-dropdown">
+          <legend>Terms Of Use <i class="fa-solid fa-angle-down"></i></legend>
+          <div class="dropdown-options">
+            <a href="#">Copyright</a>
+            <a href="#">Terms Of Service</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="footer-dropdown">
+          <legend>Services <i class="fa-solid fa-angle-down"></i></legend>
+          <div class="dropdown-options">
+            <a href="#">Book A Table</a>
+            <a href="#">Net Banking</a>
+            <a href="#">Custom Order</a>
+          </div>
+        </div>
+
+        <div class="footer-dropdown">
+          <legend>Contact Us <i class="fa-solid fa-angle-down"></i></legend>
+          <div class="dropdown-options">
+            <a href="#">Call Us</a>
+            <a href="#">Email Us</a>
+            <a href="#">Chat With Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <span>Follow Us On:</span>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+
+    <div class="copyright">
+      <h4>@2023 Railworld India. All Rights Reserved.</h4>
+    </div>
+  </footer>
+
+
+   <!-- Links Of External Js -->
+   <script src="script/index.js"></script> 
+   <script src="https://kit.fontawesome.com/8a4fbb7cf2.js" crossorigin="anonymous"></script>
+</body>
+</html>

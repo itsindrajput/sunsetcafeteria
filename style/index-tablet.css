@@ -1,0 +1,325 @@
+/*Css for medium range devices begins here*/
+
+@media only screen and (min-width: 800px) and (max-width: 1200px){
+  /*Style For Navbar Begins Here*/
+  nav{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    z-index: 1000;
+    background-color: transparent; 
+    transition: background-color 0.5s ease; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 1px;
+    margin: 0 auto;
+    user-select: none;
+    grid-gap: 0rem;
+  }
+  .nav-logo{
+    display: inline;
+  }
+  .nav-logo-in-text{
+    display: none;
+  }
+  .nav-logo img{
+    width: 100%;
+    margin-top: -5px;
+    height: 50px;
+    object-fit: fill;
+  }
+  .nav-menu-list ul, .nav-user-info ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-gap: 2rem;
+    list-style-type: none;
+    margin: 0rem 8rem;
+  }
+  @media only screen and (min-width: 800px) and (max-width: 1000px){
+    .nav-menu-list ul, .nav-user-info ul{
+      margin: 0rem 2.5rem;
+    }
+    .nav-user-info ul{
+      grid-gap: 0.5rem;
+      margin: 0rem 0rem;
+      margin-right: 1rem;
+    }
+  }
+  .nav-user-info ul{
+    grid-gap: 0.5rem;
+    margin: 0rem 0rem;
+    margin-right: 1.5rem;
+  }
+  #user-line{
+    margin-top: -0.8rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #FAFF00;
+  }
+  .nav-cart-btn ul{
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-align: center;
+  }
+  .nav-cart-btn li a{
+  color: #FFFFFF;
+  }
+  .nav-account{
+    display: none;
+  }
+  .nav-icons{
+    display: none;
+  }
+  .close-btn{
+    display: none;
+  }
+  .my-cart{
+    font-size: 0.8rem;
+  }
+
+
+  
+  /*Css for nav section begins here*/
+  .nav-hero-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 4%;
+    padding-right: 1rem;
+    top: 16%;
+  }
+  .nav-hero-content{
+    width: 45%;
+    height: auto;
+    padding-right: 3%;
+  }
+  .nav-hero-content h1{
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #D16E43;
+  }
+  #hero-paragraph1{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    color: #FFFFFF;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .nav-hero-content h3{
+    font-family: "Josefin Sans", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #D16E43;
+    padding: 5% 10%;
+  }
+  #hero-paragraph2{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 0% 10%;
+    padding-bottom: 9%;
+    line-height: 20px;
+  }
+  .nav-hero-content button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    color: #FFFFFF;
+    margin: 0% 10%;
+    border-radius: 10px;
+    padding: 8px 40px;
+    border: 2px solid #FFFFFF;
+  }
+
+
+  .wrapper {
+    width: 52%;
+    height: auto;
+    padding-top: 7%;
+    position: relative;
+  }
+  .wrapper h1{
+    font-family: "Josefin Sans", serif;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 1.5rem;
+  }
+  .wrapper i {
+    top: 57%;
+    height: 50px;
+    width: 50px;
+    margin-left: -1.5rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #e7e5e5;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    color: black;
+    user-select: none;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -22px;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 2) - 9px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    height: auto;
+    list-style: none;
+    background: #fff;
+    color: #000000;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  .card .img img {
+    width: 100%;
+    height: 160px;
+    object-fit: fill;
+    border-radius: 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .carousel li h3{
+    font-size: 14px;
+    padding: 0% 5%;
+    color: #D16E43;
+  }
+  .carousel li p{
+    font-size: 10px;
+    padding: 4% 5%;
+    text-align: justify;
+  }
+  .carousel li h6{
+    text-align: center;
+    color: #D16E43;
+  }
+
+
+  /*Styling for Deals and Offer*/
+  .carousel-for-offer {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 3.5%;
+  }
+  .carousel-for-offer legend{
+    margin-bottom: 1.5rem;
+  }
+  .offer-card{
+    width: 350px;
+    height: 215px;
+  }
+  .offer-text h2{
+    font-size: 2rem;
+    color: #1A7E11;
+    margin: 1rem 0rem;
+  }
+  .offer-text h3{
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+  }
+  .offer-btn{
+    width: 130px;
+    padding: 10px 5px;
+    border: 1px solid #525151;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    background-color: rgba(191, 255, 251, 0.46);
+  }
+  .offer-img img{
+    width: 180px;
+    height: 150px;
+    margin: 0 auto;
+    object-fit: fill;
+    padding-top: 25px;
+    background-color: #D9E8ED;
+    border: none;
+  }
+  .carousel__nav {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    text-align: center;
+  }
+
+
+  /*Style for reservation Section Begins Here!*/
+  .reservation-form{
+    width: 55%;
+    padding-left: 2%;
+  }
+  .reservation-form textarea{
+    width: 90%;
+    height: 15vh;
+  }
+  .reservation-form button{
+    width: 90%;
+    margin-top: 1.8rem;
+  }
+}
