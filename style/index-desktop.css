@@ -14,7 +14,7 @@ body{
 
 /*Style for navbar begins here*/
 header{
-  background: linear-gradient(0deg, rgba(40, 27, 16, 0.70), rgba(40, 27, 16, 0.70)), url("../images/daan-header-bg.jpeg");
+  background: linear-gradient(0deg, rgba(40, 27, 16, 0.70), rgba(40, 27, 16, 0.70)), url("../images/other-images/daan-header-bg.jpeg");
   width: 100%;
   height: 100vh;
   background-position: center;

@@ -216,8 +216,7 @@ function reservation() {
     let emailInput = form.querySelector('input[name="email"]');
     let datetimeInput = form.querySelector('input[name="datetime"]');
     let numberInput = form.querySelector('input[name="number"]');
-    let commentInput = form.querySelector('textarea[name="comment"]');
-
+    
     // Validating form data
     if (nameInput.value === '') {
       alert('Please Enter Your Full Name');

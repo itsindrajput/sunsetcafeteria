@@ -1,0 +1,1258 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #000000;
+}
+
+/*Style for Desktop/Laptop View */
+/*Style for navbar begins here*/
+header{
+  background: #000000;
+  width: 100%;
+  height: 10vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  position: relative;
+}
+nav{
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0 auto;
+  user-select: none;
+  grid-gap: 0rem;
+  padding: 0% 5%;
+}
+nav.sticky {
+  background-color: #000000; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  height: 10vh;
+}
+.nav-logo{
+  display: inline;
+  width: 20%;
+}
+.nav-logo img{
+  width: 150px;
+  height: 55px;
+  object-fit: fill;
+  align-items: center;
+  margin-top: 0.4rem;
+}
+.nav-icons{
+  display: none;
+}
+.search-input #search-icon{
+  padding: 9px 0px;
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+}
+.nav-drawer{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.close-btn{
+  display: none;
+}
+.nav-logo-in-text{
+  display: none;
+}
+.nav-menu-list ul, .nav-user-info ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  grid-gap: 4.5rem;
+  list-style-type: none;
+  margin-right:5rem;
+}
+.nav-menu-list li a, .nav-user-info li a, 
+.nav-cart-btn ul li, .nav-cart-btn ul li a i, .nav-account li a{
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+.nav-menu-list li a:after, .nav-user-info li a:after, 
+.nav-cart-btn .my-cart:after, .nav-account li a:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  border: none;
+  border-radius: 100%;
+  width: 0;
+  height: 3px;
+  background-color: #E45417; 
+  transition: width 0.3s ease-in-out;
+}
+.nav-menu-list li a:hover::after, .nav-user-info li a:hover::after, 
+.nav-cart-btn .my-cart:hover::after, .nav-account li a:hover::after{
+  width: 100%;
+}
+.nav-menu-list li a:active::after, .nav-user-info li a:active::after, 
+.nav-cart-btn .my-cart:active::after, .nav-account li a:active::after{
+  width: 100%;
+}
+.nav-user-info ul{
+  grid-gap: 0.5rem;
+}
+
+
+
+/*Style for the Signup / Register Page begins here*/
+.register-main{
+  width: 50em;
+  height: auto;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 4% 0%;
+  font-family: "Josefin Sans", serif;
+  font-style: normal;
+}
+.register-main h1{
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 1.5rem;
+}
+.reservation-form{
+  border: 1px solid black;
+  padding: 1.5%;
+  display: flex;
+  flex-direction: column;
+}
+.input{
+  display: block;
+  margin-top: 1rem;
+}
+.input input{
+  padding: 11px 20px;
+  background-color: #D9D9D9;
+  border: none;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+input::placeholder{
+  color: rgba(42, 40, 40, 0.7);
+  font-weight: bold;
+  font-size: 1rem;
+}
+input[type="email"], input[type="password"]{
+  width: 425px;
+  display: block;
+  margin : 0 auto;
+  margin-top: 2rem;
+}
+.reservation-form legend{
+  font-size: 25px;
+  color: #D16E43;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+} 
+.input button{
+  background-color: #F0AD90;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 70px;
+  font-size: large;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.input button:hover{
+  background-color: #D16E43;
+}
+.input-sign{
+  margin-bottom: 1rem;
+}
+.input-sign span{
+  color: #D16E43;
+  font-size: 18px;
+  margin-right: 0.5rem;
+}
+.input-sign a{
+  color: #000000;
+  background-color: #F0AD90;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.input-sign a:hover{
+  background-color: #D16E43;
+}
+
+
+
+/*Style for the Login Page begins here*/
+.login-main{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 0 auto;
+  padding: 4%;
+  padding-bottom: 3%;
+  gap: 4rem;
+  font-family: "Josefin Sans", serif;
+  font-style: normal;
+  user-select: none;
+}
+.login-form{
+  width: 50%;
+}
+.login-form h1{
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 1.5rem;
+}
+.form{
+  border: 1px solid black;
+}
+.form legend{
+  color: #D16E43;
+  font-size: 25px;
+  margin-bottom: 2rem;
+  margin-top: 1.4rem;
+}
+.form h4 a{
+  color: rgba(74, 71, 71, 0.75);
+  display: flex;
+  justify-content: end;
+  margin-top: 1.5rem;
+  margin-right: 15%;
+}
+.form h4 a:hover{
+  color: #000000;
+}
+input[name="username"], input[name="login-password"]{
+  width: 415px;
+  display: block;
+  margin : 0 auto;
+  margin-top: 2rem;
+}
+.login-img{
+  width: 50%;
+}
+.login-img img{
+  width: 100%;
+  height: 51vh;
+  margin-top: 3rem;
+  object-fit: fill;
+}
+.input-login{
+  margin-bottom: 1.5rem;
+}
+.input-login span{
+  color: black;
+  font-size: 18px;
+  margin-right: 0.5rem;
+}
+.input-login a{
+  color: #000000;
+  background-color: #F0AD90;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.input-login a:hover{
+  background-color: #D16E43;
+}
+
+
+
+/*Style for the Forgot Page begins here*/
+#forgot-form-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  padding: 5%;
+  padding-bottom: 3%;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+}
+#forgot-img-mobile{
+  display: none;
+}
+.forgot-img{
+  width: 45%;
+  height: 65vh;
+}
+.forgot-img img{
+  width: 100%;
+  height: 65vh;
+  object-fit: fill;
+}
+.forgot-form{
+  width: 55%;
+  height: 65vh;
+}
+.forgot-form h1{
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 2rem;
+}
+#forgot-form{
+  border: 1px solid black;
+  padding: 5%;
+}
+#forgot-form legend{
+  padding: 0% 8%;
+  margin: 0 auto;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: left;
+  color: #D16E43;
+}
+#forgot-input{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+#forgot-input input{
+  width: 350px;
+  height: 50px;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+#forgot-input button{
+  width: 350px;
+  height: 50px;
+}
+#forgot-form h4{
+  text-align: center;
+  margin: 1rem 0rem;
+}
+#forgot-form h4 a{
+  color: #000000;
+  font-size: 25px;
+  text-decoration: none;
+}
+#forgot-form h4 a:hover{
+  color: #D16E43;
+  text-decoration: underline;
+}
+
+
+
+
+
+/*Style for footer begins here*/
+footer{
+  background-color: #CDC4C4;
+  position: relative;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 9rem;
+  padding-top: 3%;
+  padding-bottom: 1%;  
+}
+.footer h3{
+  font-weight: bolder;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.footer ul li{
+  list-style-type: none;
+  margin-left: 5px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #232323;
+  font-size: 1.15rem;
+  line-height: 1.9rem;
+}
+.footer-dropdown-content{
+  display: none;
+}
+.help-info li, .contact-us li{
+  margin-bottom: 0.8rem;
+}
+.help-info ul li:hover, .contact-us ul li:hover, .useful-links ul li:hover{
+  cursor: pointer;
+  color: #E45417;
+}
+.social-icons{
+  text-align: center;
+  padding-bottom: 10px;
+}
+.social-icons span{
+  font-size: 1.5rem;
+  font-family: "Inter", serif;
+  font-weight: 700;
+  word-spacing: 3px
+}
+.social-icons a{
+  font-size: 2rem;
+  color: #000000;
+  padding-left: 1.5rem;
+}
+.social-icons .fa-facebook:hover{
+  color: #1877f2;
+}
+.social-icons .fa-instagram:hover{
+  color: #c32aa3;
+}
+.social-icons .fa-whatsapp:hover{
+  color:  #006D5B;
+}
+.social-icons .fa-x-twitter:hover{
+  color: #1AA2F8;
+}
+.copyright{
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 15px 0px;
+  word-spacing: 4px;
+}
+
+
+/*Style for the Mediam Range Devices begins here*/
+@media only screen and (min-width: 800px) and (max-width: 1100px){
+
+  /*Style for the Signup / Register Page begins here*/
+  .register-main{
+    width: 40em;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 4% 0%;
+    font-family: "Josefin Sans", serif;
+    font-style: normal;
+  }
+
+  /*Style for the Sign In page*/
+  input[name="username"], input[name="login-password"]{
+    width: 255px;
+    display: block;
+    margin : 0 auto;
+    margin-top: 2rem;
+  }
+  .input-login span{
+    color: black;
+    font-size: 16px;
+    margin-right: 0rem;
+  }
+  .input-login a{
+    color: #000000;
+    background-color: #F0AD90;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .login-img img{
+    width: 100%;
+    height: 51vh;
+    margin-top: 4rem;
+    object-fit: fill;
+  }
+
+
+  .forgot-form h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 2rem;
+  }
+  #forgot-input input{
+    width: 280px;
+    height: 50px;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  #forgot-input button{
+    width: 280px;
+    height: 50px;
+  }
+
+
+  /*Style for the Footer Section Begins Here*/
+  .footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 3%;
+    padding-bottom: 1%;  
+  }
+}
+
+
+
+
+
+
+/*Css for small range device: mobile-view*/
+@media only screen and (max-width: 800px) {
+
+  /*Style for navbar begins here*/
+    nav{
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+      align-items: stretch;
+      justify-content: space-around;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 600;
+      font-size: 1.7rem;
+      margin: 0 auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .nav-logo-in-text{
+      display: block;
+      margin-bottom: 2rem;
+    }
+    .nav-logo-in-text h3{
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      letter-spacing: 0.8rem;
+      line-height: 24px;
+      color: #DA8F70;
+      margin-left: 1.5rem;
+    }
+    .nav-logo-in-text h2{
+      font-family: 'Inspiration', serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 48px;
+      color: #000000;
+      mix-blend-mode: luminosity;
+    }
+    .nav-logo img{
+      width: 140px;
+      margin-top: -5px;
+      padding-top: 12px;
+      height: 51px;
+      align-items: center;
+      object-fit: fill;
+    }
+    .nav-menu-list ul{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      grid-gap: 2.2rem;
+      list-style-type: none;
+      margin-right: -0.2rem;
+    }
+    .nav-icons{
+      display: inline-flex;
+    }
+    .search-input{
+      display: none;
+    }
+    .logo-hamburger-container{
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      justify-content: space-between;
+    }
+    .hamburger-icon {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .bar {
+      width: 30px;
+      height: 4px;
+      background-color: #FFFFFF;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    .search-icon a{
+      color: #FFFFFF;
+      cursor: pointer;
+      font-size: 2rem;
+      margin-right: 2rem;
+    }
+    .nav-menu-list li a, .nav-user-info li a, 
+    .nav-account li a{
+      color: #000000;
+      text-decoration: none;
+    }
+  
+    /* Styles for navigation drawer */
+    .nav-drawer {
+      position: fixed;
+      top: 0;
+      left: -100%; /* Initially off-screen */
+      width: 100%;
+      height: 100%;
+      background-color: #FFFFFF;
+      padding-top: 80px;
+      z-index: 1000;
+      transition: 0.4s;
+      color: #000000;
+    }
+    /* Close button style */
+    .close-btn {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      color: #F92F60;
+      word-spacing: 0.4rem;
+    }
+    .nav-drawer.open {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+
+
+
+    /*Style for the Signup / Register Page begins here*/
+   .register-main{
+    width: 90%;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 4% 0%;
+    font-family: "Josefin Sans", serif;
+    font-style: normal;
+  }
+
+
+  /*Style for the Sign In page*/
+  .login-form h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 1.5rem;
+  }
+  input[name="username"], input[name="login-password"]{
+    width: 190px;
+    display: block;
+    margin : 0 auto;
+    margin-top: 2rem;
+  }
+  .input-login{
+    display: flex;
+    flex-direction: column;
+    width: 215px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    padding: auto;
+  }
+  .input-login span{
+    color: black;
+    font-size: 16px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.6rem;
+    text-align: justify;
+  }
+  .input-login a{
+    color: #000000;
+    background-color: #F0AD90;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 8px;
+    width: 90px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  .input button{
+    background-color: #F0AD90;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 30px;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .login-img img{
+    width: 100%;
+    height: 55vh;
+    margin-top: 6rem;
+    object-fit: fill;
+  }
+  @media only screen and (min-width: 501px) and (max-width: 630px){
+    .login-img img{
+      width: 100%;
+      height: 55vh;
+      margin-top: 5rem;
+      object-fit: fill;
+    }
+  }
+  .form legend{
+    color: #D16E43;
+    font-size: 20px;
+    margin-bottom: 2rem;
+    margin-top: 1.4rem;
+  }
+
+
+
+  #forgot-img-mobile{
+    display: none;
+  }
+  
+  .forgot-form h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 2rem;
+  }
+  #forgot-input input{
+    width: 240px;
+    height: 50px;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  #forgot-input button{
+    width: 240px;
+    height: 50px;
+  }
+  @media only screen and (min-width: 501px) and (max-width: 700px){
+    .forgot-form h1{
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 2rem;
+    }
+    #forgot-input input{
+      width: 200px;
+      height: 45px;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+    #forgot-input button{
+      width: 200px;
+      height: 45px;
+    }
+    #forgot-form legend{
+      font-size: 22px;
+      line-height: 2rem;
+    }
+  }
+
+
+
+  /*Styling for the footer begins here*/
+  .footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: left;
+    margin: 0 auto;
+    gap: 1rem;
+    justify-content: space-around;
+    padding: 0% 5%;
+    padding-top: 3%;
+    padding-bottom: 1%;  
+  }
+  .help-info , .contact-us, .useful-links{
+    display: none;
+  }
+  .footer-dropdown-content{
+    display: inline-block;
+  }
+  .footer-dropdown{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .dropdown-options{
+    display: none;
+    position: absolute;
+    background-color: #c4c4c4;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-options a{
+    color: black;
+    padding: 7px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-options a:hover {
+    background-color: #ddd;
+  }
+  .footer-dropdown:hover .dropdown-options {
+    margin-top: 1.5rem;
+    display: block;
+    overflow-y: hidden;
+  }
+  .footer-dropdown:active .dropdown-options {
+    margin-top: 2rem;
+    display: block;
+  }
+  
+  /*Styling for footer section begins here*/
+  .footer h3{
+    font-weight: bolder;
+    font-family: "Inter", serif;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+  .footer ul li{
+    list-style-type: none;
+    margin: 0px;  
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #232323;
+    font-size: 1rem;
+    line-height: 1.9rem;
+  }
+  legend{
+    font-size: 1.3rem;
+    font-family: "Inter", serif;
+    font-weight: 600;
+    color: #232323;
+    margin-bottom: 0.33rem;
+  }
+  .social-icons{
+    text-align: center;
+    padding-bottom: 7px;
+  }
+  .social-icons span{
+    font-size: 1.3rem;
+    font-family: "Inter", serif;
+    font-weight: 700;
+    word-spacing: 0px
+  }
+  .social-icons a{
+    font-size: 1.4rem;
+    color: #000000;
+    padding-left: 0.5rem;
+  }
+  .copyright{
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 15px 0px;
+    word-spacing: 0px;
+  }
+}
+  
+
+
+/*Styling for footer section begins here*/
+@media only screen and (max-width: 500px){
+  
+  /*Style for the Signup / Register Page begins here*/
+  .register-main{
+    width: 95%;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 4% 0%;
+    font-family: "Josefin Sans", serif;
+    font-style: normal;
+  }
+  .register-main h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 1.5rem;
+  }
+  .reservation-form{
+    border: 1px solid black;
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+  }
+  .input{
+    display: block;
+    margin-top: 1rem;
+  }
+  .input input{
+    padding: 11px 15px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 12px;
+    margin: 0% 5%;
+    width: 125px;
+  }
+  @media only screen and (max-width: 361px) {
+    .input input{
+      padding: 11px 15px;
+      background-color: #D9D9D9;
+      border: none;
+      border-radius: 12px;
+      margin: 0% 1%;
+      width: 142px;
+    }
+  }
+  input::placeholder{
+    color: rgba(42, 40, 40, 0.7);
+    font-weight: bold;
+  }
+  input[type="email"], input[type="password"]{
+    width: 300px;
+    display: block;
+    margin : 0 auto;
+    margin-top: 2rem;
+  }
+  .reservation-form legend{
+    font-size: 22px;
+    color: #D16E43;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    word-spacing: 2px;
+  } 
+  .input button{
+    background-color: #F0AD90;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 70px;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .input button:hover{
+    background-color: #D16E43;
+  }
+  .input-sign{
+    margin-bottom: 1rem;
+  }
+  .input-sign span{
+    color: #D16E43;
+    font-size: 16px;
+    margin-right: 0rem;
+  }
+  .input-sign a{
+    color: #000000;
+    background-color: #F0AD90;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .input-sign a:hover{
+    background-color: #D16E43;
+  }
+
+
+
+  /*Style for the Login Page begins here*/
+  .login-main{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 4%;
+    padding-bottom: 3%;
+    gap: 2rem;
+    font-family: "Josefin Sans", serif;
+    font-style: normal;
+    user-select: none;
+  }
+  .login-form{
+    width: 100%;
+  }
+  .login-form h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 1.5rem;
+  }
+  .form{
+    border: 1px solid black;
+  }
+  .form legend{
+    color: #D16E43;
+    font-size: 25px;
+    margin-bottom: 2rem;
+    margin-top: 1.4rem;
+  }
+  .form h4 a{
+    color: rgba(74, 71, 71, 0.75);
+    display: flex;
+    justify-content: end;
+    margin-top: 1.5rem;
+    margin-right: 18%;
+  }
+  .form h4 a:hover{
+    color: #000000;
+  }
+  input[name="username"], input[name="login-password"]{
+    width: 250px;
+    display: block;
+    margin : 0 auto;
+    margin-top: 2rem;
+  }
+  .login-img{
+    width: 100%;
+  }
+  .login-img img{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  .input-login{
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .input-login span{
+    color: black;
+    font-size: 18px;
+    margin-right: 0.5rem;
+  }
+  .input-login a{
+    color: #000000;
+    background-color: #F0AD90;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 10px;
+    width: 201px;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  .input-login a:hover{
+    background-color: #D16E43;
+  }
+
+
+
+  
+  /*Style for the Forgot Page begins here*/
+  #forgot-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0rem;
+    padding: 5%;
+    padding-bottom: 3%;
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+  }
+  @media only screen and (min-width: 0px) and (max-width: 500px){
+  #forgot-img{
+    display: none;
+  }
+  #forgot-img-mobile{
+    display: block;
+  }
+}
+  .forgot-img{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .forgot-img img{
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+  }
+  .forgot-form{
+    width: 100%;
+    height: auto;
+  }
+  .forgot-form h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 2rem;
+    margin-top: 0.8rem;
+  }
+  #forgot-form{
+    border: 1px solid black;
+    padding: 5%;
+  }
+  #forgot-form legend{
+    padding: 0% 0%;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: left;
+    color: #D16E43;
+  }
+  #forgot-input{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #forgot-input input{
+    width: 270px;
+    height: 47px;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  #forgot-input button{
+    width: 270px;
+    height: 45px;
+  }
+  #forgot-form h4{
+    text-align: center;
+    margin: 1rem 0rem;
+  }
+  #forgot-form h4 a{
+    color: #000000;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  #forgot-form h4 a:hover{
+    color: #D16E43;
+    text-decoration: underline;
+  }
+
+
+
+
+  .footer{
+    gap: 0.4rem;
+    padding: 3% 2%;
+    padding-bottom: 0%;
+    justify-content: space-around;
+  }
+  .footer ul li{
+    list-style-type: none;
+    margin: 0px;  
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #232323;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  legend{
+    font-size: 1rem;
+    font-family: "Inter", serif;
+    font-weight: 600;
+    color: #232323;
+    margin-bottom: 0.3rem;
+  }
+}
+  
+
+
+/*Css for medium range devices begins here*/
+@media only screen and (min-width: 800px) and (max-width: 1236px){
+  /*Style For Navbar Begins Here*/
+  nav{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    z-index: 1000;
+    background-color: transparent; 
+    transition: background-color 0.5s ease; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0 auto;
+    user-select: none;
+    grid-gap: 0rem;
+  }
+  .nav-logo{
+    display: inline;
+    width: 17%;
+  }
+  .search-input #search-icon{
+    padding: 8px 0px;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+  }
+  .nav-drawer{
+    width: 83%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+  } 
+  .nav-logo-in-text{
+    display: none;
+  }
+  .nav-logo img{
+    width: 100px;
+    height: 51px;
+    object-fit: fill;
+    align-items: center;
+    margin-top: 0.4rem;
+  }
+  
+  @media only screen and (min-width: 801px) and (max-width: 900px){
+    .nav-logo img{
+      margin-left: 1rem;
+      margin-right: 0.5rem;
+    }
+  }
+  .nav-menu-list ul, .nav-user-info ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-gap: 2rem;
+    list-style-type: none;
+    margin-right: 1rem;
+  }
+  .nav-icons{
+    display: none;
+  }
+  .close-btn{
+    display: none;
+  }
+}

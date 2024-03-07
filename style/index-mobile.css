@@ -10,15 +10,16 @@
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
+    font-family: "Josefin Sans", sans-serif;
   }
   .nav-logo-in-text{
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .nav-logo-in-text h3{
     font-family: 'Inter', sans-serif;
@@ -49,12 +50,12 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    grid-gap: 1.2rem;
+    grid-gap: 1.5rem;
     list-style-type: none;
     margin: 0rem 0rem;
   }
   .nav-user-info ul{
-    grid-gap: 0.9rem;
+    grid-gap: 1.5rem;
     margin: 0rem 0rem;
     margin-top: 1.2rem;
     margin-bottom: 1.4rem;
