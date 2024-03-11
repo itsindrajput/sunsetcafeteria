@@ -103,7 +103,7 @@ nav.sticky {
   left: 0;
   bottom: -2px;
   border: none;
-  border-radius: 100%;
+  border-radius: 25%;
   width: 0;
   height: 3px;
   background-color: #E45417; 
@@ -1235,7 +1235,7 @@ footer{
     margin-top: 0.4rem;
   }
   
-  @media only screen and (min-width: 801px) and (max-width: 900px){
+  @media only screen and (min-width: 800px) and (max-width: 900px){
     .nav-logo img{
       margin-left: 1rem;
       margin-right: 0.5rem;

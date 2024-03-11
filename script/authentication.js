@@ -106,3 +106,32 @@ function loginMain() {
 
   window.location.href = '../index.html';
 }
+
+
+
+// Js Code Forgot page begins here
+  function generateOTP() {
+    // Get the email input value
+    const emailInput = document.querySelector('input[name="email"]').value;
+
+    // Validate the email using a simple regex pattern
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(emailInput)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    // Generate a random 6-digit OTP
+    const otp = Math.floor(100000 + Math.random() * 900000);
+
+    alert(`Generated OTP: ${otp}`);
+  }
+
+  function reservation() {
+    const emailInput = document.querySelector('input[name="email"]').value;
+    if (emailInput.trim() === '') {
+      alert('Please enter your email address.');
+      return;
+    }
+    generateOTP();
+  }
