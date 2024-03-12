@@ -688,7 +688,7 @@
 
 @media only screen and (max-width: 500px){
   .nav-menu-list ul, .nav-user-info ul{
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
   #about-img1{
     display: block;
