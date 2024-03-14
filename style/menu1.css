@@ -19,7 +19,7 @@
   font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
   text-align: center;
-  margin: 2rem 0rem;
+  margin: 0.5rem 0rem 1.5rem 0rem;
   user-select: none;
 }
 .see-more-btn i{
@@ -33,10 +33,218 @@
   background-color: lightgreen;
   color: #000000;
   border: 3px solid #000000;
+  transition: background-color 0.3s ease-in-out;
+  transition: border 0.3s ease-out;
+}
+.nav-menu ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+.nav-menu ul li a{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+#active-menu, .nav-menu ul li a:hover{
+  color: #FFAF40;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.menu-item-btn{
+  position: relative;
+  width: 90%;
+  height: 10vh;
+  margin: 2rem auto;
+  margin-bottom: 3rem;
+}
+.menu-item-btn p:nth-child(1){
+  left: 10px;
+  position: absolute;
+  background-color: #D16E43;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  color: #FFFFFF;
+}
+.menu-item-btn p:nth-child(2){
+  right: 10px;
+  position: absolute;
+  background-color: #D16E43;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  color: #FFFFFF;
+}
+#menu-item-btn-mobile, #card-img{
+  display: none;
+}
+.menu-item-btn p{
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;user-select: none;
+}
+.menu-item-btn p #green-btn, .menu-item ul li #green-btn{
+  padding: 1px 10px;
+  border: 2px solid #2FD820;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2FD820;
+  background-color: #D3C9C9;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+.menu-item ul li #green-btn{
+  margin-left: 0rem;
+}
+.menu-item-btn p #green-btn:hover, .menu-item ul li #green-btn:hover{
+  color:  #D3C9C9;
+  background-color: #2FD820;
+  transition: background-color 0.3s ease-in-out;
+}
+.menu-item-btn p #red-btn, .menu-item ul li #red-btn{
+  padding: 1px 10px;
+  border: 2px solid #D71919;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #D71919;
+  background-color: #D3C9C9;
+  cursor: pointer;
+  text-decoration: none;
+}
+.menu-item-btn p #red-btn:hover, .menu-item ul li #red-btn:hover{
+  color:  #D3C9C9;
+  background-color: #D71919;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+/*Css for menu-container begins here*/
+.menu-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-around;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.menu-container1{
+  width: 40%;
+}
+.yellow-line{
+  width: 2px;
+  height: 81vh;
+  background-color: #F6FA11;
+  border: none;
+  border-radius: 10px;
+}
+.menu-container2{
+  width: 40%;
+}
+.menu-item ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.menu-item ul li{
+  margin-right: 0rem;
+}
+.menu-container1 .menu-item .menu-txt{
+  width: 40%;
+  line-height: 1.4rem;
+}
+.menu-container2 .menu-item .menu-txt{
+  width: 45%;
+  line-height: 1.4rem;
+}
+.menu-item ul li span{
+  color: #F6FA11;
+  font-weight: 700;
+  padding-left: 1rem;
+  line-height: 3rem;
+  display: block;
+}
+.count-btn{
+  margin-top: -2.5px;
+  background-color:#D9D9D9;
+  color: #000000;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  list-style-type: none;
+  border: none;
+  border-radius: 100%;
+}
+.count-btn b{
+  line-height: 2.1rem;
+  font-size: 0.9rem;
+}
+.count-btn button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bolder;
+}
+.count-btn button:hover{
+  color: blue;
+  transform: scale(1.5);
+  transition: transform 0.3s ease-in-out;
+}
+.count-btn button:nth-child(1){
+  padding-bottom: 1px;
+  padding-right: 2px;
+  font-weight: bolder;
+}
+.add-to-cart{
+  margin-top: -2.5px;
+  width: 100px;
+  height: 40px;
+  background-color: #CB5F5F;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+}
+.add-to-cart:hover{
+  background-color: #c64747;
+  transition: background-color 0.3s ease-in-out;
 }
 
 
 
+
+
+/*Styling For The Mediam Screen Device*/
+@media only screen and (min-width: 800px) and (max-width: 1000px){
+  #menu-hero img{
+    height: 60vh;
+  }
+  .nav-menu ul li a{
+    font-size: 20px;
+  }
+}
 
 
 
@@ -51,12 +259,89 @@
     object-fit: fill;
     object-position: center;
   }
+  .nav-menu ul {
+    justify-content: space-between;
+    width: 97%;
+    margin: 0 auto;
+  }
+  .nav-menu ul li a{
+    font-size: 17px;
+  }
+  .nav-menu ul #sides{
+    display: none;
+  }
+
+  .menu-item-btn{
+    position: relative;
+    justify-content: space-between;
+    width: 97.5%;
+    height: 10vh;
+    margin: 2rem auto;
+    margin-bottom: 3rem;
+  }
+  .menu-item-btn p:nth-child(1){
+    left: 0px;
+    padding: 10px 20px;
+    border-radius: 25px;
+  }
+  .menu-item-btn p:nth-child(2){
+    right: 0px;
+    padding: 10px 20px;
+    border-radius: 25px;
+  }
+  .menu-item-btn p{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;user-select: none;
+  }
+
+  /*Css for menu-container begins here*/
+  .menu-container{
+    width: 100%;
+  }
+  .menu-container1{
+    width: 47%;
+  }
+  .yellow-line{
+    width: 2px;
+    height: 85vh;
+    border-radius: 10px;
+  }
+  @media only screen and (min-width: 500px) and (max-width: 550px){
+    .yellow-line{
+      width: 2px;
+      height: 100vh;
+      border-radius: 10px;
+    }
+  }
+  .menu-container2{
+    width: 47%;
+  }
+  .menu-txt{
+    font-size: 1rem;
+  }
+  .menu-container1 .menu-item .menu-txt{
+    width: 100%;
+    line-height: 1.4rem;
+  }
+  .menu-container2 .menu-item .menu-txt{
+    width: 100%;
+    line-height: 1.4rem;
+  } 
+  .menu-item ul li span{
+    padding-left: 0rem;
+    line-height: 3rem;
+  }
+  .count-btn b{
+    line-height: 2.2rem;
+    font-size: 0.9rem;
+  }
+  .add-to-cart{
+    margin-top: -2.5px;
+    width: 75px;
+    height: 40px;
+  }
 }
-
-
-
-
-
 
 
 
@@ -71,5 +356,138 @@
     height: 50vh;
     object-fit: cover;
     object-position: center;
+  }
+  .nav-menu ul{
+    padding: 0px 10px;
+    margin-top: 0rem;
+  }
+  .nav-menu ul li a{
+    font-size: 16px;
+  }
+  .nav-menu ul #sides{
+    display: none;
+  }
+  .menu-item-btn{
+    position: relative;
+    justify-content: space-between;
+    width: 97.5%;
+    height: 9vh;
+    margin: 2rem auto;
+    margin-top: 1rem;
+  }
+  .menu-item-btn p:nth-child(1){
+    left: 0px;
+    padding: 10px 20px;
+    border-radius: 25px;
+  }
+  .menu-item-btn p:nth-child(2){
+    right: 0px;
+    padding: 5px 20px;
+    border-radius: 25px;
+    justify-content: center;
+  }
+  .menu-item-btn p{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;user-select: none;
+  }
+  .menu-item-btn p #green-btn, .menu-item ul li #green-btn{
+    margin-left: 0rem;
+  }
+
+
+  /*Css for menu-container begins here*/
+  .menu-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu-container1{
+    width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .menu-container2{
+    width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .menu-item ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .menu-item ul li{
+    margin-right: 0rem;
+  }
+  .menu-txt{
+    font-size: 1rem;
+  }
+  .menu-container1 .menu-item .menu-txt{
+    width: 45%;
+    line-height: 1.4rem;
+  }
+  .menu-container2 .menu-item .menu-txt{
+    width: 45%;
+    line-height: 1.4rem;
+  }
+  .see-more-btn{
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    margin: -1.5rem 0rem 1.5rem 0rem;
+    user-select: none;
+  }
+  .count-btn, .add-to-cart{
+    display: none;
+  }
+  #menu-item-btn-mobile, #card-img{
+    display: block;
+  }
+  #card-img{
+    width: 100px;
+    height: 70px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    align-items: end;
+  }
+  .card-img li{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  card-btn{
+    background-color: #D9D9D9;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 60px;
+    height: 23px;
+  }
+  .card-btn button{
+    background-color: #cdcbcb;
+    border: none;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+  .card-btn button:hover{
+    background-color: #a29e9e;
+  }
+  .menu-item-btn{
+    display: none;
+  }
+  .yellow-line{
+    display: none;
   }
 }
