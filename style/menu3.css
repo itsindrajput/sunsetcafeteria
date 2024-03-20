@@ -1,0 +1,80 @@
+/*Css for menu 3 page begins here*/
+#desk-hero-img {
+  display: block;
+}
+#mobile-hero-img {
+  display: none;
+}
+#menu-item-btn1,
+#menu-item-btn2 {
+  background-color: transparent;
+  color: #f7eded;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 3rem auto 2.1rem auto;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+}
+.yellow-line {
+  margin: 7vh 0vh;
+  width: 1.5px;
+  height: auto;
+  background-color: #f6fa11;
+  border: none;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+  #menu-item-btn1,
+  #menu-item-btn2 {
+    font-size: 1.4rem;
+    margin: 2rem auto 2.1rem auto;
+    font-weight: 600;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  #menu-item-btn1,
+  #menu-item-btn2 {
+    font-size: 1.4rem;
+    text-align: left;
+    margin: 2rem auto 2.1rem auto;
+    font-weight: 600;
+  }
+  .nav-menu ul {
+    margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #menu-item-btn1,
+  #menu-item-btn2 {
+    background-color: #d16e43;
+    color: #f7eded;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 12px 0px 9px 0px;
+    text-align: center;
+    margin: 2.3rem auto 1.5rem auto;
+    width: 290px;
+  }
+  .yellow-line {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #desk-hero-img {
+    display: none;
+  }
+  #mobile-hero-img {
+    display: block;
+  }
+  .nav-menu ul {
+    margin-top: 1.5rem;
+  }
+  .menu-container2 {
+    margin-top: -0.7rem;
+  }
+}

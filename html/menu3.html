@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sunset Cafe | Main Menu 1</title>
+    <title>Sunset Cafe | Main Menu 3</title>
     <meta http-equiv="author" content="Rishabh Singh" />
     <meta http-equiv="pragma" content="cache" />
 
@@ -25,6 +25,7 @@
     <!-- Links Of External Css -->
     <link rel="stylesheet" href="../style/signup.css" type="text/css" />
     <link rel="stylesheet" href="../style/menu1.css" type="text/css" />
+    <link rel="stylesheet" href="../style/menu3.css" type="text/css" />
   </head>
   <body style="background-color: #251a17">
     <header style="background-color: transparent">
@@ -79,84 +80,38 @@
     <main>
       <!--Html Code For Hero Section-->
       <div id="menu-hero">
-        <img src="../images/next-menu-images/pixzolo-photography.jpeg" alt="" />
+        <img
+          id="desk-hero-img"
+          src="../images/menu-images/Starter_Hero.jpg"
+          alt="Starters"
+        />
+        <img
+          id="mobile-hero-img"
+          src="../images/menu-images/Starters.jpg"
+          alt="Starters"
+        />
       </div>
       <div class="nav-menu">
         <ul>
-          <li><a href="#" id="active-menu">BURGER & SANDWICHES</a></li>
+          <li><a href="menu1.html">BURGER & SANDWICHES</a></li>
           <li><a href="menu2.html">CHINESE CUSINE</a></li>
-          <li><a href="menu3.html">STARTERS</a></li>
+          <li><a href="#" id="active-menu">STARTERS</a></li>
           <li id="sides"><a href="#">SIDES</a></li>
           <li id="sides"><a href="#">SALADS</a></li>
           <li style="margin-left: 1rem">
-            <a href="menu2.html"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="menu4.html"><i class="fa-solid fa-arrow-right"></i></a>
           </li>
         </ul>
-      </div>
-      <div class="menu-item-btn">
-        <p>
-          BURGERS
-          <button type="button" id="green-btn">&#8226;</button>
-          <em>/</em>
-          <button type="button" id="red-btn">&#8226;</button>
-        </p>
-        <p>
-          SANDWICHES
-          <button type="button" id="green-btn">&#8226;</button>
-          <em>/</em>
-          <button type="button" id="red-btn">&#8226;</button>
-        </p>
-      </div>
-
-      <div class="menu-item-btn" id="menu-item-btn-mobile">
-        <p>BURGERS</p>
-        <p>
-          <button type="button" id="green-btn">&#8226;</button>
-          <em>/</em>
-          <button type="button" id="red-btn">&#8226;</button>
-        </p>
       </div>
 
       <div class="menu-container">
         <div class="menu-container1">
+          <p id="menu-item-btn1">STARTERS</p>
           <div class="menu-item">
             <ul>
               <li class="menu-txt">
-                Tandoori Chicken Tikka Burger <span>210/-</span>
+                CRISPY VEGETABLE SPRING ROOLS <span>159/-</span>
               </li>
-              <li><a href="#" id="red-btn">&#8226;</a></li>
-              <li class="count-btn">
-                <button type="button">-</button>
-                <b class="value">1</b>
-                <button type="button">+</button>
-              </li>
-              <li>
-                <button type="button" class="add-to-cart">
-                  ADD <i class="fa-solid fa-plus"></i>
-                </button>
-              </li>
-
-              <!--The Below ul element only designed for mobile view max-width: 500px-->
-              <li
-                class="card-img"
-                id="card-img"
-                style="
-                  background-image: url('../images/next-menu-images/burger1.png');
-                "
-              >
-                <ul>
-                  <li class="card-btn">
-                    <button type="button">-</button>
-                    <button type="button" id="current-Data">1</button>
-                    <button type="button">+</button>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="menu-item">
-            <ul>
-              <li class="menu-txt">Paneer Bhurji Burger <span>169/-</span></li>
               <li><a href="#" id="green-btn">&#8226;</a></li>
               <li class="count-btn">
                 <button type="button">-</button>
@@ -174,7 +129,7 @@
                 class="card-img"
                 id="card-img"
                 style="
-                  background-image: url('../images/next-menu-images/burger2.png');
+                  background-image: url('../images/next-menu-images/Spring_rolls.png');
                 "
               >
                 <ul>
@@ -187,10 +142,9 @@
               </li>
             </ul>
           </div>
-
           <div class="menu-item">
             <ul>
-              <li class="menu-txt">Aloo Tikki Burger <span>149/-</span></li>
+              <li class="menu-txt">Paneer Tikka Skewers <span>149/-</span></li>
               <li><a href="#" id="green-btn">&#8226;</a></li>
               <li class="count-btn">
                 <button type="button">-</button>
@@ -207,9 +161,7 @@
               <li
                 class="card-img"
                 id="card-img"
-                style="
-                  background-image: url('../images/next-menu-images/burger3.png');
-                "
+                style="background-image: url('../images/menu-images/news.jpg')"
               >
                 <ul>
                   <li class="card-btn">
@@ -221,78 +173,12 @@
               </li>
             </ul>
           </div>
+
           <div class="menu-item">
             <ul>
               <li class="menu-txt">
-                Egg Bhurji Breakfast Burger <span>129/-</span>
+                Stuffed Mushrooms with Spinach and Feta <span>139/-</span>
               </li>
-              <li><a href="#" id="red-btn">&#8226;</a></li>
-              <li class="count-btn">
-                <button type="button">-</button>
-                <b class="value">1</b>
-                <button type="button">+</button>
-              </li>
-              <li>
-                <button type="button" class="add-to-cart">
-                  ADD <i class="fa-solid fa-plus"></i>
-                </button>
-              </li>
-
-              <!--The Below ul element only designed for mobile view max-width: 500px-->
-              <li
-                class="card-img"
-                id="card-img"
-                style="
-                  background-image: url('../images/next-menu-images/burger4.png');
-                "
-              >
-                <ul>
-                  <li class="card-btn">
-                    <button type="button">-</button>
-                    <button type="button" id="current-Data">1</button>
-                    <button type="button">+</button>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-
-          <div class="menu-item">
-            <ul>
-              <li class="menu-txt">Keema Pav Burger <span>210/-</span></li>
-              <li><a href="#" id="red-btn">&#8226;</a></li>
-              <li class="count-btn">
-                <button type="button">-</button>
-                <b class="value">1</b>
-                <button type="button">+</button>
-              </li>
-              <li>
-                <button type="button" class="add-to-cart">
-                  ADD <i class="fa-solid fa-plus"></i>
-                </button>
-              </li>
-
-              <!--The Below ul element only designed for mobile view max-width: 500px-->
-              <li
-                class="card-img"
-                id="card-img"
-                style="
-                  background-image: url('../images/next-menu-images/burger5.png');
-                "
-              >
-                <ul>
-                  <li class="card-btn">
-                    <button type="button">-</button>
-                    <button type="button" id="current-Data">1</button>
-                    <button type="button">+</button>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="menu-item">
-            <ul>
-              <li class="menu-txt">Palak Paneer Burger <span>159/-</span></li>
               <li><a href="#" id="green-btn">&#8226;</a></li>
               <li class="count-btn">
                 <button type="button">-</button>
@@ -310,7 +196,175 @@
                 class="card-img"
                 id="card-img"
                 style="
-                  background-image: url('../images/next-menu-images/burger6.png');
+                  background-image: url('../images/next-menu-images/Mushrooms.png');
+                "
+              >
+                <ul>
+                  <li class="card-btn">
+                    <button type="button">-</button>
+                    <button type="button" id="current-Data">1</button>
+                    <button type="button">+</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-item">
+            <ul>
+              <li class="menu-txt">Corn and Cheese Balls <span>169/-</span></li>
+              <li><a href="#" id="green-btn">&#8226;</a></li>
+              <li class="count-btn">
+                <button type="button">-</button>
+                <b class="value">1</b>
+                <button type="button">+</button>
+              </li>
+              <li>
+                <button type="button" class="add-to-cart">
+                  ADD <i class="fa-solid fa-plus"></i>
+                </button>
+              </li>
+
+              <!--The Below ul element only designed for mobile view max-width: 500px-->
+              <li
+                class="card-img"
+                id="card-img"
+                style="
+                  background-image: url('../images/menu-images/Cheese-Balls.jpg');
+                "
+              >
+                <ul>
+                  <li class="card-btn">
+                    <button type="button">-</button>
+                    <button type="button" id="current-Data">1</button>
+                    <button type="button">+</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-item">
+            <ul>
+              <li class="menu-txt">
+                Chicken Satay with Peanut Sauce <span>210/-</span>
+              </li>
+              <li><a href="#" id="red-btn">&#8226;</a></li>
+              <li class="count-btn">
+                <button type="button">-</button>
+                <b class="value">1</b>
+                <button type="button">+</button>
+              </li>
+              <li>
+                <button type="button" class="add-to-cart">
+                  ADD <i class="fa-solid fa-plus"></i>
+                </button>
+              </li>
+
+              <!--The Below ul element only designed for mobile view max-width: 500px-->
+              <li
+                class="card-img"
+                id="card-img"
+                style="
+                  background-image: url('../images/next-menu-images/Chicken-Satay.png');
+                "
+              >
+                <ul>
+                  <li class="card-btn">
+                    <button type="button">-</button>
+                    <button type="button" id="current-Data">1</button>
+                    <button type="button">+</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-item">
+            <ul>
+              <li class="menu-txt">Prawn Tempura <span>159/-</span></li>
+              <li><a href="#" id="red-btn">&#8226;</a></li>
+              <li class="count-btn">
+                <button type="button">-</button>
+                <b class="value">1</b>
+                <button type="button">+</button>
+              </li>
+              <li>
+                <button type="button" class="add-to-cart">
+                  ADD <i class="fa-solid fa-plus"></i>
+                </button>
+              </li>
+
+              <!--The Below ul element only designed for mobile view max-width: 500px-->
+              <li
+                class="card-img"
+                id="card-img"
+                style="
+                  background-image: url('../images/next-menu-images/Prawn-Tempura.png');
+                "
+              >
+                <ul>
+                  <li class="card-btn">
+                    <button type="button">-</button>
+                    <button type="button" id="current-Data">1</button>
+                    <button type="button">+</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-item">
+            <ul>
+              <li class="menu-txt">Spicy Chicken Wings <span>199/-</span></li>
+              <li><a href="#" id="red-btn">&#8226;</a></li>
+              <li class="count-btn">
+                <button type="button">-</button>
+                <b class="value">1</b>
+                <button type="button">+</button>
+              </li>
+              <li>
+                <button type="button" class="add-to-cart">
+                  ADD <i class="fa-solid fa-plus"></i>
+                </button>
+              </li>
+
+              <!--The Below ul element only designed for mobile view max-width: 500px-->
+              <li
+                class="card-img"
+                id="card-img"
+                style="
+                  background-image: url('../images/menu-images/Sizzling-Tandoori-Platter.jpg');
+                "
+              >
+                <ul>
+                  <li class="card-btn">
+                    <button type="button">-</button>
+                    <button type="button" id="current-Data">1</button>
+                    <button type="button">+</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-item">
+            <ul>
+              <li class="menu-txt">Fish Tikka Tacos <span>139/-</span></li>
+              <li><a href="#" id="red-btn">&#8226;</a></li>
+              <li class="count-btn">
+                <button type="button">-</button>
+                <b class="value">1</b>
+                <button type="button">+</button>
+              </li>
+              <li>
+                <button type="button" class="add-to-cart">
+                  ADD <i class="fa-solid fa-plus"></i>
+                </button>
+              </li>
+
+              <!--The Below ul element only designed for mobile view max-width: 500px-->
+              <li
+                class="card-img"
+                id="card-img"
+                style="
+                  background-image: url('../images/next-menu-images/Fish_Tikka.jpg');
                 "
               >
                 <ul>
@@ -327,22 +381,11 @@
 
         <div class="yellow-line"></div>
 
-        <div class="menu-item-btn" id="menu-item-btn-mobile">
-          <p>SANDWICHES</p>
-          <p>
-            <button type="button" id="green-btn">&#8226;</button>
-            <em>/</em>
-            <button type="button" id="red-btn">&#8226;</button>
-          </p>
-        </div>
-
         <div class="menu-container2">
+          <p id="menu-item-btn1">MOUTHWATERING COMBOS</p>
           <div class="menu-item">
             <ul>
-              <li class="menu-txt">
-                Bombay Masala Grilled Cheese <span>159/-</span>
-              </li>
-              <li><a href="#" id="green-btn">&#8226;</a></li>
+              <li class="menu-txt">Vegetarian Platter <span>149/-</span></li>
               <li class="count-btn">
                 <button type="button">-</button>
                 <b class="value">1</b>
@@ -359,7 +402,7 @@
                 class="card-img"
                 id="card-img"
                 style="
-                  background-image: url('../images/next-menu-images/Sandwich1.png');
+                  background-image: url('../images/menu-images/Vegetarian-Platter.jpg');
                 "
               >
                 <ul>
@@ -375,9 +418,8 @@
           <div class="menu-item">
             <ul>
               <li class="menu-txt">
-                Chicken Seekh Kebab SANDWICH <span>179/-</span>
+                Sunset Signature Sampler <span>139/-</span>
               </li>
-              <li><a href="#" id="red-btn">&#8226;</a></li>
               <li class="count-btn">
                 <button type="button">-</button>
                 <b class="value" id="current-Data">1</b>
@@ -393,147 +435,7 @@
               <li
                 class="card-img"
                 id="card-img"
-                style="
-                  background-image: url('../images/next-menu-images/Sandwich2.png');
-                "
-              >
-                <ul>
-                  <li class="card-btn">
-                    <button type="button">-</button>
-                    <button type="button" id="current-Data">1</button>
-                    <button type="button">+</button>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-
-          <div class="menu-item">
-            <ul>
-              <li class="menu-txt">Mumbai Vada Pav <span>139/-</span></li>
-              <li><a href="#" id="green-btn">&#8226;</a></li>
-              <li class="count-btn">
-                <button type="button">-</button>
-                <b class="value">1</b>
-                <button type="button">+</button>
-              </li>
-              <li>
-                <button type="button" class="add-to-cart">
-                  ADD <i class="fa-solid fa-plus"></i>
-                </button>
-              </li>
-
-              <!--The Below ul element only designed for mobile view max-width: 500px-->
-              <li
-                class="card-img"
-                id="card-img"
-                style="
-                  background-image: url('../images/next-menu-images/vadapav3.png');
-                "
-              >
-                <ul>
-                  <li class="card-btn">
-                    <button type="button">-</button>
-                    <button type="button" id="current-Data">1</button>
-                    <button type="button">+</button>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="menu-item">
-            <ul>
-              <li class="menu-txt">
-                Butter Chicken Naanwich <span>179/-</span>
-              </li>
-              <li><a href="#" id="red-btn">&#8226;</a></li>
-              <li class="count-btn">
-                <button type="button">-</button>
-                <b class="value">1</b>
-                <button type="button">+</button>
-              </li>
-              <li>
-                <button type="button" class="add-to-cart">
-                  ADD <i class="fa-solid fa-plus"></i>
-                </button>
-              </li>
-
-              <!--The Below ul element only designed for mobile view max-width: 500px-->
-              <li
-                class="card-img"
-                id="card-img"
-                style="
-                  background-image: url('../images/next-menu-images/Sandwich4.png');
-                "
-              >
-                <ul>
-                  <li class="card-btn">
-                    <button type="button">-</button>
-                    <button type="button" id="current-Data">1</button>
-                    <button type="button">+</button>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-
-          <div class="menu-item">
-            <ul>
-              <li class="menu-txt">
-                Masala Grilled Fish Sandwich <span>199/-</span>
-              </li>
-              <li><a href="#" id="red-btn">&#8226;</a></li>
-              <li class="count-btn">
-                <button type="button">-</button>
-                <b class="value">1</b>
-                <button type="button">+</button>
-              </li>
-              <li>
-                <button type="button" class="add-to-cart">
-                  ADD <i class="fa-solid fa-plus"></i>
-                </button>
-              </li>
-
-              <!--The Below ul element only designed for mobile view max-width: 500px-->
-              <li
-                class="card-img"
-                id="card-img"
-                style="
-                  background-image: url('../images/next-menu-images/Sandwich5.png');
-                "
-              >
-                <ul>
-                  <li class="card-btn">
-                    <button type="button">-</button>
-                    <button type="button" id="current-Data">1</button>
-                    <button type="button">+</button>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="menu-item">
-            <ul>
-              <li class="menu-txt">Veg Seekh Kebab Sub <span>159/-</span></li>
-              <li><a href="#" id="green-btn">&#8226;</a></li>
-              <li class="count-btn">
-                <button type="button">-</button>
-                <b class="value">1</b>
-                <button type="button">+</button>
-              </li>
-              <li>
-                <button type="button" class="add-to-cart">
-                  ADD <i class="fa-solid fa-plus"></i>
-                </button>
-              </li>
-
-              <!--The Below ul element only designed for mobile view max-width: 500px-->
-              <li
-                class="card-img"
-                id="card-img"
-                style="
-                  background-image: url('../images/next-menu-images/seekkabab6.png');
-                "
+                style="background-image: url('../images/menu-images/main.jpg')"
               >
                 <ul>
                   <li class="card-btn">
@@ -549,7 +451,7 @@
       </div>
 
       <h3 class="see-more-btn">
-        <a href="menu2.html"><i class="fa-solid fa-arrow-down"></i></a>
+        <a href="menu4.html"><i class="fa-solid fa-arrow-down"></i></a>
       </h3>
     </main>
 

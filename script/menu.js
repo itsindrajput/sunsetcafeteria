@@ -45,6 +45,17 @@ function changeSlide(direction){
   carousel.style.transform = 'translateX(' + translateValue + ')';
 }
 
+//Alert On Add To Cart For Main Menu
+function addToAlert(event) {
+  let nameOfBeverage = event.target.closest('.menu-item').querySelector('.name-of-beverage').innerText;
+  let priceOfBeverage = event.target.closest('.menu-item').querySelector('.price-of-beverage').innerText;
+
+  alert('Your Item Is Added To Cart!\n' +
+    'Name: ' + nameOfBeverage + '\n' +
+    'Price: ' + priceOfBeverage);
+
+  return false;
+}
 
 
 //JavaScript for Updating the count when the item is added or removed

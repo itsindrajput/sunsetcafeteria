@@ -40,6 +40,7 @@ nav{
   user-select: none;
   grid-gap: 0rem;
   padding: 0% 5%;
+  background-color: #000000; 
 }
 nav.sticky {
   background-color: #000000; 
@@ -59,6 +60,9 @@ nav.sticky {
 }
 .nav-icons{
   display: none;
+}
+.search-icon{
+  margin-top: 0.5rem;
 }
 .search-input #search-icon{
   padding: 9px 0px;

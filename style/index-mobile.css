@@ -105,6 +105,9 @@
     margin: 6px 0;
     transition: 0.4s;
   }
+  .search-icon{
+    margin-top: 0.5rem;
+  }
   .search-icon a{
     color: #FFFFFF;
     cursor: pointer;
