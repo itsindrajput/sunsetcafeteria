@@ -45,6 +45,9 @@
   width: 50%;
   line-height: 1.4rem;
 }
+#green-btn {
+  display: none;
+}
 .yellow-line {
   margin: 7vh 0vh;
   width: 1.5px;
@@ -129,6 +132,9 @@
   }
   .nav-menu ul {
     margin-top: 1rem;
+  }
+  #green-btn {
+    display: block;
   }
   .yellow-line {
     display: none;

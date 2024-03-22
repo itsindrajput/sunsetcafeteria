@@ -28,7 +28,6 @@ window.addEventListener("scroll", function() {
 
 
 
-//js for register-main begins here
 function registerMain() {
   let form = document.getElementById('form');
   let fnameInput = form.querySelector('input[name="fname"]');
@@ -36,43 +35,64 @@ function registerMain() {
   let emailInput = form.querySelector('input[name="email"]');
   let passwordInput = form.querySelector('input[name="password"]');
   let cnfPasswordInput = form.querySelector('input[name="cnf-password"]');
+  let errorMessage = document.getElementById("error-message");
 
   // Validating form data
-  if (fnameInput.value === '') {
-    alert('Please Enter Your First Name');
+  if (fnameInput.value === '' || fnameInput.value.length < 7) {
+    alert('Please Provide A First Name With At Least 6 Characters.');
     return;
   }
-  if (lnameInput.value === '') {
-    alert('Please Enter Your Last Name');
+  if (lnameInput.value === '' || lnameInput.value.length < 4) {
+    alert('Please Provide A Last Name With At Least 3 Characters.');
     return;
   }
-
   if (emailInput.value === '' || !isValidEmail(emailInput.value)) {
-    alert('Please Enter A Valid Email Address');
+    alert('Please Enter A Valid Email Address.');
+    return;
+  }
+  if (passwordInput.value === '' || passwordInput.value.length < 6) {
+    alert('Please Enter A Password Consisting of More Than 5 Letters.');
+    return;
+  }
+  if (cnfPasswordInput.value === '' || cnfPasswordInput.value.length < 6) {
+    alert('Please Re-enter The Password To Confirm.');
     return;
   }
 
-  if (passwordInput.value === '') {
-    alert('Please Enter A Password');
-    return;
-  }
-
-  if (cnfPasswordInput.value === '') {
-    alert('Please Re-enter The Password To Confirm');
-    return;
-  }
-
+  // Check password match
   if (passwordInput.value !== cnfPasswordInput.value) {
-    console.error();
+    errorMessage.textContent = 'Passwords Do Not Match, Please Re-enter!';
+    errorMessage.style.display = "block";
     return;
+  } else {
+    errorMessage.style.display = "none";
   }
 
-
-  alert(`You have been successfully registered to the sunset cafe websit 🚀`)
+  alert(`You have been successfully Registered. 🎉
+Now proceed to the Login page by clicking the Sign in button. 👇`);
+  localStorage.clear();
+  localStorage.setItem("Email", emailInput.value);
+  localStorage.setItem("Password", passwordInput.value);
 
   form.reset();
   console.clear();
 }
+
+function checkPasswordMatch() {
+  let passwordInput = document.querySelector('input[name="password"]');
+  let cnfPasswordInput = document.querySelector('input[name="cnf-password"]');
+  let errorMessage = document.getElementById("error-message");
+
+  if (passwordInput.value !== cnfPasswordInput.value) {
+    errorMessage.textContent = 'Passwords do not match, please re-enter!';
+    errorMessage.style.display = "block";
+  } else {
+    errorMessage.style.display = "none";
+  }
+}
+document.querySelector('input[name="password"]').addEventListener("input", checkPasswordMatch);
+document.querySelector('input[name="cnf-password"]').addEventListener("input", checkPasswordMatch);
+
 
 function isValidEmail(email) {
 // Basic email validation regex
@@ -82,29 +102,36 @@ return emailRegex.test(email);
 
 
 
-//js for register-main begins here
+//js for Login page begins here
 function loginMain() {
   let form = document.querySelector('.form');
   let usernameInput = form.querySelector('input[name="username"]');
   let passwordInput = form.querySelector('input[name="login-password"]');
 
   // Validating form data
-  if (usernameInput.value === '') {
-    alert('Please Enter Your Username.');
+  if (usernameInput.value === '' || !isValidEmail(usernameInput.value)){
+    alert('Please Enter A Valid Email Address');
     return;
   }
-
   if (passwordInput.value === '') {
     alert('Please Enter Your Password.');
     return;
   }
+  const loginEmail = localStorage.getItem("Email");
+  const loginpassword = localStorage.getItem("Password");
+  if(loginEmail === usernameInput.value){
+    if(loginpassword === passwordInput.value){
+    alert(`You have been successfully Logged in. 
+Redirecting to the Dashboard Page... 🚀`);
+    form.reset();
+    window.location.href = '../html/dashboard.html';
+    }
+    
+    else{
+      alert("Passwords do not match, please re-enter!");
+    }
+  }
 
-  alert(`You have been successfully logged in. Redirecting to Home Page... 🚀`);
-
-  form.reset();
-  console.clear();
-
-  window.location.href = '../index.html';
 }
 
 

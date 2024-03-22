@@ -1,8 +1,8 @@
 /*Css for small range device: mobile-view*/
 
 @media only screen and (max-width: 800px) {
-/*Style for navbar begins here*/
-  nav{
+  /*Style for navbar begins here*/
+  nav {
     width: 100%;
     height: 10vh;
     display: flex;
@@ -17,22 +17,22 @@
     padding-right: 1rem;
     font-family: "Josefin Sans", sans-serif;
   }
-  .nav-logo-in-text{
+  .nav-logo-in-text {
     display: block;
     margin-bottom: 2rem;
   }
-  .nav-logo-in-text h3{
-    font-family: 'Inter', sans-serif;
+  .nav-logo-in-text h3 {
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     letter-spacing: 0.8rem;
     line-height: 24px;
-    color: #DA8F70;
+    color: #da8f70;
     margin-left: 1.5rem;
   }
-  .nav-logo-in-text h2{
-    font-family: 'Inspiration', serif;
+  .nav-logo-in-text h2 {
+    font-family: "Inspiration", serif;
     font-style: normal;
     font-weight: 600;
     font-size: 35px;
@@ -40,13 +40,14 @@
     color: #000000;
     mix-blend-mode: luminosity;
   }
-  .nav-logo img{
+  .nav-logo img {
     width: 100%;
     height: 50px;
     object-fit: fill;
     padding-top: 5px;
   }
-  .nav-menu-list ul, .nav-user-info ul{
+  .nav-menu-list ul,
+  .nav-user-info ul {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -54,16 +55,16 @@
     list-style-type: none;
     margin: 0rem 0rem;
   }
-  .nav-user-info ul{
+  .nav-user-info ul {
     grid-gap: 1.5rem;
     margin: 0rem 0rem;
     margin-top: 1.2rem;
     margin-bottom: 1.4rem;
   }
-  #user-line{
+  #user-line {
     display: none;
   }
-  .nav-cart-btn ul{
+  .nav-cart-btn ul {
     line-height: 1;
     display: flex;
     flex-direction: column;
@@ -71,23 +72,23 @@
     list-style-type: none;
     text-align: center;
   }
-  .nav-cart-btn li a{
-  color: #FFFFFF;
+  .nav-cart-btn li a {
+    color: #ffffff;
   }
-  .nav-cart-btn{
+  .nav-cart-btn {
     display: none;
   }
-  .nav-account{
+  .nav-account {
     display: block;
   }
-  .nav-account a{
+  .nav-account a {
     list-style-type: none;
     margin-top: -0.5rem;
   }
-  .nav-icons{
+  .nav-icons {
     display: inline-flex;
   }
-  .logo-hamburger-container{
+  .logo-hamburger-container {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -101,25 +102,26 @@
   .bar {
     width: 30px;
     height: 4px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 6px 0;
     transition: 0.4s;
   }
-  .search-icon{
+  .search-icon {
     margin-top: 0.5rem;
   }
-  .search-icon a{
-    color: #FFFFFF;
+  .search-icon a {
+    color: #ffffff;
     cursor: pointer;
     font-size: 2rem;
     margin-right: 2rem;
   }
-  .nav-menu-list li a, .nav-user-info li a, 
-  .nav-account a{
+  .nav-menu-list li a,
+  .nav-user-info li a,
+  .nav-account a {
     color: #000000;
     text-decoration: none;
   }
-  .user-info-container{
+  .user-info-container {
     display: flex;
     flex-direction: column;
   }
@@ -131,7 +133,7 @@
     left: -100%; /* Initially off-screen */
     width: 100%;
     height: 100%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding-top: 80px;
     z-index: 1000;
     transition: 0.4s;
@@ -145,21 +147,20 @@
     right: 1rem;
     font-size: 1rem;
     cursor: pointer;
-    color: #F92F60;
+    color: #f92f60;
     word-spacing: 0.4rem;
   }
   .nav-drawer.open {
-      width: 100%;
-      height: 100%;
-      display: block;
+    width: 100%;
+    height: 100%;
+    display: block;
   }
   .no-scroll {
-      overflow: hidden;
+    overflow: hidden;
   }
 
-  
   /*Css for nav section begins here*/
-  .nav-hero-container{
+  .nav-hero-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -171,48 +172,48 @@
     padding: 5%;
     top: 21%;
   }
-  .nav-hero-content{
+  .nav-hero-content {
     width: 100%;
     height: auto;
   }
-  .nav-hero-content h1{
+  .nav-hero-content h1 {
     font-family: "Josefin Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
-    color: #D16E43;
+    color: #d16e43;
     text-align: center;
     margin-bottom: 1.5rem;
   }
-  #hero-paragraph1{
-    font-family: 'Playfair Display', serif;
+  #hero-paragraph1 {
+    font-family: "Playfair Display", serif;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
-  .nav-hero-content h3{
+  .nav-hero-content h3 {
     font-family: "Josefin Sans", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    color: #D16E43;
+    color: #d16e43;
     padding: 0% 0%;
     margin-bottom: 1.5rem;
   }
-  #hero-paragraph2{
-    font-family: 'Playfair Display', serif;
+  #hero-paragraph2 {
+    font-family: "Playfair Display", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 0% 0%;
     padding-bottom: 5%;
     line-height: 25px;
   }
-  .nav-hero-content button{
+  .nav-hero-content button {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -220,29 +221,28 @@
     align-items: center;
     text-align: center;
     background-color: transparent;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 1rem 0rem;
     margin-bottom: 3rem;
     border-radius: 8px;
     padding: 6px 30px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #ffffff;
   }
 
-
-  #wrapper{
+  #wrapper {
     display: block;
     width: 100%;
     height: auto;
     padding-left: 12px;
     padding-top: 4%;
     padding-bottom: 5%;
-    background-color: #B38E5F;
+    background-color: #b38e5f;
     position: relative;
   }
   .wrapper {
     display: none;
   }
-  #wrapper h1{
+  #wrapper h1 {
     font-family: "Josefin Sans", serif;
     font-style: normal;
     font-size: 27px;
@@ -250,12 +250,12 @@
     text-decoration: underline;
     text-align: center;
     margin-bottom: 1.6rem;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .wrapper i {
     display: none;
   }
-  .wrapper .carousel{
+  .wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
@@ -299,53 +299,52 @@
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
   }
-  .carousel li h3{
+  .carousel li h3 {
     font-size: 10px;
     padding: 0% 2%;
-    color: #D16E43;
+    color: #d16e43;
   }
-  .carousel li p{
+  .carousel li p {
     font-size: 10px;
     padding: 4% 5%;
     text-align: justify;
   }
-  .carousel li p span{
+  .carousel li p span {
     display: none;
   }
-  .carousel li h6{
+  .carousel li h6 {
     text-align: center;
-    color: #D16E43;
+    color: #d16e43;
     padding-top: 0px;
   }
 
-
-   /*Style for about us section begins here*/
-   .about-container{
-    background-color: #C4C4C4;
+  /*Style for about us section begins here*/
+  .about-container {
+    background-color: #c4c4c4;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     text-align: center;
   }
-  .first-about-div span{
+  .first-about-div span {
     display: none;
   }
-  .first-about-div{
+  .first-about-div {
     margin-bottom: 2rem;
     color: #000000;
   }
-  .first-about-div > *{
+  .first-about-div > * {
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-style: normal;
     margin-bottom: 0.6rem;
     font-size: 25px;
   }
-  .first-about-div h1{
+  .first-about-div h1 {
     text-shadow: 0 0 2px #000000;
   }
-  .second-about-div p{
+  .second-about-div p {
     font-size: 21px;
     font-family: "Inter", serif;
     text-align: justify;
@@ -356,17 +355,17 @@
     padding: 0% 4.5%;
     margin-top: 1.5rem;
   }
-  .second-about-div p span{
+  .second-about-div p span {
     display: none;
   }
-  .about-btn{
+  .about-btn {
     width: 150px;
     height: 35px;
     border-radius: 0px;
-    background: #F0AD90;
+    background: #f0ad90;
     border: none;
     color: #000000;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 17px;
@@ -375,8 +374,8 @@
     cursor: pointer;
     margin-left: 0%;
     margin-top: 0rem;
-  }  
-  #about-img1{
+  }
+  #about-img1 {
     display: block;
     width: 280px;
     height: 280px;
@@ -386,7 +385,7 @@
     object-fit: cover;
     background-color: #000000;
   }
-  .about-img{
+  .about-img {
     width: 280px;
     height: 278px;
     margin-top: 0%;
@@ -394,13 +393,12 @@
     border-radius: 50%;
     object-fit: cover;
   }
-  #about-img2{
+  #about-img2 {
     display: none;
   }
 
-
   /*Styling for the footer begins here*/
-  .footer{
+  .footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -410,28 +408,30 @@
     justify-content: space-around;
     padding: 0% 5%;
     padding-top: 3%;
-    padding-bottom: 1%;  
+    padding-bottom: 1%;
   }
-  .help-info , .contact-us, .useful-links{
+  .help-info,
+  .contact-us,
+  .useful-links {
     display: none;
   }
-  .footer-dropdown-content{
+  .footer-dropdown-content {
     display: inline-block;
   }
-  .footer-dropdown{
+  .footer-dropdown {
     position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
   }
-  .dropdown-options{
+  .dropdown-options {
     display: none;
     position: absolute;
     background-color: #c4c4c4;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
-  .dropdown-options a{
+  .dropdown-options a {
     color: black;
     padding: 7px 10px;
     text-decoration: none;
@@ -449,8 +449,7 @@
     margin-top: 2rem;
     display: block;
   }
-  
-  
+
   /*Styling for Deals and Offer*/
   .carousel-for-offer {
     padding-left: 1%;
@@ -458,38 +457,38 @@
     padding-bottom: 8%;
     padding-top: 5%;
   }
-  .carousel-for-offer legend{
+  .carousel-for-offer legend {
     margin-bottom: 1.5rem;
   }
-  .offer-card{
+  .offer-card {
     width: 240px;
     height: 190px;
   }
-  @media only screen and (min-width: 700px) and (max-width: 800px){
+  @media only screen and (min-width: 700px) and (max-width: 800px) {
     .carousel-for-offer {
       padding-left: 2%;
       padding-right: 2%;
       padding-bottom: 8%;
       padding-top: 5%;
     }
-    .offer-card{
+    .offer-card {
       width: 335px;
       height: 180px;
     }
   }
-  .offer-text h4{
+  .offer-text h4 {
     font-size: 1rem;
   }
-  .offer-text h2{
+  .offer-text h2 {
     font-size: 1.5rem;
-    color: #1A7E11;
+    color: #1a7e11;
     margin: 0.7rem 0rem;
   }
-  .offer-text h3{
+  .offer-text h3 {
     margin-bottom: 0.8rem;
     font-size: 0.9rem;
   }
-  .offer-btn{
+  .offer-btn {
     width: 110px;
     padding: 10px 0px;
     border: 1px solid #525151;
@@ -498,13 +497,13 @@
     font-weight: 600;
     background-color: rgba(191, 255, 251, 0.46);
   }
-  .offer-img img{
+  .offer-img img {
     width: 100px;
     height: 140px;
     margin: 0 auto;
     object-fit: cover;
     padding-top: 25px;
-    background-color: #D9E8ED;
+    background-color: #d9e8ed;
     border: none;
   }
   .carousel__nav {
@@ -516,80 +515,74 @@
     text-align: center;
   }
 
-
-
   /*Style for reservation Section Begins Here!*/
-  .reservation-container{
+  .reservation-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
     height: auto;
     position: relative;
-    background-color: #0F172B;
+    background-color: #0f172b;
     padding: 4%;
   }
-  .reservation-img{
+  .reservation-img {
     width: 40%;
     margin: 0% 2%;
   }
-  .reservation-img img{
+  .reservation-img img {
     width: 90%;
     height: 100%;
     object-fit: fill;
   }
-  .reservation-form{
+  .reservation-form {
     width: 60%;
   }
-  .reservation-form h3{
+  .reservation-form h3 {
     font-family: "Josefin Sans", sans-serif;
     font-size: 30px;
-    color: #FFAB08;
+    color: #ffab08;
   }
-  .reservation-form legend{
+  .reservation-form legend {
     font-family: "Josefin Sans", sans-serif;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 25px;
     margin: 1rem 0rem;
     word-spacing: 3px;
   }
-  .reservation-form input{
+  .reservation-form input {
     padding: 8px 20px;
     margin: 0rem 1rem 1.5rem 0rem;
     font-size: 1rem;
     font-family: "Inter", sans-serif;
     width: 40%;
   }
-  .reservation-form textarea{
+  .reservation-form textarea {
     padding: 10px 20px;
     font-size: 1rem;
     font-family: "Inter", sans-serif;
     width: 87%;
     height: 15vh;
   }
-  .reservation-form button{
+  .reservation-form button {
     width: 87%;
     margin-top: 1rem;
     padding: 10px 20px;
     font-size: 1.2rem;
     font-family: "Inter", sans-serif;
-    background-color: #FFAB08;
-    color: #FFFFFF;
+    background-color: #ffab08;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     font-weight: 700;
   }
 
-
-
-
- 
   /*Style for Motivation and Subscription Section Begins Here!*/
-  #slider-container h1{
+  #slider-container h1 {
     font-size: 1.8rem;
     margin-top: 1rem;
   }
-  .slide > span{
+  .slide > span {
     margin-top: -0.5rem;
     margin-left: 8%;
     font-size: 3rem;
@@ -597,7 +590,7 @@
     user-select: none;
     position: absolute;
   }
-  .slide p{
+  .slide p {
     width: 85%;
     margin: 20px auto;
     margin-bottom: 40px;
@@ -606,7 +599,8 @@
     justify-content: center;
     background-color: rgba(217, 217, 217, 0.3);
   }
-  #prev, #next {
+  #prev,
+  #next {
     position: absolute;
     top: 55%;
     transform: translateY(-50%);
@@ -618,67 +612,72 @@
     padding: 0px 0px;
     background-color: rgba(0, 0, 0, 0);
   }
-  #prev:hover, #next:hover, #prev:active, #next:active{
+  #prev:hover,
+  #next:hover,
+  #prev:active,
+  #next:active {
     background-color: rgba(0, 0, 0, 0);
     padding: 0px 0px;
     transform: translateY(-50%) scale(0.9);
   }
-  #prev { left: 10px; }
-  #next { right: 10px; }
-  .subscribe #input-email{
+  #prev {
+    left: 10px;
+  }
+  #next {
+    right: 10px;
+  }
+  .subscribe #input-email {
     padding: 10px 0px;
     padding-left: 10px;
     font-size: 1.2rem;
   }
-  .subscribe .submit-btn{
+  .subscribe .submit-btn {
     padding: 10px 20px;
     margin-left: -5px;
     font-size: 1.2rem;
   }
 
-
-
   /*Styling for footer section begins here*/
-  .footer h3{
+  .footer h3 {
     font-weight: bolder;
     font-family: "Inter", serif;
     font-style: normal;
     font-size: 1.5rem;
   }
-  .footer ul li{
+  .footer ul li {
     list-style-type: none;
-    margin: 0px;  
+    margin: 0px;
     font-family: "Inter", sans-serif;
     font-weight: 600;
     color: #232323;
     font-size: 1rem;
     line-height: 1.9rem;
   }
-  legend{
+  legend {
     font-size: 1.3rem;
     font-family: "Inter", serif;
     font-weight: 600;
     color: #232323;
     margin-bottom: 0.33rem;
   }
-  .social-icons{
+  .social-icons {
     text-align: center;
     padding-bottom: 7px;
   }
-  .social-icons span{
+  .social-icons span {
     font-size: 1.3rem;
     font-family: "Inter", serif;
     font-weight: 700;
-    word-spacing: 0px
+    word-spacing: 0px;
   }
-  .social-icons a{
+  .social-icons a {
     font-size: 1.4rem;
     color: #000000;
     padding-left: 0.5rem;
   }
-  .copyright{
+  .copyright {
     background-color: #000000;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 0.9rem;
     text-align: center;
     padding: 15px 0px;
@@ -686,14 +685,12 @@
   }
 }
 
-
-
-
-@media only screen and (max-width: 500px){
-  .nav-menu-list ul, .nav-user-info ul{
+@media only screen and (max-width: 500px) {
+  .nav-menu-list ul,
+  .nav-user-info ul {
     font-size: 1.15rem;
   }
-  #about-img1{
+  #about-img1 {
     display: block;
     width: 250px;
     height: 250px;
@@ -703,7 +700,7 @@
     object-fit: cover;
     background-color: #000000;
   }
-  .about-img{
+  .about-img {
     width: 250px;
     height: 248px;
     margin-top: 0%;
@@ -711,7 +708,7 @@
     border-radius: 50%;
     object-fit: cover;
   }
-    
+
   /*Styling for Deals and Offer*/
   .carousel-for-offer {
     padding-left: 3%;
@@ -719,31 +716,31 @@
     padding-bottom: 10%;
     padding-top: 5%;
   }
-  .carousel-for-offer legend{
+  .carousel-for-offer legend {
     margin-bottom: 1rem;
     font-size: 1.2rem;
   }
-  .offer-card{
+  .offer-card {
     width: 47%;
     height: auto;
     border-radius: 10px;
   }
-  .offer-text{
+  .offer-text {
     width: 60px;
   }
-  .offer-text h4{
+  .offer-text h4 {
     font-size: 0.7rem;
   }
-  .offer-text h2{
+  .offer-text h2 {
     font-size: 1rem;
-    color: #1A7E11;
+    color: #1a7e11;
     margin: 0.6rem 0rem;
   }
-  .offer-text h3{
+  .offer-text h3 {
     margin-bottom: 0.8rem;
     font-size: 0.7rem;
   }
-  .offer-btn{
+  .offer-btn {
     width: 110px;
     padding: 8px 2px;
     border: 1px solid #525151;
@@ -752,13 +749,13 @@
     font-weight: 600;
     background-color: rgba(191, 255, 251, 0.46);
   }
-  .offer-img img{
+  .offer-img img {
     width: 80px;
     height: 100px;
     margin: 0 auto;
     object-fit: fill;
     padding-top: 30px;
-    background-color: #D9E8ED;
+    background-color: #d9e8ed;
     border: none;
   }
   .carousel__nav {
@@ -770,10 +767,8 @@
     text-align: center;
   }
 
-
-
   /*Style for reservation Section Begins Here!*/
-  .reservation-container{
+  .reservation-container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -783,12 +778,17 @@
     background-color: transparent;
     padding: 0%;
   }
-  .reservation-img{
+  .reservation-img {
     display: none;
   }
-  .reservation-form{
+  .reservation-form {
     width: 100%;
-    background: linear-gradient(0deg, rgba(146, 146, 146, 0.7), rgba(40, 27, 16, 0.70)), url("../images/menu-images/Book-a-table.jpg");
+    background: linear-gradient(
+        0deg,
+        rgba(146, 146, 146, 0.7),
+        rgba(40, 27, 16, 0.7)
+      ),
+      url("../images/menu-images/Book-a-table.jpg");
     mix-blend-mode: lighten;
     background-position: center;
     background-repeat: no-repeat;
@@ -796,12 +796,12 @@
     padding: 7% 5%;
     text-align: center;
   }
-  .reservation-form h3{
+  .reservation-form h3 {
     font-family: "Josefin Sans", sans-serif;
     font-size: 30px;
-    color: #FFAB08;
+    color: #ffab08;
   }
-  .reservation-form legend{
+  .reservation-form legend {
     font-family: "Josefin Sans", sans-serif;
     color: rgba(0, 0, 0, 0.7);
     font-size: 21px;
@@ -809,7 +809,7 @@
     margin-bottom: 1.7rem;
     word-spacing: 3px;
   }
-  .reservation-form input{
+  .reservation-form input {
     padding: 8px 20px;
     margin: 0rem 0.5rem 1.5rem 1rem;
     font-size: 1rem;
@@ -817,12 +817,13 @@
     width: 40%;
     background-color: rgba(0, 0, 0, 0.4);
     border: none;
-    color: #FFFFFF;
+    color: #ffffff;
   }
-  input::placeholder, textarea::placeholder {
-    color: #FFFFFF;
-}
-  .reservation-form textarea{
+  input::placeholder,
+  textarea::placeholder {
+    color: #ffffff;
+  }
+  .reservation-form textarea {
     padding: 10px 20px;
     font-size: 1rem;
     font-family: "Inter", sans-serif;
@@ -830,42 +831,40 @@
     height: 15vh;
     background-color: rgba(0, 0, 0, 0.4);
     border: none;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-left: 0.5rem;
   }
-  .reservation-form button{
+  .reservation-form button {
     width: 90%;
     margin-top: 1rem;
     padding: 10px 20px;
     font-size: 1.2rem;
     font-family: "Inter", sans-serif;
-    background-color: #FFAB08;
-    color: #FFFFFF;
+    background-color: #ffab08;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     font-weight: 700;
     margin-left: 0.5rem;
   }
 
-
-
   /*Styling for footer section begins here*/
-  .footer{
+  .footer {
     gap: 0.4rem;
     padding: 3% 2%;
     padding-bottom: 0%;
     justify-content: space-around;
   }
-  .footer ul li{
+  .footer ul li {
     list-style-type: none;
-    margin: 0px;  
+    margin: 0px;
     font-family: "Inter", sans-serif;
     font-weight: 500;
     color: #232323;
     font-size: 1rem;
     line-height: 1.5rem;
   }
-  legend{
+  legend {
     font-size: 1rem;
     font-family: "Inter", serif;
     font-weight: 600;
@@ -873,13 +872,12 @@
     margin-bottom: 0.3rem;
   }
 
-
   /*Style for Motivation and Subscription Section Begins Here!*/
-  #slider-container h1{
+  #slider-container h1 {
     font-size: 1.25rem;
     margin-top: 1rem;
   }
-  .slide > span{
+  .slide > span {
     margin-top: -1rem;
     margin-left: 8%;
     font-size: 3rem;
@@ -887,7 +885,7 @@
     user-select: none;
     position: absolute;
   }
-  .slide p{
+  .slide p {
     width: 85%;
     margin: 10px auto;
     margin-bottom: 30px;
@@ -896,7 +894,8 @@
     justify-content: center;
     background-color: rgba(217, 217, 217, 0.3);
   }
-  #prev, #next {
+  #prev,
+  #next {
     position: absolute;
     top: 55%;
     transform: translateY(-50%);
@@ -908,14 +907,21 @@
     padding: 0px 0px;
     background-color: rgba(0, 0, 0, 0);
   }
-  #prev:hover, #next:hover, #prev:active, #next:active{
+  #prev:hover,
+  #next:hover,
+  #prev:active,
+  #next:active {
     background-color: rgba(0, 0, 0, 0);
     padding: 0px 0px;
     transform: translateY(-50%) scale(0.9);
   }
-  #prev { left: 10px; }
-  #next { right: 10px; }
-  .subscribe{
+  #prev {
+    left: 10px;
+  }
+  #next {
+    right: 10px;
+  }
+  .subscribe {
     padding: 5% 7%;
     padding-bottom: 7%;
   }
@@ -925,19 +931,18 @@
   .subscribe h2:nth-child(2) {
     font-size: 1.5rem;
   }
-  .subscribe p{
+  .subscribe p {
     margin-bottom: 1rem;
   }
-  .subscribe #input-email{
+  .subscribe #input-email {
     width: 160px;
     padding: 10px 10px;
     padding-left: 10px;
     font-size: 1rem;
   }
-  .subscribe .submit-btn{
+  .subscribe .submit-btn {
     padding: 10px 10px;
     margin-left: -5px;
     font-size: 1rem;
   }
-
 }

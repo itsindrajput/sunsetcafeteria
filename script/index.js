@@ -218,7 +218,7 @@ function reservation() {
     let numberInput = form.querySelector('input[name="number"]');
     
     // Validating form data
-    if (nameInput.value === '') {
+    if (nameInput.value === '' || nameInput.value.length < 7) {
       alert('Please Enter Your Full Name');
       return;
     }

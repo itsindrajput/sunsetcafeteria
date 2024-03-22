@@ -1,35 +1,40 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
   font-style: normal;
   color: #000000;
 }
 
-
 /*Style for navbar begins here*/
-header{
-  background: linear-gradient(0deg, rgba(40, 27, 16, 0.70), rgba(40, 27, 16, 0.70)), url("../images/other-images/daan-header-bg.jpeg");
+header {
+  background: linear-gradient(
+      0deg,
+      rgba(40, 27, 16, 0.7),
+      rgba(40, 27, 16, 0.7)
+    ),
+    url("../images/other-images/daan-header-bg.jpeg");
   width: 100%;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #FFFFFF;
+  color: #ffffff;
   position: relative;
 }
-nav{
+nav {
   width: 100%;
   height: 10vh;
   position: fixed;
   z-index: 1000;
-  background-color: transparent; 
-  transition: background-color 0.5s ease-in-out; 
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -44,35 +49,39 @@ nav{
   grid-gap: 1rem;
 }
 nav.sticky {
-  background-color: #000000; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  background-color: #000000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   height: 10vh;
 }
-.nav-logo{
+.nav-logo {
   display: inline;
 }
-.nav-logo img{
+.nav-logo img {
   width: 100%;
   height: 45px;
   margin-top: -5px;
   object-fit: fill;
 }
-.nav-icons{
+.fa-circle-user {
+  font-size: 2rem;
+}
+.nav-icons {
   display: none;
 }
-.nav-drawer{
+.nav-drawer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
 }
-.close-btn{
+.close-btn {
   display: none;
 }
-.nav-logo-in-text{
+.nav-logo-in-text {
   display: none;
 }
-.nav-menu-list ul, .nav-user-info ul{
+.nav-menu-list ul,
+.nav-user-info ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -81,16 +90,26 @@ nav.sticky {
   list-style-type: none;
   margin: 0rem 10.5rem;
 }
-.nav-menu-list li a, .nav-user-info li a, 
-.nav-cart-btn ul li, .nav-cart-btn ul li a i, .nav-account a{
-  color: #FFFFFF;
+@media only screen and (min-width: 1300px) and (max-width: 1800px) {
+  .nav-menu-list ul {
+    margin: 0rem 13rem;
+  }
+}
+.nav-menu-list li a,
+.nav-user-info li a,
+.nav-cart-btn ul li,
+.nav-cart-btn ul li a i,
+.nav-account a {
+  color: #ffffff;
   text-decoration: none;
   cursor: pointer;
   position: relative;
 }
-.nav-menu-list li a:after, .nav-user-info li a:after, 
-.nav-cart-btn .my-cart:after, .nav-account a:after{
-  content: '';
+.nav-menu-list li a:after,
+.nav-user-info li a:after,
+.nav-cart-btn .my-cart:after,
+.nav-account a:after {
+  content: "";
   position: absolute;
   left: 0;
   bottom: -2px;
@@ -98,33 +117,36 @@ nav.sticky {
   border-radius: 25%;
   width: 0;
   height: 3px;
-  background-color: #E45417; 
+  background-color: #e45417;
   transition: width 0.3s ease-in-out;
 }
-.nav-menu-list li a:hover::after, .nav-user-info li a:hover::after, 
-.nav-cart-btn .my-cart:hover::after, .nav-account a:hover::after{
+.nav-menu-list li a:hover::after,
+.nav-user-info li a:hover::after,
+.nav-cart-btn .my-cart:hover::after,
+.nav-account a:hover::after {
   width: 100%;
 }
-.nav-menu-list li a:active::after, .nav-user-info li a:active::after, 
-.nav-cart-btn .my-cart:active::after, .nav-account a:active::after{
+.nav-menu-list li a:active::after,
+.nav-user-info li a:active::after,
+.nav-cart-btn .my-cart:active::after,
+.nav-account a:active::after {
   width: 100%;
 }
-.user-info-container{
+.user-info-container {
   display: flex;
-  
 }
-.nav-user-info ul{
+.nav-user-info ul {
   grid-gap: 0.5rem;
   margin: 0rem 0rem;
   margin-right: 2rem;
 }
-#user-line{
+#user-line {
   margin-top: -0.8rem;
   font-size: 2.5rem;
   font-weight: bolder;
-  color: #FAFF00;
+  color: #faff00;
 }
-.nav-cart-btn ul{
+.nav-cart-btn ul {
   line-height: 1;
   display: flex;
   flex-direction: column;
@@ -132,23 +154,21 @@ nav.sticky {
   list-style-type: none;
   text-align: center;
 }
-.my-cart{
+.my-cart {
   font-size: 0.9rem;
 }
-.nav-cart-btn li a{
- color: #FFFFFF;
+.nav-cart-btn li a {
+  color: #ffffff;
 }
-.nav-cart-btn li a:hover{
+.nav-cart-btn li a:hover {
   cursor: pointer;
 }
-.nav-account{
+.nav-account {
   display: none;
 }
 
-
-
 /*Css for nav section begins here*/
-.nav-hero-container{
+.nav-hero-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -160,47 +180,47 @@ nav.sticky {
   padding-right: 1rem;
   top: 21%;
 }
-.nav-hero-content{
+.nav-hero-content {
   width: 45%;
   height: auto;
   padding-right: 3%;
 }
-.nav-hero-content h1{
+.nav-hero-content h1 {
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  color: #D16E43;
+  color: #d16e43;
 }
-#hero-paragraph1{
-  font-family: 'Playfair Display', serif;
+#hero-paragraph1 {
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
-.nav-hero-content h3{
+.nav-hero-content h3 {
   font-family: "Josefin Sans", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
-  color: #D16E43;
+  color: #d16e43;
   padding: 5% 20%;
 }
-#hero-paragraph2{
-  font-family: 'Playfair Display', serif;
+#hero-paragraph2 {
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 0% 20%;
   padding-bottom: 9%;
   line-height: 27px;
 }
-.nav-hero-content button{
+.nav-hero-content button {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -208,22 +228,20 @@ nav.sticky {
   align-items: center;
   text-align: center;
   background-color: transparent;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0% 20%;
   padding: 8px 40px;
   border-radius: 10px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 }
-.nav-hero-content button:hover{
+.nav-hero-content button:hover {
   cursor: pointer;
   background-color: #c83e04;
   border: 2px outset #cfcaca;
   color: #cfcaca;
 }
 
-
-
-#wrapper{
+#wrapper {
   display: none;
 }
 .wrapper {
@@ -232,7 +250,7 @@ nav.sticky {
   padding-top: 5%;
   position: relative;
 }
-.wrapper h1{
+.wrapper h1 {
   font-family: "Josefin Sans", serif;
   font-style: normal;
   font-size: 30px;
@@ -252,22 +270,22 @@ nav.sticky {
   line-height: 50px;
   background: #e7e5e5;
   border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
   transform: translateY(-50%);
   transition: transform 0.1s linear;
   color: black;
   user-select: none;
 }
-.wrapper i:active{
+.wrapper i:active {
   transform: translateY(-50%) scale(0.85);
 }
-.wrapper i:first-child{
+.wrapper i:first-child {
   left: -22px;
 }
-.wrapper i:last-child{
+.wrapper i:last-child {
   right: -22px;
 }
-.wrapper .carousel{
+.wrapper .carousel {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 3) - 12px);
@@ -311,30 +329,28 @@ nav.sticky {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-.carousel li h3{
+.carousel li h3 {
   font-size: 14px;
   padding: 0% 5%;
-  color: #D16E43;
+  color: #d16e43;
 }
-.carousel li p{
+.carousel li p {
   font-size: 10px;
   padding: 4% 5%;
   text-align: justify;
 }
-.carousel li h6{
+.carousel li h6 {
   text-align: center;
-  color: #D16E43;
+  color: #d16e43;
 }
-.carousel li h6:hover{
+.carousel li h6:hover {
   color: rgb(203, 67, 9);
   text-shadow: 0px 0px 5px black;
 }
 
-
-
 /*Style for about us section begins here*/
-.about-container{
-  background-color: #C4C4C4;
+.about-container {
+  background-color: #c4c4c4;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -344,16 +360,17 @@ nav.sticky {
   padding: 3%;
   user-select: none;
 }
-.first-about-div span{
+.first-about-div span {
   display: inline;
 }
-.about-div .first-about-div h2, h1{
+.about-div .first-about-div h2,
+h1 {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-style: normal;
   margin-bottom: 1.5rem;
 }
-.second-about-div p{
+.second-about-div p {
   font-size: 24px;
   font-family: "Inter", serif;
   text-align: justify;
@@ -364,14 +381,14 @@ nav.sticky {
   color: #000000;
   padding-right: 10%;
 }
-.about-btn{
+.about-btn {
   width: 225px;
   height: 60px;
-  background: #E45417;
+  background: #e45417;
   border: none;
   border-radius: 20px;
   color: #000000;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -380,13 +397,13 @@ nav.sticky {
   margin-top: 2rem;
   cursor: pointer;
 }
-.about-btn:hover{
+.about-btn:hover {
   background: #c83e04;
 }
-#about-img1{
+#about-img1 {
   display: none;
 }
-#about-img2{
+#about-img2 {
   display: block;
   width: 350px;
   height: 350px;
@@ -395,7 +412,7 @@ nav.sticky {
   object-fit: contain;
   background-color: #000000;
 }
-.about-img{
+.about-img {
   width: 350px;
   height: 345px;
   margin-top: 0%;
@@ -403,8 +420,6 @@ nav.sticky {
   border-radius: 50%;
   object-fit: cover;
 }
-
-
 
 /*Style for deals and offer section begins here*/
 .carousel-for-offer {
@@ -414,10 +429,10 @@ nav.sticky {
   padding-right: 5%;
   padding-bottom: 4%;
   padding-top: 2.5%;
-  background-color: #B8A3BA;
+  background-color: #b8a3ba;
   user-select: none;
 }
-.carousel-for-offer legend{
+.carousel-for-offer legend {
   font-family: "Josefin Sans", serif;
   font-size: 30px;
   font-weight: 700;
@@ -427,7 +442,7 @@ nav.sticky {
 .carousel__item {
   display: none;
 }
-.carousel-item-container{
+.carousel-item-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -435,7 +450,7 @@ nav.sticky {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
 }
-.offer-card{
+.offer-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -446,47 +461,48 @@ nav.sticky {
   border: none;
   border-radius: 20px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1400px){
-  .offer-card{
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .offer-card {
     width: 500px;
     height: 280px;
   }
 }
-.offer-text{
+.offer-text {
   padding: auto;
 }
-.offer-text h2{
+.offer-text h2 {
   font-size: 2.5rem;
-  color: #1A7E11;
+  color: #1a7e11;
   margin: 1rem 0rem;
 }
-.offer-text h3{
+.offer-text h3 {
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
 }
-.offer-btn{
+.offer-btn {
   padding: 12px 31px;
   border: 1px solid #525151;
   border-radius: 15px;
   font-weight: 600;
   background-color: rgba(191, 255, 251, 0.46);
 }
-.offer-btn:hover, .offer-btn:active{
+.offer-btn:hover,
+.offer-btn:active {
   background-color: rgba(118, 241, 233, 0.46);
   border: 1px inset #525151;
   cursor: pointer;
   user-select: all;
 }
-.offer-btn span{
+.offer-btn span {
   color: rgba(0, 0, 0, 0.5);
 }
-.offer-img img{
+.offer-img img {
   width: 250px;
   height: 200px;
   margin: 0 auto;
   object-fit: cover;
   padding-top: 25px;
-  background-color: #D9E8ED;
+  background-color: #d9e8ed;
   border: none;
 }
 .carousel__item--selected {
@@ -514,75 +530,70 @@ nav.sticky {
   background: rgba(26, 126, 17, 1);
 }
 
-
-
 /*Style for reservation Section Begins Here!*/
-.reservation-container{
+.reservation-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
   height: auto;
   position: relative;
-  background-color: #0F172B;
+  background-color: #0f172b;
   padding: 4% 5%;
 }
-.reservation-img{
+.reservation-img {
   width: 40%;
   margin: 0% 6%;
 }
-.reservation-img img{
+.reservation-img img {
   width: 90%;
   height: 100%;
   object-fit: fill;
 }
-.reservation-form{
+.reservation-form {
   width: 55%;
 }
-.reservation-form h3{
+.reservation-form h3 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 40px;
-  color: #FFAB08;
+  color: #ffab08;
 }
-.reservation-form legend{
+.reservation-form legend {
   font-family: "Josefin Sans", sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 28px;
   margin: 1.2rem 0rem;
   word-spacing: 3px;
 }
-.reservation-form input{
+.reservation-form input {
   padding: 10px 20px;
   margin: 0rem 2rem 2rem 0rem;
   font-size: 1.2rem;
   font-family: "Inter", sans-serif;
   width: 40%;
 }
-.reservation-form textarea{
+.reservation-form textarea {
   padding: 10px 20px;
   font-size: 1.2rem;
   font-family: "Inter", sans-serif;
   width: 85.5%;
   height: 15vh;
 }
-.reservation-form button{
+.reservation-form button {
   width: 85.5%;
   margin-top: 1.6rem;
   padding: 10px 20px;
   font-size: 1.2rem;
   font-family: "Inter", sans-serif;
-  background-color: #FFAB08;
-  color: #FFFFFF;
+  background-color: #ffab08;
+  color: #ffffff;
   border: none;
   cursor: pointer;
   font-weight: 700;
 }
 
-
-
-
 /*Style for Motivation and Subscription Section Begins Here!*/
-.motivation{
+.motivation {
   display: flex;
   flex-direction: column;
   background-image: url("../images/blog-images/morning.jpg");
@@ -594,25 +605,25 @@ nav.sticky {
   height: auto;
 }
 #slider-container {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin: 0px auto;
-    padding: 3%;
-    background-color: rgba(0, 0, 0, 0.78);
-    color: #FFFFFF;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  padding: 3%;
+  background-color: rgba(0, 0, 0, 0.78);
+  color: #ffffff;
+  overflow: hidden;
 }
-#slider-container h1{
+#slider-container h1 {
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
   font-style: oblique;
 }
 #slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
-.slide > span{
+.slide > span {
   margin-top: -1rem;
   margin-left: 10.5%;
   font-size: 4rem;
@@ -621,11 +632,11 @@ nav.sticky {
   position: absolute;
 }
 .slide {
-    min-width: 100%;
-    text-align: left;
-    font-size: 1.2rem;
+  min-width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
 }
-.slide p{
+.slide p {
   width: 80%;
   margin: 20px auto;
   margin-bottom: 40px;
@@ -635,45 +646,53 @@ nav.sticky {
   justify-content: center;
   background-color: rgba(217, 217, 217, 0.3);
 }
-#prev, #next {
-    position: absolute;
-    top: 52.5%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    cursor: pointer;
-    margin: 0 auto;
-    text-align: center;
-    user-select: none;
-    padding: 50px 20px;
-    background-color: rgba(0, 0, 0, 0);
+#prev,
+#next {
+  position: absolute;
+  top: 52.5%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  user-select: none;
+  padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 0);
 }
-#prev:hover, #next:hover, #prev:active, #next:active{
+#prev:hover,
+#next:hover,
+#prev:active,
+#next:active {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 50px 20px;
   transform: translateY(-50%) scale(0.9);
 }
-#prev { left: 15px; }
-#next { right: 15px; }
+#prev {
+  left: 15px;
+}
+#next {
+  right: 15px;
+}
 #slider-nav-bar {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    user-select: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  user-select: none;
 }
 .dot {
-    height: 10px;
-    width: 10px;
-    background-color: rgba(100, 84, 84, 0.5);
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
+  height: 10px;
+  width: 10px;
+  background-color: rgba(100, 84, 84, 0.5);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
 }
 .active-dot {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
-.subscribe{
+.subscribe {
   width: 100%;
   height: auto;
   font-family: "Inter", sans-serif;
@@ -681,18 +700,18 @@ nav.sticky {
   user-select: none;
 }
 .subscribe h2:nth-child(1) {
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 0.3rem;
 }
 .subscribe h2:nth-child(2) {
-  color: #BBA6A6;
+  color: #bba6a6;
   margin-bottom: 1rem;
 }
-.subscribe p{
-  color: #FFFFFF;
+.subscribe p {
+  color: #ffffff;
   margin-bottom: 0.7rem;
 }
-.subscribe #input-email{
+.subscribe #input-email {
   padding: 10px 40px;
   border: none;
   border-top-left-radius: 11px;
@@ -702,8 +721,8 @@ nav.sticky {
   padding-left: 10px;
   font-size: 1.1rem;
 }
-.subscribe .submit-btn{
-  background-color: #BBA6A6;
+.subscribe .submit-btn {
+  background-color: #bba6a6;
   padding: 9px 40px;
   border: none;
   border-top-left-radius: 0px;
@@ -713,48 +732,47 @@ nav.sticky {
   margin-left: -5px;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
-.subscribe .submit-btn:hover, .subscribe .submit-btn:active{
-  background-color: #bc9191; 
+.subscribe .submit-btn:hover,
+.subscribe .submit-btn:active {
+  background-color: #bc9191;
 }
-
 
 /*Style for footer begins here*/
-footer{
-  background-color: #CDC4C4;
+footer {
+  background-color: #cdc4c4;
   position: relative;
 }
-.footer{
+.footer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   gap: 9rem;
   padding-top: 3%;
-  padding-bottom: 1%;  
+  padding-bottom: 1%;
 }
-@media only screen and (min-width: 800px) and (max-width: 1100px){
-  .footer{
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+  .footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     gap: 3rem;
     padding-top: 3%;
-    padding-bottom: 1%;  
+    padding-bottom: 1%;
   }
 }
-.footer h3{
+.footer h3 {
   font-weight: bolder;
   font-family: "Inter", serif;
   font-style: normal;
   font-size: 1.6rem;
   margin-bottom: 1rem;
-
 }
-.footer ul li{
+.footer ul li {
   list-style-type: none;
   margin-left: 5px;
   font-family: "Inter", sans-serif;
@@ -763,46 +781,49 @@ footer{
   font-size: 1.15rem;
   line-height: 1.9rem;
 }
-.footer-dropdown-content{
+.footer-dropdown-content {
   display: none;
 }
-.help-info li, .contact-us li{
+.help-info li,
+.contact-us li {
   margin-bottom: 0.8rem;
 }
-.help-info ul li:hover, .contact-us ul li:hover, .useful-links ul li:hover{
+.help-info ul li:hover,
+.contact-us ul li:hover,
+.useful-links ul li:hover {
   cursor: pointer;
-  color: #E45417;
+  color: #e45417;
 }
-.social-icons{
+.social-icons {
   text-align: center;
   padding-bottom: 10px;
 }
-.social-icons span{
+.social-icons span {
   font-size: 1.5rem;
   font-family: "Inter", serif;
   font-weight: 700;
-  word-spacing: 3px
+  word-spacing: 3px;
 }
-.social-icons a{
+.social-icons a {
   font-size: 2rem;
   color: #000000;
   padding-left: 1.5rem;
 }
-.social-icons .fa-facebook:hover{
+.social-icons .fa-facebook:hover {
   color: #1877f2;
 }
-.social-icons .fa-instagram:hover{
+.social-icons .fa-instagram:hover {
   color: #c32aa3;
 }
-.social-icons .fa-whatsapp:hover{
-  color:  #006D5B;
+.social-icons .fa-whatsapp:hover {
+  color: #006d5b;
 }
-.social-icons .fa-x-twitter:hover{
-  color: #1AA2F8;
+.social-icons .fa-x-twitter:hover {
+  color: #1aa2f8;
 }
-.copyright{
+.copyright {
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   padding: 15px 0px;
   word-spacing: 4px;
