@@ -1,86 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunset Cafe | Main Menu</title>
-  <meta http-equiv="author" content="Rishabh Singh">
-  <meta http-equiv="pragma" content="cache"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunset Cafe | Main Menu</title>
+    <meta http-equiv="author" content="Rishabh Singh" />
+    <meta http-equiv="pragma" content="cache" />
 
-  <!-- Favicons -->
-  <link href="../images/other-images/sunset-cafe-tab-logo.png" rel="icon">
-  <link href="../images/other-images/sunset-cafe-tab-logo.png" rel="touch-icon">
+    <!-- Favicons -->
+    <link href="../images/other-images/sunset-cafe-tab-logo.png" rel="icon" />
+    <link
+      href="../images/other-images/sunset-cafe-tab-logo.png"
+      rel="touch-icon"
+    />
 
-  <!--Link Of Google Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!--Link Of Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inspiration&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Links Of External Css -->
-  <link rel="stylesheet" href="../style/signup.css" type="text/css">
-  <link rel="stylesheet" href="../style/menu.css" type="text/css">
-  <link rel="stylesheet" href="../style/menu-mobile.css" type="text/css">
-
-</head>
-<body style="background-color: #251A17;">
-  <header style="background-color: transparent; ">
-    <nav>
-      <div class="logo-hamburger-container">
-        <div class="nav-logo"><a href="#">
-          <img src="../images/other-images/sunset-cafe-logo.png" alt="Image contains the logo of Sunset Cafe"></a>
-        </div>
-        <!-- Hamburger icon and a search icon -->
-        <div class="nav-icons">
-          <div class="search-icon">
-            <a href="#"><i class="fa-solid fa-search"></i></a>
+    <!-- Links Of External Css -->
+    <link rel="stylesheet" href="../style/signup.css" type="text/css" />
+    <link rel="stylesheet" href="../style/menu.css" type="text/css" />
+    <link rel="stylesheet" href="../style/menu-mobile.css" type="text/css" />
+  </head>
+  <body style="background-color: #251a17">
+    <header style="background-color: transparent">
+      <nav>
+        <div class="logo-hamburger-container">
+          <div class="nav-logo">
+            <a href="#">
+              <img
+                src="../images/other-images/sunset-cafe-logo.png"
+                alt="Image contains the logo of Sunset Cafe"
+            /></a>
           </div>
-          <div class="hamburger-icon" onclick="myHamburger()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+          <!-- Hamburger icon and a search icon -->
+          <div class="nav-icons">
+            <div class="search-icon">
+              <a href="#"><i class="fa-solid fa-search"></i></a>
+            </div>
+            <div class="hamburger-icon" onclick="myHamburger()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="nav-drawer" id="navDrawer">
-        <div class="close-btn" onclick="myHamburger()">Close ❌</div> 
-        <div class="nav-logo-in-text">
-          <h3>SUNSET</h3>
-          <h2>CAFE</h2>
+        <div class="nav-drawer" id="navDrawer">
+          <div class="close-btn" onclick="myHamburger()">Close ❌</div>
+          <div class="nav-logo-in-text">
+            <h3>SUNSET</h3>
+            <h2>CAFE</h2>
+          </div>
+          <div class="nav-menu-list">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li id="status-active"><a href="menu.html">Menu</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="search-input">
+            <input
+              type="search"
+              name="search"
+              id="search-icon"
+              placeholder="&#128269; Search Items"
+            />
+          </div>
         </div>
-        <div class="nav-menu-list">
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li id="status-active"><a href="menu.html">Menu</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-        <div class="search-input">
-          <input type="search" name="search" id="search-icon" placeholder="&#128269; Search Items" />
-        </div>
-      </div>
-    </nav>  
-  </header>
+      </nav>
+    </header>
 
-  <!--Html Code For Laptop View-->
-  <div class="sunset-cafe-logo">
-    <div class="line-with-text">
-    SUNSET
+    <!--Html Code For Laptop View-->
+    <div class="sunset-cafe-logo">
+      <div class="line-with-text">SUNSET</div>
+      <h2>CAFE</h2>
     </div>
-    <h2>CAFE</h2>
-  </div>
 
-  <div class="section-container">
-    <Section class="menu-seciton">
+    <div class="section-container">
+      <section class="menu-seciton">
         <div class="menu-item" id="menu-item">
           <ul>
-            <li><img src="../images/other-images/Cappuccino.jpeg" alt="Image Of A Cappuccino" /></li>
+            <li>
+              <img
+                src="../images/other-images/Cappuccino.jpeg"
+                alt="Image Of A Cappuccino"
+              />
+            </li>
             <li><h2>HOT BEVERAGES</h2></li>
           </ul>
         </div>
         <div class="menu-item">
-          <ul class="beverage-lt" >
+          <ul class="beverage-lt">
             <li class="name-of-beverage">Espresso</li>
             <li>A single shot of concentrated coffee.</li>
           </ul>
@@ -109,14 +126,19 @@
             <li class="price-of-beverage">Rs.158</li>
           </ul>
         </div>
-    </Section>
+      </section>
 
-    <div class="section-border1 "></div>
+      <div class="section-border1"></div>
 
-    <Section class="menu-seciton">
+      <section class="menu-seciton">
         <div class="menu-item" id="menu-item">
           <ul>
-            <li><img src="../images/other-images/Iced Coffee.jpeg" alt="Image Of A Cold Coffee" /></li>
+            <li>
+              <img
+                src="../images/other-images/Iced Coffee.jpeg"
+                alt="Image Of A Cold Coffee"
+              />
+            </li>
             <li><h2>COLD BEVERAGES</h2></li>
           </ul>
         </div>
@@ -164,506 +186,673 @@
           <ul class="cold-beverage-rt">
             <li><a onclick="addToAlert(event)">+</a></li>
           </ul>
-      </div>
-    </Section>
-
-
-    <div class="section-border2"></div>
-
-
-    <Section class="menu-seciton">
-      <div class="menu-item" id="menu-item">
-        <ul>
-          <li><img src="../images/other-images/Caramel-Tea.jpeg" alt="Image Of Special Drinks" /></li>
-          <li><h2>SPECIALTY DRINKS</h2></li>
-        </ul>
-      </div>
-      <div class="menu-item">
-        <ul class="beverage-lt">
-          <li class="name-of-beverage">Matcha Latte</li>
-          <li class="price-of-beverage">Rs.148</li>
-        </ul>
-        <ul class="cold-beverage-rt">
-          <li><a onclick="addToAlert(event)">+</a></li>
-        </ul>
-      </div>
-      <div class="menu-item">
-        <ul class="beverage-lt">
-          <li class="name-of-beverage">Turmeric Latte</li>
-          <li class="price-of-beverage">Rs.160</li>
-        </ul>
-        <ul class="cold-beverage-rt">
-          <li><a onclick="addToAlert(event)">+</a></li>
-        </ul>
-      </div>
-      <div class="menu-item">
-        <ul class="beverage-lt">
-          <li class="name-of-beverage">Caramel Tea</li>
-          <li class="price-of-beverage">Rs.160</li>
-        </ul>
-        <ul class="cold-beverage-rt">
-          <li><a onclick="addToAlert(event)">+</a></li>
-        </ul>
-      </div>
-      <div class="menu-item">
-        <ul class="beverage-lt">
-          <li class="name-of-beverage">Green Tea</li>
-          <li class="price-of-beverage">Rs.120</li>
-        </ul>
-        <ul class="cold-beverage-rt">
-          <li><a onclick="addToAlert(event)">+</a></li>
-        </ul>
-      </div>
-      <div class="menu-item">
-        <ul class="beverage-lt">
-          <li class="name-of-beverage">Herbal Infusions</li>
-          <li class="price-of-beverage">Rs.120</li>
-        </ul>
-        <ul class="cold-beverage-rt">
-          <li><a onclick="addToAlert(event)">+</a></li>
-        </ul>
-      </div>
-    </Section>
-  </div>
-
-
-
-
-  <!--Html Code For Mobile View-->
-  <div class="mobile-view-container">
-    <div class="logo-for-mobile">
-      <h1>SUNSET</h1>
-      <h2>CAFE</h2>
-      <h4 id="line-with-txt">FOR YOU</h4>
-    </div>
-
-    <div class="choice-btn">
-      <a href="#">Recommended</a>
-      <a href="#"><img src="../images/offer-images/like.png" alt="Image Of Like Button" />Favourites</a>
-    </div>
-
-    <div class="menu-container">
-      <div class="menu-header" style="background-image: url('../images/other-images/Caramel-Tea.jpeg');">
-        <h2>SPECIALTY <br/> DRINKS</h2>
-      </div>
-
-      <div class="card-container">
-        <div class="menu-card">
-          <ul class="card-txt">
-            <li><h4>Matcha Latte</h4></li>
-            <li><h6>Rs.120</h6></li>
-          </ul>
-          <ul class="card-img" style="background-image: url('../images/offer-images/Special_Drink1.jpeg');">
-            <li>
-              <img src="../images/offer-images/like.png" alt="Image Of Like Button To Add Items In Your Favourite List">
-            </li>
-            <li class="card-btn">
-              <button type="button">-</button>
-              <button type="button" id="current-Data">1</button>
-              <button type="button">+</button>
-            </li>
-          </ul>
         </div>
-        <div class="card-border"></div>
+      </section>
 
-        <div class="menu-card">
-          <ul class="card-txt">
-            <li><h4>Turmeric Latte</h4></li>
-            <li><h6>Rs.160</h6></li>
-          </ul>
-          <ul class="card-img" style="background-image: url('../images/offer-images/Special_Drink2.jpeg');">
-            <li>
-              <img src="../images/offer-images/like.png" alt="Image Of Like Button To Add Items In Your Favourite List">
-            </li>
-            <li class="card-btn">
-              <button type="button">-</button>
-              <button type="button" id="current-Data">1</button>
-              <button type="button">+</button>
-            </li>
-          </ul>
-        </div>
-        <div class="card-border"></div>
+      <div class="section-border2"></div>
 
-        <div class="menu-card">
-          <ul class="card-txt">
-            <li><h4>Caramel  Tea</h4></li>
-            <li><h6>Rs.160</h6></li>
-          </ul>
-          <ul class="card-img" style="background-image: url('../images/offer-images/Special_Drink3.jpeg');">
-            <li>
-              <img src="../images/offer-images/like.png" alt="Image Of Like Button To Add Items In Your Favourite List">
-            </li>
-            <li class="card-btn">
-              <button type="button">-</button>
-              <button type="button" id="current-Data">1</button>
-              <button type="button">+</button>
-            </li>
-          </ul>
-        </div>
-        <div class="card-border"></div>
-
-        <div class="menu-card">
-          <ul class="card-txt" style="margin-right: 1.3rem;">
-            <li><h4>Green Tea</h4></li>
-            <li><h6>Rs.120</h6></li>
-          </ul>
-          <ul class="card-img" style="background-image: url('../images/offer-images/Special_Drink4.png');">
-            <li>
-              <img src="../images/offer-images/like.png" alt="Image Of Like Button To Add Items In Your Favourite List">
-            </li>
-            <li class="card-btn">
-              <button type="button">-</button>
-              <button type="button" id="current-Data">1</button>
-              <button type="button">+</button>
-            </li>
-          </ul>
-        </div>
-        <div class="card-border"></div>
-
-        <div class="menu-card">
-          <ul class="card-txt">
-            <li><h4>Herbal Infusions</h4></li>
-            <li><h6>Rs.120</h6></li>
-          </ul>
-          <ul class="card-img" style="background-image: url('../images/offer-images/Special_Drink5.jpeg');">
-            <li>
-              <img src="../images/offer-images/like.png" alt="Image Of Like Button To Add Items In Your Favourite List">
-            </li>
-            <li class="card-btn">
-              <button type="button">-</button>
-              <button type="button" id="current-Data">1</button>
-              <button type="button">+</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="menu-container">
-      <div class="menu-header" style="background-image: url('../images/other-images/Cappuccino.jpeg');">
-        <h2>HOT <br/> BEVERAGES</h2>
-      </div>
-
-      <div class="card-container">
-        <div class="menu-card">
-          <ul class="card-txt">
-            <li><h4>Espresso</h4></li>
-            <li><p>A single shot of concentrated coffee.</p></li>
-            <li><h6>Rs.120</h6></li>
-          </ul>
-          <ul class="card-img" style="background-image: url('../images/offer-images/Hot_Beverage_1.jpeg');">
-            <li>
-              <img src="../images/offer-images/like.png" alt="Image Of Like Button To Add Items In Your Favourite List">
-            </li>
-            <li class="card-btn">
-              <button type="button">-</button>
-              <button type="button" id="current-Data">1</button>
-              <button type="button">+</button>
-            </li>
-          </ul>
-        </div>
-        <div class="card-border"></div>
-
-        <div class="menu-card">
-          <ul class="card-txt">
-            <li><h4>Cappuccino</h4></li>
-            <li><p>Equal parts espresso steamed milk, and foam.</p></li>
-            <li><h6>Rs.250</h6></li>
-          </ul>
-          <ul class="card-img" style="background-image: url('../images/offer-images/Hot_Beverage_2.jpeg');">
-            <li>
-              <img src="../images/offer-images/like.png" alt="Image Of Like Button To Add Items In Your Favourite List">
-            </li>
-            <li class="card-btn">
-              <button type="button">-</button>
-              <button type="button" id="current-Data">1</button>
-              <button type="button">+</button>
-            </li>
-          </ul>
-        </div>
-        <div class="card-border"></div>
-
-        <div class="menu-card">
-          <ul class="card-txt" id="Americanoa">
-            <li><h4>Americanoa</h4></li>
-            <li><p>Espresso shots with hot water.</p></li>
-            <li><h6>Rs.150</h6></li>
-          </ul>
-          <ul class="card-img" style="background-image: url('../images/offer-images/Hot_Beverage_3.jpeg');">
-            <li>
-              <img src="../images/offer-images/like.png" alt="Image Of Like Button To Add Items In Your Favourite List">
-            </li>
-            <li class="card-btn">
-              <button type="button">-</button>
-              <button type="button" id="current-Data">1</button>
-              <button type="button">+</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="menu-container">
-      <div class="menu-header" style="background-image: url('../images/other-images/Cold-Beverage.jpeg');">
-        <h2>COLD <br/> BEVERAGES</h2>
-      </div>
-
-      <div class="card-container">
-        <div class="menu-card">
-          <ul class="card-txt">
-            <li><h4>Iced Coffee</h4></li>
-            <li><h6>Rs.140</h6></li>
-          </ul>
-          <ul class="card-img" style="background-image: url('../images/offer-images/Cold_Beverage_1.jpeg');">
-            <li>
-              <img src="../images/offer-images/like.png" alt="Image Of Like Button To Add Items In Your Favourite List">
-            </li>
-            <li class="card-btn">
-              <button type="button">-</button>
-              <button type="button" id="current-Data">1</button>
-              <button type="button">+</button>
-            </li>
-          </ul>
-        </div>
-        <div class="card-border"></div>
-
-        <div class="menu-card">
-          <ul class="card-txt">
-            <li><h4>Iced Latte</h4></li>
-            <li><h6>Rs.130</h6></li>
-          </ul>
-          <ul class="card-img" style="background-image: url('../images/offer-images/Cold_Beverage_2.jpeg');">
-            <li>
-              <img src="../images/offer-images/like.png" alt="Image Of Like Button To Add Items In Your Favourite List">
-            </li>
-            <li class="card-btn">
-              <button type="button">-</button>
-              <button type="button" id="current-Data">1</button>
-              <button type="button">+</button>
-            </li>
-          </ul>
-        </div>
-        <div class="card-border"></div>
-
-        <div class="menu-card">
-          <ul class="card-txt">
-            <li><h4>Frappuccino</h4></li>
-            <li><h6>Rs.120</h6></li>
-          </ul>
-          <ul class="card-img" style="background-image: url('../images/offer-images/Cold_Beverage_3.jpeg');">
-            <li>
-              <img src="../images/offer-images/like.png" alt="Image Of Like Button To Add Items In Your Favourite List">
-            </li>
-            <li class="card-btn">
-              <button type="button">-</button>
-              <button type="button" id="current-Data">1</button>
-              <button type="button">+</button>
-            </li>
-          </ul>
-        </div>
-        <div class="card-border"></div>
-
-        <div class="menu-card">
-          <ul class="card-txt" style="margin-right: 1.3rem;">
-            <li><h4>Affogato</h4></li>
-            <li><h6>Rs.110</h6></li>
-          </ul>
-          <ul class="card-img" style="background-image: url('../images/offer-images/Cold_Beverage_4.jpeg');">
-            <li>
-              <img src="../images/offer-images/like.png" alt="Image Of Like Button To Add Items In Your Favourite List">
-            </li>
-            <li class="card-btn">
-              <button type="button">-</button>
-              <button type="button" id="current-Data">1</button>
-              <button type="button">+</button>
-            </li>
-          </ul>
-        </div>
-        <div class="card-border"></div>
-
-        <div class="menu-card">
-          <ul class="card-txt">
-            <li><h4>Ice Latte</h4></li>
-            <li><h6>Rs.120</h6></li>
-          </ul>
-          <ul class="card-img" style="background-image: url('../images/offer-images/Cold_Beverage_5.jpeg');">
-            <li>
-              <img src="../images/offer-images/like.png" alt="Image Of Like Button To Add Items In Your Favourite List">
-            </li>
-            <li class="card-btn">
-              <button type="button">-</button>
-              <button type="button" id="current-Data">1</button>
-              <button type="button">+</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-
-  <!-- Html code for Other Categories begins here -->
-  <div class="categories-container">
-    <div class="categories-heading">
-      <h1>OTHER CATEGORIES</h1>
-    </div>
-    <div class="categories-card-container">
-      <div class="batch-one">
-        <img src="../images/offer-images/burger.jpg" alt="IMAGES OF BURGER & SANDWICHES">
-        <h4>BURGER & SANDWICHES</h4>
-      </div>
-      <div class="batch-two">
-        <img src="../images/offer-images/Salad.jpeg" alt="IMAGES OF SALADS">
-        <h4>SALADS</h4>
-      </div>
-      <div class="batch-two">
-        <img src="../images/offer-images/past.jpg" alt="IMAGES OF DESSERTS / ICE-CREAM">
-        <h4>DESSERTS / ICE-CREAM</h4>
-      </div>
-      <div class="batch-one">
-        <img src="../images/offer-images/Value_Combo.png" alt="IMAGES OF VALUE COMBO">
-        <h4>VALUE COMBO</h4>
-      </div>
-    </div>
-    <div class="explore-btn">
-      <a href="explore.html" title="Discover What's On Your Mind?">EXPLORE</a>
-    </div>
-  </div>
-
-
-
-
-  <!-- Html code for Best Offers begins here -->
-  <div class="offer-container">
-    <div class="categories-heading">
-      <h1 style="padding: 15px 0px;">BEST OFFERS <i class="fa-solid fa-gifts"></i></h1>
-    </div>
-  </div>
-
-  <div id="carousel-container">
-    <button id="prev-btn" class="carousel-btn" onclick="changeSlide(-1)">&#10094;</button>
-
-    <div id="image-carousel">
-      <img src="../images/offer-images/banner1.png" alt="Image Containing A Banner Which Shows The Offer On Buy1 Get-1 Free" />
-      <img src="../images/offer-images/banner2.png" alt="Image Containing A Banner Which Shows The Offer On Pepsi, Burger and French Fries" />
-      <img src="../images/offer-images/banner3.jpeg" alt="Image Containing A Banner Which Shows The Offer On Suer Delicious Burger Combo" />
-      <img src="../images/offer-images/banner4.png" alt="Image Containing A Banner Which Shows The Offer On French Fries" />
-      <img src="../images/offer-images/banner5.png" alt="Image Containing A Banner Which Shows The Offer On Coffee" />
-      <img src="../images/offer-images/banner6.png" alt="Image Containing A Banner Which Shows The Offer On Buffet Night" />
-      <img src="../images/offer-images/banner7.png" alt="Image Containing A Banner Which Shows Offer On Pizza" />
-    </div>
-    
-    <button id="next-btn" class="carousel-btn" onclick="changeSlide(1)">&#10095;</button>
-  </div>
-  
-
-
-  <!-- Html code for footer section begins here -->
-  <footer>
-    <div class="footer">
-      <div class="address">
-        <address>
-          <h3>Address</h3>
+      <section class="menu-seciton">
+        <div class="menu-item" id="menu-item">
           <ul>
-            <li>Cafe</li>
-            <li>Plot No. 45, Street No.14</li>
-            <li>Marol MIDC Industry Estate,</li>
-            <li>Andheri East,Mumbai-400093</li>
+            <li>
+              <img
+                src="../images/other-images/Caramel-Tea.jpeg"
+                alt="Image Of Special Drinks"
+              />
+            </li>
+            <li><h2>SPECIALTY DRINKS</h2></li>
           </ul>
-        </address>
+        </div>
+        <div class="menu-item">
+          <ul class="beverage-lt">
+            <li class="name-of-beverage">Matcha Latte</li>
+            <li class="price-of-beverage">Rs.148</li>
+          </ul>
+          <ul class="cold-beverage-rt">
+            <li><a onclick="addToAlert(event)">+</a></li>
+          </ul>
+        </div>
+        <div class="menu-item">
+          <ul class="beverage-lt">
+            <li class="name-of-beverage">Turmeric Latte</li>
+            <li class="price-of-beverage">Rs.160</li>
+          </ul>
+          <ul class="cold-beverage-rt">
+            <li><a onclick="addToAlert(event)">+</a></li>
+          </ul>
+        </div>
+        <div class="menu-item">
+          <ul class="beverage-lt">
+            <li class="name-of-beverage">Caramel Tea</li>
+            <li class="price-of-beverage">Rs.160</li>
+          </ul>
+          <ul class="cold-beverage-rt">
+            <li><a onclick="addToAlert(event)">+</a></li>
+          </ul>
+        </div>
+        <div class="menu-item">
+          <ul class="beverage-lt">
+            <li class="name-of-beverage">Green Tea</li>
+            <li class="price-of-beverage">Rs.120</li>
+          </ul>
+          <ul class="cold-beverage-rt">
+            <li><a onclick="addToAlert(event)">+</a></li>
+          </ul>
+        </div>
+        <div class="menu-item">
+          <ul class="beverage-lt">
+            <li class="name-of-beverage">Herbal Infusions</li>
+            <li class="price-of-beverage">Rs.120</li>
+          </ul>
+          <ul class="cold-beverage-rt">
+            <li><a onclick="addToAlert(event)">+</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!--Html Code For Mobile View-->
+    <div class="mobile-view-container">
+      <div class="logo-for-mobile">
+        <h1>SUNSET</h1>
+        <h2>CAFE</h2>
+        <h4 id="line-with-txt">FOR YOU</h4>
       </div>
 
-      <div class="help-info">
-        <h3>Help & Info</h3>
-        <ul>
-          <li>About Cafe</li>
-          <li>Careers</li>
-          <li>FAQs</li>
-        </ul>
+      <div class="choice-btn">
+        <a href="#">Recommended</a>
+        <a href="#"
+          ><img
+            src="../images/offer-images/like.png"
+            alt="Image Of Like Button"
+          />Favourites</a
+        >
       </div>
 
-      <div class="contact-us">
-        <h3>Contact Us</h3>
-        <ul>
-          <li>1809-908-5647</li>
-          <li>Get in Touch</li>
-          <li>Chat With Us</li>
-        </ul>
-      </div>
-
-      <div class="useful-links">
-        <h3>Useful Links</h3>
-        <ul>
-          <li>Privacy Policy</li>
-          <li>Terms of Service</li>
-          <li>Payment Issues</li>
-          <li>Net Banking</li>
-          <li>Custom Order</li>
-        </ul>
-      </div>
-
-      <!--Html code for mobile view begins here-->
-      <div class="footer-dropdown-content">
-        <div class="footer-dropdown">
-          <legend>About Us <i class="fa-solid fa-angle-down"></i></legend>
-          <div class="dropdown-options">
-            <a href="#">About Cafe</a>
-            <a href="#">Careers</a>
-            <a href="#">FAQs</a>
-          </div>
+      <div class="menu-container">
+        <div
+          class="menu-header"
+          style="
+            background-image: url('../images/other-images/Caramel-Tea.jpeg');
+          "
+        >
+          <h2>
+            SPECIALTY <br />
+            DRINKS
+          </h2>
         </div>
 
-        <div class="footer-dropdown">
-          <legend>Term Of Use<i class="fa-solid fa-angle-down"></i></legend>
-          <div class="dropdown-options">
-            <a href="#">Copyright</a>
-            <a href="#">Terms Of Service</a>
-            <a href="#">Privacy Policy</a>
+        <div class="card-container">
+          <div class="menu-card">
+            <ul class="card-txt">
+              <li><h4>Matcha Latte</h4></li>
+              <li><h6>Rs.120</h6></li>
+            </ul>
+            <ul
+              class="card-img"
+              style="
+                background-image: url('../images/offer-images/Special_Drink1.jpeg');
+              "
+            >
+              <li>
+                <img
+                  src="../images/offer-images/like.png"
+                  alt="Image Of Like Button To Add Items In Your Favourite List"
+                />
+              </li>
+              <li class="card-btn">
+                <button type="button">-</button>
+                <button type="button" id="current-Data">1</button>
+                <button type="button">+</button>
+              </li>
+            </ul>
+          </div>
+          <div class="card-border"></div>
+
+          <div class="menu-card">
+            <ul class="card-txt">
+              <li><h4>Turmeric Latte</h4></li>
+              <li><h6>Rs.160</h6></li>
+            </ul>
+            <ul
+              class="card-img"
+              style="
+                background-image: url('../images/offer-images/Special_Drink2.jpeg');
+              "
+            >
+              <li>
+                <img
+                  src="../images/offer-images/like.png"
+                  alt="Image Of Like Button To Add Items In Your Favourite List"
+                />
+              </li>
+              <li class="card-btn">
+                <button type="button">-</button>
+                <button type="button" id="current-Data">1</button>
+                <button type="button">+</button>
+              </li>
+            </ul>
+          </div>
+          <div class="card-border"></div>
+
+          <div class="menu-card">
+            <ul class="card-txt">
+              <li><h4>Caramel Tea</h4></li>
+              <li><h6>Rs.160</h6></li>
+            </ul>
+            <ul
+              class="card-img"
+              style="
+                background-image: url('../images/offer-images/Special_Drink3.jpeg');
+              "
+            >
+              <li>
+                <img
+                  src="../images/offer-images/like.png"
+                  alt="Image Of Like Button To Add Items In Your Favourite List"
+                />
+              </li>
+              <li class="card-btn">
+                <button type="button">-</button>
+                <button type="button" id="current-Data">1</button>
+                <button type="button">+</button>
+              </li>
+            </ul>
+          </div>
+          <div class="card-border"></div>
+
+          <div class="menu-card">
+            <ul class="card-txt" style="margin-right: 1.3rem">
+              <li><h4>Green Tea</h4></li>
+              <li><h6>Rs.120</h6></li>
+            </ul>
+            <ul
+              class="card-img"
+              style="
+                background-image: url('../images/offer-images/Special_Drink4.png');
+              "
+            >
+              <li>
+                <img
+                  src="../images/offer-images/like.png"
+                  alt="Image Of Like Button To Add Items In Your Favourite List"
+                />
+              </li>
+              <li class="card-btn">
+                <button type="button">-</button>
+                <button type="button" id="current-Data">1</button>
+                <button type="button">+</button>
+              </li>
+            </ul>
+          </div>
+          <div class="card-border"></div>
+
+          <div class="menu-card">
+            <ul class="card-txt">
+              <li><h4>Herbal Infusions</h4></li>
+              <li><h6>Rs.120</h6></li>
+            </ul>
+            <ul
+              class="card-img"
+              style="
+                background-image: url('../images/offer-images/Special_Drink5.jpeg');
+              "
+            >
+              <li>
+                <img
+                  src="../images/offer-images/like.png"
+                  alt="Image Of Like Button To Add Items In Your Favourite List"
+                />
+              </li>
+              <li class="card-btn">
+                <button type="button">-</button>
+                <button type="button" id="current-Data">1</button>
+                <button type="button">+</button>
+              </li>
+            </ul>
           </div>
         </div>
+      </div>
 
-        <div class="footer-dropdown">
-          <legend>Services <i class="fa-solid fa-angle-down"></i></legend>
-          <div class="dropdown-options">
-            <a href="#">Book A Table</a>
-            <a href="#">Net Banking</a>
-            <a href="#">Custom Order</a>
-          </div>
+      <div class="menu-container">
+        <div
+          class="menu-header"
+          style="
+            background-image: url('../images/other-images/Cappuccino.jpeg');
+          "
+        >
+          <h2>
+            HOT <br />
+            BEVERAGES
+          </h2>
         </div>
 
-        <div class="footer-dropdown">
-          <legend>Contact Us <i class="fa-solid fa-angle-down"></i></legend>
-          <div class="dropdown-options">
-            <a href="#">Call Us</a>
-            <a href="#">Email Us</a>
-            <a href="#">Chat With Us</a>
+        <div class="card-container">
+          <div class="menu-card">
+            <ul class="card-txt">
+              <li><h4>Espresso</h4></li>
+              <li><p>A single shot of concentrated coffee.</p></li>
+              <li><h6>Rs.120</h6></li>
+            </ul>
+            <ul
+              class="card-img"
+              style="
+                background-image: url('../images/offer-images/Hot_Beverage_1.jpeg');
+              "
+            >
+              <li>
+                <img
+                  src="../images/offer-images/like.png"
+                  alt="Image Of Like Button To Add Items In Your Favourite List"
+                />
+              </li>
+              <li class="card-btn">
+                <button type="button">-</button>
+                <button type="button" id="current-Data">1</button>
+                <button type="button">+</button>
+              </li>
+            </ul>
+          </div>
+          <div class="card-border"></div>
+
+          <div class="menu-card">
+            <ul class="card-txt">
+              <li><h4>Cappuccino</h4></li>
+              <li><p>Equal parts espresso steamed milk, and foam.</p></li>
+              <li><h6>Rs.250</h6></li>
+            </ul>
+            <ul
+              class="card-img"
+              style="
+                background-image: url('../images/offer-images/Hot_Beverage_2.jpeg');
+              "
+            >
+              <li>
+                <img
+                  src="../images/offer-images/like.png"
+                  alt="Image Of Like Button To Add Items In Your Favourite List"
+                />
+              </li>
+              <li class="card-btn">
+                <button type="button">-</button>
+                <button type="button" id="current-Data">1</button>
+                <button type="button">+</button>
+              </li>
+            </ul>
+          </div>
+          <div class="card-border"></div>
+
+          <div class="menu-card">
+            <ul class="card-txt" id="Americanoa">
+              <li><h4>Americanoa</h4></li>
+              <li><p>Espresso shots with hot water.</p></li>
+              <li><h6>Rs.150</h6></li>
+            </ul>
+            <ul
+              class="card-img"
+              style="
+                background-image: url('../images/offer-images/Hot_Beverage_3.jpeg');
+              "
+            >
+              <li>
+                <img
+                  src="../images/offer-images/like.png"
+                  alt="Image Of Like Button To Add Items In Your Favourite List"
+                />
+              </li>
+              <li class="card-btn">
+                <button type="button">-</button>
+                <button type="button" id="current-Data">1</button>
+                <button type="button">+</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-container">
+        <div
+          class="menu-header"
+          style="
+            background-image: url('../images/other-images/Cold-Beverage.jpeg');
+          "
+        >
+          <h2>
+            COLD <br />
+            BEVERAGES
+          </h2>
+        </div>
+
+        <div class="card-container">
+          <div class="menu-card">
+            <ul class="card-txt">
+              <li><h4>Iced Coffee</h4></li>
+              <li><h6>Rs.140</h6></li>
+            </ul>
+            <ul
+              class="card-img"
+              style="
+                background-image: url('../images/offer-images/Cold_Beverage_1.jpeg');
+              "
+            >
+              <li>
+                <img
+                  src="../images/offer-images/like.png"
+                  alt="Image Of Like Button To Add Items In Your Favourite List"
+                />
+              </li>
+              <li class="card-btn">
+                <button type="button">-</button>
+                <button type="button" id="current-Data">1</button>
+                <button type="button">+</button>
+              </li>
+            </ul>
+          </div>
+          <div class="card-border"></div>
+
+          <div class="menu-card">
+            <ul class="card-txt">
+              <li><h4>Iced Latte</h4></li>
+              <li><h6>Rs.130</h6></li>
+            </ul>
+            <ul
+              class="card-img"
+              style="
+                background-image: url('../images/offer-images/Cold_Beverage_2.jpeg');
+              "
+            >
+              <li>
+                <img
+                  src="../images/offer-images/like.png"
+                  alt="Image Of Like Button To Add Items In Your Favourite List"
+                />
+              </li>
+              <li class="card-btn">
+                <button type="button">-</button>
+                <button type="button" id="current-Data">1</button>
+                <button type="button">+</button>
+              </li>
+            </ul>
+          </div>
+          <div class="card-border"></div>
+
+          <div class="menu-card">
+            <ul class="card-txt">
+              <li><h4>Frappuccino</h4></li>
+              <li><h6>Rs.120</h6></li>
+            </ul>
+            <ul
+              class="card-img"
+              style="
+                background-image: url('../images/offer-images/Cold_Beverage_3.jpeg');
+              "
+            >
+              <li>
+                <img
+                  src="../images/offer-images/like.png"
+                  alt="Image Of Like Button To Add Items In Your Favourite List"
+                />
+              </li>
+              <li class="card-btn">
+                <button type="button">-</button>
+                <button type="button" id="current-Data">1</button>
+                <button type="button">+</button>
+              </li>
+            </ul>
+          </div>
+          <div class="card-border"></div>
+
+          <div class="menu-card">
+            <ul class="card-txt" style="margin-right: 1.3rem">
+              <li><h4>Affogato</h4></li>
+              <li><h6>Rs.110</h6></li>
+            </ul>
+            <ul
+              class="card-img"
+              style="
+                background-image: url('../images/offer-images/Cold_Beverage_4.jpeg');
+              "
+            >
+              <li>
+                <img
+                  src="../images/offer-images/like.png"
+                  alt="Image Of Like Button To Add Items In Your Favourite List"
+                />
+              </li>
+              <li class="card-btn">
+                <button type="button">-</button>
+                <button type="button" id="current-Data">1</button>
+                <button type="button">+</button>
+              </li>
+            </ul>
+          </div>
+          <div class="card-border"></div>
+
+          <div class="menu-card">
+            <ul class="card-txt">
+              <li><h4>Ice Latte</h4></li>
+              <li><h6>Rs.120</h6></li>
+            </ul>
+            <ul
+              class="card-img"
+              style="
+                background-image: url('../images/offer-images/Cold_Beverage_5.jpeg');
+              "
+            >
+              <li>
+                <img
+                  src="../images/offer-images/like.png"
+                  alt="Image Of Like Button To Add Items In Your Favourite List"
+                />
+              </li>
+              <li class="card-btn">
+                <button type="button">-</button>
+                <button type="button" id="current-Data">1</button>
+                <button type="button">+</button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="social-icons">
-      <span>Follow Us On:</span>
-        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    <!-- Html code for Other Categories begins here -->
+    <div class="categories-container">
+      <div class="categories-heading">
+        <h1>OTHER CATEGORIES</h1>
+      </div>
+      <div class="categories-card-container">
+        <div class="batch-one">
+          <img
+            src="../images/offer-images/burger.jpg"
+            alt="IMAGES OF BURGER & SANDWICHES"
+          />
+          <h4>BURGER & SANDWICHES</h4>
+        </div>
+        <div class="batch-two">
+          <img src="../images/offer-images/Salad.jpeg" alt="IMAGES OF SALADS" />
+          <h4>SALADS</h4>
+        </div>
+        <div class="batch-two">
+          <img
+            src="../images/offer-images/past.jpg"
+            alt="IMAGES OF DESSERTS / ICE-CREAM"
+          />
+          <h4>DESSERTS / ICE-CREAM</h4>
+        </div>
+        <div class="batch-one">
+          <img
+            src="../images/offer-images/Value.png"
+            alt="IMAGES OF VALUE COMBO"
+          />
+          <h4>VALUE COMBO</h4>
+        </div>
+      </div>
+      <div class="explore-btn">
+        <a href="explore.html" title="Discover What's On Your Mind?">EXPLORE</a>
+      </div>
     </div>
 
-    <div class="copyright">
-      <h4>@2023 Railworld India. All Rights Reserved.</h4>
+    <!-- Html code for Best Offers begins here -->
+    <div class="offer-container">
+      <div class="categories-heading">
+        <h1 style="padding: 15px 0px">
+          BEST OFFERS <i class="fa-solid fa-gifts"></i>
+        </h1>
+      </div>
     </div>
-  </footer>
 
+    <div id="carousel-container">
+      <button id="prev-btn" class="carousel-btn" onclick="changeSlide(-1)">
+        &#10094;
+      </button>
 
-   <!-- Links Of External Js -->
-   <script src="../script/menu.js"></script> 
-   <script src="https://kit.fontawesome.com/8a4fbb7cf2.js" crossorigin="anonymous"></script>
-</body>
+      <div id="image-carousel">
+        <img
+          src="../images/offer-images/banner1.png"
+          alt="Image Containing A Banner Which Shows The Offer On Buy1 Get-1 Free"
+        />
+        <img
+          src="../images/offer-images/banner2.png"
+          alt="Image Containing A Banner Which Shows The Offer On Pepsi, Burger and French Fries"
+        />
+        <img
+          src="../images/offer-images/banner3.jpeg"
+          alt="Image Containing A Banner Which Shows The Offer On Suer Delicious Burger Combo"
+        />
+        <img
+          src="../images/offer-images/banner4.png"
+          alt="Image Containing A Banner Which Shows The Offer On French Fries"
+        />
+        <img
+          src="../images/offer-images/banner5.png"
+          alt="Image Containing A Banner Which Shows The Offer On Coffee"
+        />
+        <img
+          src="../images/offer-images/banner6.png"
+          alt="Image Containing A Banner Which Shows The Offer On Buffet Night"
+        />
+        <img
+          src="../images/offer-images/banner7.png"
+          alt="Image Containing A Banner Which Shows Offer On Pizza"
+        />
+      </div>
+
+      <button id="next-btn" class="carousel-btn" onclick="changeSlide(1)">
+        &#10095;
+      </button>
+    </div>
+
+    <!-- Html code for footer section begins here -->
+    <footer>
+      <div class="footer">
+        <div class="address">
+          <address>
+            <h3>Address</h3>
+            <ul>
+              <li>Cafe</li>
+              <li>Plot No. 45, Street No.14</li>
+              <li>Marol MIDC Industry Estate,</li>
+              <li>Andheri East,Mumbai-400093</li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="help-info">
+          <h3>Help & Info</h3>
+          <ul>
+            <li>About Cafe</li>
+            <li>Careers</li>
+            <li>FAQs</li>
+          </ul>
+        </div>
+
+        <div class="contact-us">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>1809-908-5647</li>
+            <li>Get in Touch</li>
+            <li>Chat With Us</li>
+          </ul>
+        </div>
+
+        <div class="useful-links">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>Payment Issues</li>
+            <li>Net Banking</li>
+            <li>Custom Order</li>
+          </ul>
+        </div>
+
+        <!--Html code for mobile view begins here-->
+        <div class="footer-dropdown-content">
+          <div class="footer-dropdown">
+            <legend>About Us <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">About Cafe</a>
+              <a href="#">Careers</a>
+              <a href="#">FAQs</a>
+            </div>
+          </div>
+
+          <div class="footer-dropdown">
+            <legend>Term Of Use<i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">Copyright</a>
+              <a href="#">Terms Of Service</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+
+          <div class="footer-dropdown">
+            <legend>Services <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">Book A Table</a>
+              <a href="#">Net Banking</a>
+              <a href="#">Custom Order</a>
+            </div>
+          </div>
+
+          <div class="footer-dropdown">
+            <legend>Contact Us <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">Call Us</a>
+              <a href="#">Email Us</a>
+              <a href="#">Chat With Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <span>Follow Us On:</span>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.whatsapp.com/" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="https://www.twitter.com/" target="_blank"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+      </div>
+
+      <div class="copyright">
+        <h4>@2023 Railworld India. All Rights Reserved.</h4>
+      </div>
+    </footer>
+
+    <!-- Links Of External Js -->
+    <script src="../script/menu.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8a4fbb7cf2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

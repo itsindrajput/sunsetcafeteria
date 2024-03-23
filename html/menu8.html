@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunset Cafe | Main Menu 8</title>
+    <meta http-equiv="author" content="Rishabh Singh" />
+    <meta http-equiv="pragma" content="cache" />
+
+    <!-- Favicons -->
+    <link href="../images/other-images/sunset-cafe-tab-logo.png" rel="icon" />
+    <link
+      href="../images/other-images/sunset-cafe-tab-logo.png"
+      rel="touch-icon"
+    />
+
+    <!--Link Of Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inspiration&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Links Of External Css -->
+    <link rel="stylesheet" href="../style/signup.css" type="text/css" />
+    <link rel="stylesheet" href="../style/menu1.css" type="text/css" />
+    <link rel="stylesheet" href="../style/menu8.css" type="text/css" />
+  </head>
+  <body style="background-color: #251a17">
+    <header style="background-color: transparent">
+      <nav>
+        <div class="logo-hamburger-container">
+          <div class="nav-logo">
+            <a href="#">
+              <img
+                src="../images/other-images/sunset-cafe-logo.png"
+                alt="Image contains the logo of Sunset Cafe"
+            /></a>
+          </div>
+          <!-- Hamburger icon and a search icon -->
+          <div class="nav-icons">
+            <div class="search-icon">
+              <a href="#"><i class="fa-solid fa-search"></i></a>
+            </div>
+            <div class="hamburger-icon" onclick="myHamburger()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-drawer" id="navDrawer">
+          <div class="close-btn" onclick="myHamburger()">Close ❌</div>
+          <div class="nav-logo-in-text">
+            <h3>SUNSET</h3>
+            <h2>CAFE</h2>
+          </div>
+          <div class="nav-menu-list">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li id="status-active"><a href="menu.html">Menu</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="search-input">
+            <input
+              type="search"
+              name="search"
+              id="search-icon"
+              placeholder="&#128269; Search Items"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--Html Code For Hero Section-->
+      <div id="menu-hero">
+        <img
+          id="desk-hero-img"
+          src="../images/offer-images/Value_Combo_Hero.png"
+          alt="Starters"
+        />
+        <img
+          id="mobile-hero-img"
+          src="../images/offer-images/Value.png"
+          alt="Starters"
+        />
+      </div>
+      <div class="nav-menu">
+        <ul>
+          <li>
+            <a href="menu7.html"><i class="fa-solid fa-arrow-left"></i></a>
+          </li>
+          <li id="sides"><a href="menu4.html">SIDES</a></li>
+          <li id="sides"><a href="menu5.html">SALADS</a></li>
+          <li>
+            <a href="menu6.html">DESSERTS / ICECREAM</a>
+          </li>
+          <li><a href="menu7.html">MAIN COURSE</a></li>
+          <li>
+            <a href="menu8.html" id="active-menu">VALUE COMBO</a>
+          </li>
+          <li>
+            <a href="menu1.html"><i class="fa-solid fa-arrow-right"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-container">
+        <div class="menu-container1">
+          <div class="single-menu-item">
+            <div class="menu-item-left">
+              <h4>Combo 1: Sunset Sampler</h4>
+              <ul class="combo-list">
+                <li>
+                  <b>Choice of Starter:</b>
+                  <ul class="list-inside-list">
+                    <li>Crispy Vegetable Spring Rolls</li>
+                    <li>Chicken Satay Skewers</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Main Course:</b>
+                  <ul class="list-inside-list">
+                    <li>Vegetable Pad Thai</li>
+                    <li>Chicken Tikka Masala</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Side Dish:</b>
+                  <ul class="list-inside-list">
+                    <li>Garlic Parmesan Fries</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Beverage:</b>
+                  <ul class="list-inside-list">
+                    <li>Soft Drink or Iced Tea</li>
+                    <li>570/-</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-item-right">
+              <ul>
+                <li class="count-btn">
+                  <button type="button">-</button>
+                  <b class="value">1</b>
+                  <button type="button">+</button>
+                </li>
+                <li>
+                  <button type="button" class="add-to-cart">
+                    ADD <i class="fa-solid fa-plus"></i>
+                  </button>
+                </li>
+
+                <!--The Below ul element only designed for mobile view max-width: 500px-->
+                <li
+                  class="card-img"
+                  id="card-img"
+                  style="
+                    background-image: url('../images/next-menu-images/value_combo_01.jpeg');
+                  "
+                >
+                  <ul>
+                    <li class="card-btn">
+                      <button type="button">-</button>
+                      <button type="button" id="current-Data">1</button>
+                      <button type="button">+</button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="single-menu-item">
+            <div class="menu-item-left">
+              <h4>Combo 2: Taste of Asia</h4>
+              <ul class="combo-list">
+                <li>
+                  <b>Choice of Starter:</b>
+                  <ul class="list-inside-list">
+                    <li>Prawn Tempura</li>
+                    <li>Veg Spring Rolls</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Main Course:</b>
+                  <ul class="list-inside-list">
+                    <li>Beef Rendang with Steamed Jasmine Rice</li>
+                    <li>Thai Basil Chicken with Egg Fried Rice</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Dessert:</b>
+                  <ul class="list-inside-list">
+                    <li>Mango Sticky Rice</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Beverage:</b>
+                  <ul class="list-inside-list">
+                    <li>Thai Iced Tea or Lemongrass Infusion</li>
+                    <li>799/-</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-item-right">
+              <ul>
+                <li class="count-btn">
+                  <button type="button">-</button>
+                  <b class="value">1</b>
+                  <button type="button">+</button>
+                </li>
+                <li>
+                  <button type="button" class="add-to-cart">
+                    ADD <i class="fa-solid fa-plus"></i>
+                  </button>
+                </li>
+
+                <!--The Below ul element only designed for mobile view max-width: 500px-->
+                <li
+                  class="card-img"
+                  id="card-img"
+                  style="
+                    background-image: url('../images/next-menu-images/value_combo_02.jpeg');
+                  "
+                >
+                  <ul>
+                    <li class="card-btn">
+                      <button type="button">-</button>
+                      <button type="button" id="current-Data">1</button>
+                      <button type="button">+</button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="yellow-line"></div>
+
+        <div class="menu-container2">
+          <div class="single-menu-item">
+            <div class="menu-item-left">
+              <h4>Combo 3: Vegetarian Delight</h4>
+              <ul class="combo-list">
+                <li>
+                  <b>Starter:</b>
+                  <ul class="list-inside-list">
+                    <li>Caprese Salad</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Main Course:</b>
+                  <ul class="list-inside-list">
+                    <li>Paneer Tikka Masala with Garlic Naan</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Side Dish:</b>
+                  <ul class="list-inside-list">
+                    <li>Cumin-Spiced Roasted Potatoes</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Dessert:</b>
+                  <ul class="list-inside-list">
+                    <li>Lemon Meringue Tart</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Beverage:</b>
+                  <ul class="list-inside-list">
+                    <li>Fresh Lime Soda</li>
+                    <li>799/-</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-item-right">
+              <ul>
+                <li class="count-btn">
+                  <button type="button">-</button>
+                  <b class="value">1</b>
+                  <button type="button">+</button>
+                </li>
+                <li>
+                  <button type="button" class="add-to-cart">
+                    ADD <i class="fa-solid fa-plus"></i>
+                  </button>
+                </li>
+
+                <!--The Below ul element only designed for mobile view max-width: 500px-->
+                <li
+                  class="card-img"
+                  id="card-img"
+                  style="
+                    background-image: url('../images/next-menu-images/value_combo_03.jpeg');
+                  "
+                >
+                  <ul>
+                    <li class="card-btn">
+                      <button type="button">-</button>
+                      <button type="button" id="current-Data">1</button>
+                      <button type="button">+</button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="single-menu-item">
+            <div class="menu-item-left">
+              <h4>Combo 4: Family Feast</h4>
+              <ul class="combo-list">
+                <li>
+                  <b>Starter:</b>
+                  <ul class="list-inside-list">
+                    <li>Paneer Tikka Skewers</li>
+                  </ul>
+                </li>
+                <li>
+                  <b> Main Course:</b>
+                  <ul class="list-inside-list">
+                    <li>Paneer Makhani</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Side Dish:</b>
+                  <ul class="list-inside-list">
+                    <li>Grilled Seasonal Vegetables</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Dessert:</b>
+                  <ul class="list-inside-list">
+                    <li>Cheese Cake</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Beverage:</b>
+                  <ul class="list-inside-list">
+                    <li>Fresh Coke</li>
+                    <li>699/-</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-item-right">
+              <ul>
+                <li class="count-btn">
+                  <button type="button">-</button>
+                  <b class="value">1</b>
+                  <button type="button">+</button>
+                </li>
+                <li>
+                  <button type="button" class="add-to-cart">
+                    ADD <i class="fa-solid fa-plus"></i>
+                  </button>
+                </li>
+
+                <!--The Below ul element only designed for mobile view max-width: 500px-->
+                <li
+                  class="card-img"
+                  id="card-img"
+                  style="
+                    background-image: url('../images/next-menu-images/value_combo_04.jpeg');
+                  "
+                >
+                  <ul>
+                    <li class="card-btn">
+                      <button type="button">-</button>
+                      <button type="button" id="current-Data">1</button>
+                      <button type="button">+</button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="value-giving">
+        Indulge in Value and Flavor with Our Irresistible Value Combos at Café
+        Sunset!
+      </h2>
+    </main>
+
+    <!-- Html code for footer section begins here -->
+    <footer>
+      <div class="footer">
+        <div class="address">
+          <address>
+            <h3>Address</h3>
+            <ul>
+              <li>Cafe</li>
+              <li>Plot No. 45, Street No.14</li>
+              <li>Marol MIDC Industry Estate,</li>
+              <li>Andheri East,Mumbai-400093</li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="help-info">
+          <h3>Help & Info</h3>
+          <ul>
+            <li>About Cafe</li>
+            <li>Careers</li>
+            <li>FAQs</li>
+          </ul>
+        </div>
+
+        <div class="contact-us">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>1809-908-5647</li>
+            <li>Get in Touch</li>
+            <li>Chat With Us</li>
+          </ul>
+        </div>
+
+        <div class="useful-links">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>Payment Issues</li>
+            <li>Net Banking</li>
+            <li>Custom Order</li>
+          </ul>
+        </div>
+
+        <!--Html code for mobile view begins here-->
+        <div class="footer-dropdown-content">
+          <div class="footer-dropdown">
+            <legend>About Us <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">About Cafe</a>
+              <a href="#">Careers</a>
+              <a href="#">FAQs</a>
+            </div>
+          </div>
+
+          <div class="footer-dropdown">
+            <legend>Term Of Use<i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">Copyright</a>
+              <a href="#">Terms Of Service</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+
+          <div class="footer-dropdown">
+            <legend>Services <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">Book A Table</a>
+              <a href="#">Net Banking</a>
+              <a href="#">Custom Order</a>
+            </div>
+          </div>
+
+          <div class="footer-dropdown">
+            <legend>Contact Us <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">Call Us</a>
+              <a href="#">Email Us</a>
+              <a href="#">Chat With Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <span>Follow Us On:</span>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.whatsapp.com/" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="https://www.twitter.com/" target="_blank"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+      </div>
+
+      <div class="copyright">
+        <h4>@2023 Railworld India. All Rights Reserved.</h4>
+      </div>
+    </footer>
+
+    <!-- Links Of External Js -->
+    <script src="../script/menu.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8a4fbb7cf2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
