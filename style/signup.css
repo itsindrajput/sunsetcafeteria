@@ -99,7 +99,8 @@ nav.sticky {
 .nav-user-info li a,
 .nav-cart-btn ul li,
 .nav-cart-btn ul li a i,
-.nav-account li a {
+.nav-account li a,
+.user-and-cart a {
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
@@ -108,7 +109,8 @@ nav.sticky {
 .nav-menu-list li a:after,
 .nav-user-info li a:after,
 .nav-cart-btn .my-cart:after,
-.nav-account li a:after {
+.nav-account li a:after,
+.user-and-cart a:after {
   content: "";
   position: absolute;
   left: 0;
@@ -123,7 +125,8 @@ nav.sticky {
 .nav-menu-list li a:hover::after,
 .nav-user-info li a:hover::after,
 .nav-cart-btn .my-cart:hover::after,
-.nav-account li a:hover::after {
+.nav-account li a:hover::after,
+.user-and-cart a:hover::after {
   width: 100%;
 }
 .nav-menu-list li a:active::after,

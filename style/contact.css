@@ -1,0 +1,274 @@
+#status-active {
+  border-bottom: 2px solid #ffffff;
+}
+#status-active:hover {
+  border-bottom: 2px solid transparent;
+}
+.user-and-cart {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+.user-and-cart a {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+.contact-container {
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+}
+.hero-item h1 {
+  text-align: center;
+  width: 70%;
+  margin: 4rem auto;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  word-spacing: 4px;
+  color: #ffffff;
+  text-shadow: 0 0 30px #fbefef;
+}
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1% 5%;
+}
+.card-icon {
+  width: 300px;
+  height: auto;
+  text-align: center;
+}
+.card-icon img {
+  width: 280px;
+  margin: 0 auto;
+  height: auto;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.card-icon h3 {
+  font-size: 1.5rem;
+  margin: 1.5rem auto 0.5rem auto;
+}
+.card-icon img:hover {
+  filter: drop-shadow(0 0 5px lightblue);
+  transition: filter 0.4s ease-in-out;
+}
+#horizontal-line {
+  width: 96%;
+  margin: 3rem auto;
+}
+#form {
+  width: 80%;
+  margin: 0 auto;
+}
+#form legend {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.input-container input {
+  width: 350px;
+  height: 40px;
+  margin: 1rem auto;
+  margin-top: 0.5rem;
+  background-color: rgba(217, 217, 217, 0.7);
+  color: #000000;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+.input-field label {
+  font-size: 1.5rem;
+}
+#textArea {
+  width: 100%;
+  height: 120px;
+  margin: 0 auto;
+  background-color: rgba(217, 217, 217, 0.7);
+  color: #000000;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+#textArea::placeholder {
+  color: #000000;
+}
+#submit-btn {
+  text-align: center;
+  margin: 2.5rem auto;
+}
+#submit-btn button {
+  padding: 5px 40px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(217, 217, 217, 0.6);
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+#submit-btn button:hover {
+  filter: drop-shadow(0 0 5px rgba(217, 217, 217, 0.6));
+  transition: filter 0.4s ease-in-out;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  #horizontal-line {
+    width: 96%;
+    margin: 2.5rem auto 2rem auto;
+  }
+  #form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #form legend {
+    font-size: 2rem;
+  }
+  .hero-item h1 {
+    width: 90%;
+    margin: 2.5rem auto 2rem auto;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    word-spacing: 3px;
+  }
+  .card-icon {
+    width: 180px;
+    height: auto;
+    text-align: center;
+  }
+  .card-icon img {
+    width: 180px;
+    margin: 0 auto;
+    height: auto;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  .card-icon p {
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .input-container input {
+    width: 230px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+  #submit-btn {
+    text-align: center;
+    margin: 1.7rem auto;
+  }
+  #submit-btn button {
+    padding: 7px 40px;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 1%;
+  }
+  .card-icon {
+    width: 280px;
+    height: auto;
+    margin: 1.5rem auto;
+    text-align: center;
+  }
+  .card-icon img {
+    width: 250px;
+    margin: 0 auto;
+    height: auto;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  .hero-item h1 {
+    width: 90%;
+    margin: 2rem auto 1rem auto;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    word-spacing: 5px;
+  }
+  @media only screen and (min-width: 0px) and (max-width: 400px) {
+    .hero-item h1 {
+      width: 85%;
+      margin: 2rem auto 1rem auto;
+      font-size: 1.5rem;
+      line-height: 1.7rem;
+      word-spacing: 2px;
+    }
+  }
+  .card-icon h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem auto;
+  }
+  #horizontal-line {
+    width: 96%;
+    margin: 1rem auto 1.8rem auto;
+  }
+  #form {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #form legend {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 290px;
+    margin: 0 auto;
+  }
+  .input-container input {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .input-field label {
+    font-size: 1.3rem;
+  }
+  #textArea {
+    display: flex;
+    width: 290px;
+    height: 100px;
+    margin: 1.5rem auto;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: 5px;
+  }
+  #submit-btn {
+    text-align: center;
+    margin: 2rem auto;
+  }
+  #submit-btn button {
+    padding: 5px 30px;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .user-and-cart {
+    gap: 2rem;
+    justify-content: center;
+    margin: 2.2rem 0rem 0rem 0.5rem;
+  }
+  .user-and-cart a {
+    color: #000000;
+    font-size: 1.8rem;
+  }
+}

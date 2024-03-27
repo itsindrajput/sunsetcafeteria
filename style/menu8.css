@@ -149,6 +149,7 @@
     text-transform: capitalize;
     font-family: "Inter", sans-serif;
     font-size: 1rem;
+    list-style-type: none;
   }
   .yellow-line {
     display: none;
