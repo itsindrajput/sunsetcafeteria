@@ -65,8 +65,10 @@
             </ul>
           </div>
           <div class="user-and-cart">
-            <a href="#"><i class="fa-solid fa-circle-user"></i></a>
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" id="user-check" onclick="userCheck()"
+              ><i class="fa-solid fa-circle-user"></i
+            ></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
           </div>
         </div>
       </nav>
@@ -273,5 +275,17 @@
       src="https://kit.fontawesome.com/8a4fbb7cf2.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function userCheck() {
+        let userCheck = document.querySelector("#user-check");
+        let userCheckValue = localStorage.getItem("True");
+        if (userCheckValue) {
+          window.location.href = "../html/myAccount.html";
+        } else {
+          alert(`Access Denied: Please Login First 🚫
+This Page Requires You To Be Logged In.!`);
+        }
+      }
+    </script>
   </body>
 </html>

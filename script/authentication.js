@@ -71,6 +71,8 @@ function registerMain() {
   alert(`You have been successfully Registered. 🎉
 Now proceed to the Login page by clicking the Sign in button. 👇`);
   localStorage.clear();
+  localStorage.setItem("FirstName", fnameInput.value);
+  localStorage.setItem("LastName", lnameInput.value);
   localStorage.setItem("Email", emailInput.value);
   localStorage.setItem("Password", passwordInput.value);
 
@@ -117,10 +119,15 @@ function loginMain() {
     alert('Please Enter Your Password.');
     return;
   }
-  const loginEmail = localStorage.getItem("Email");
+  if(passwordInput.value.length < 6){
+    alert('Please Re-enter Your Password.');
+    return;
+  }
+  const loginEmail = localStorage.getItem("Email" || '');
   const loginpassword = localStorage.getItem("Password");
-  if(loginEmail === usernameInput.value){
+  if(loginEmail === usernameInput.value || !loginEmail == ''){
     if(loginpassword === passwordInput.value){
+      localStorage.setItem("True", true);
     alert(`You have been successfully Logged in. 
 Redirecting to the Dashboard Page... 🚀`);
     form.reset();
@@ -130,6 +137,10 @@ Redirecting to the Dashboard Page... 🚀`);
     else{
       alert("Passwords do not match, please re-enter!");
     }
+  }
+  else{
+    alert(`You're Not Registered! 🤔 
+Please Signup Before Signing In. 📝`);
   }
 
 }

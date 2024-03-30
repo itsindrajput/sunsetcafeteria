@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunset Cafe | Dashboard Page</title>
+
+    <meta
+      name="description"
+      content="Discover Culinary Elegance at Cafe Sunset: Where Every Sip and Bite Unveils a Symphony of Flavors and Moments."
+    />
+    <meta
+      name="keywords"
+      content="Sunset Cafe, Cafe with a View, itsindrajput, Sunset Dining, Ocean View Cafe"
+    />
+    <meta http-equiv="author" content="Rishabh Singh" />
+    <meta http-equiv="pragma" content="cache" />
+
+    <!-- Favicons -->
+    <link href="../images/other-images/sunset-cafe-tab-logo.png" rel="icon" />
+    <link
+      href="../images/other-images/sunset-cafe-tab-logo.png"
+      rel="touch-icon"
+    />
+
+    <!--Link Of Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inspiration&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Links Of External Css -->
+    <link rel="stylesheet" href="../style/index-desktop.css" type="text/css" />
+    <link rel="stylesheet" href="../style/index-tablet.css" type="text/css" />
+    <link rel="stylesheet" href="../style/index-mobile.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="../style/myAccountDesktop.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../style/myAccountMobile.css"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-hamburger-container">
+          <div class="nav-logo">
+            <a href="#">
+              <img
+                src="../images/other-images/sunset-cafe-logo.png"
+                alt="Image contains the logo of Sunset Cafe"
+            /></a>
+          </div>
+          <!-- Hamburger icon and a search icon -->
+          <div class="nav-icons">
+            <div class="search-icon">
+              <a href="#"><i class="fa-solid fa-search"></i></a>
+            </div>
+            <div class="hamburger-icon" onclick="myHamburger()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-drawer" id="navDrawer">
+          <div class="close-btn" onclick="myHamburger()">Close ❌</div>
+          <div class="nav-logo-in-text">
+            <h3>SUNSET</h3>
+            <h2>CAFE</h2>
+          </div>
+          <div class="nav-menu-list">
+            <ul>
+              <li><a href="dashboard.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="user-info-container">
+            <div class="nav-user-info">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav-cart-btn" style="display: block">
+              <ul>
+                <li>
+                  <a href="cart.html"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></a>
+                </li>
+                <li class="my-cart">My Cart</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Html code for Desktop view begins here -->
+      <div class="desktop-view" id="desktop-view">
+        <div class="account-container">
+          <div class="side-nav">
+            <ul>
+              <li><a href="#" id="active-side-nav">My Account</a></li>
+              <li><a href="#">Account Information</a></li>
+              <li><a href="#">Your Order</a></li>
+            </ul>
+          </div>
+          <div class="account-content">
+            <h1>MY ACCOUNT</h1>
+            <h2>ACCOUNT INFORMATION</h2>
+
+            <div class="contact-container">
+              <h3>CONTACT INFORMATION</h3>
+              <p class="contact-info-name">Username:</p>
+              <p class="contact-info-email">Useremail:</p>
+
+              <div class="address-book">
+                <h3>ADDRESS BOOK</h3>
+                <h3><a href="#">Manage Addresses</a></h3>
+              </div>
+            </div>
+
+            <div class="billing-address">
+              <h3>DEFAULT BILLING ADDRESS</h3>
+              <p>You have not set a default billing address.</p>
+              <h4><a href="#">Edit Address</a></h4>
+            </div>
+
+            <div class="billing-address">
+              <h3>DEFAULT SHIPPING ADDRESS</h3>
+              <p>You have not set a default shipping address.</p>
+              <h4><a href="#">Edit Address</a></h4>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <div class="subscription">
+          <label for="email">Let us reach you!</label><br />
+          <input
+            class="txt-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your E-mail Id..."
+            required
+          />
+          <input class="submit-input" type="submit" value="Submit" />
+        </div>
+      </div>
+
+      <!-- Html code for Mobile view begins here -->
+      <div class="mobile-view" id="mobile-view">
+        <div class="account-sec">
+          <i class="fa-solid fa-user-gear" style="padding-left: 4px"></i>
+          <ul>
+            <li class="contact-info-name">Username:</li>
+            <li><a href="accountInfo.html">Account</a></li>
+          </ul>
+        </div>
+        <div class="account-sec" style="background-color: transparent">
+          <ul class="track-it">
+            <li><i class="fa-regular fa-heart"></i></li>
+            <li class="track-it-txt">Favourites</li>
+          </ul>
+          <ul class="track-it">
+            <li><i class="fa-solid fa-indian-rupee-sign"></i></li>
+            <li class="track-it-txt">Money</li>
+          </ul>
+        </div>
+        <div class="account-sec">
+          <i class="fa-solid fa-user-tie"></i>
+          <h4>Your Profile</h4>
+        </div>
+        <div class="account-sec">
+          <i class="fa-regular fa-star"></i>
+          <h4>Your Rating</h4>
+        </div>
+        <div class="food-orders">
+          <legend>Food Orders</legend>
+          <ul>
+            <li id="special-line">
+              <i class="fa-solid fa-cart-arrow-down"></i> Your Order
+            </li>
+            <li><i class="fa-solid fa-bookmark"></i> Favorite Orders</li>
+            <li><i class="fa-solid fa-address-book"></i> Address Book</li>
+            <li>
+              <i class="fa-solid fa-circle-info"></i> Online Ordering Help
+            </li>
+          </ul>
+        </div>
+        <div class="food-orders">
+          <legend>Money</legend>
+          <ul>
+            <li id="special-line">
+              <i class="fa-solid fa-wallet"></i> Sunset Wallet
+            </li>
+            <li><i class="fa-solid fa-gift"></i> Buy Gift Card</li>
+            <li>
+              <i class="fa-solid fa-circle-dollar-to-slot"></i> Claim Gift Card
+            </li>
+            <li>
+              <i class="fa-solid fa-hand-holding-dollar"></i> Sunset Credits
+            </li>
+            <li>
+              <i class="fa-brands fa-cc-amazon-pay"></i> Manage Payment Methods
+            </li>
+          </ul>
+        </div>
+        <div class="account-sec" style="margin-bottom: 0rem">
+          <i class="fa-solid fa-ticket"></i>
+          <h4>Coupons</h4>
+        </div>
+        <div style="padding-top: 2rem"></div>
+      </div>
+    </header>
+
+    <!-- Html code for footer section begins here -->
+    <footer>
+      <div class="footer">
+        <div class="address">
+          <address>
+            <h3>Address</h3>
+            <ul>
+              <li>Cafe</li>
+              <li>Plot No. 45, Street No.14</li>
+              <li>Marol MIDC Industry Estate,</li>
+              <li>Andheri East,Mumbai-400093</li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="help-info">
+          <h3>Help & Info</h3>
+          <ul>
+            <li>About Cafe</li>
+            <li>Careers</li>
+            <li>FAQs</li>
+          </ul>
+        </div>
+
+        <div class="contact-us">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>1809-908-5647</li>
+            <li>Get in Touch</li>
+            <li>Chat With Us</li>
+          </ul>
+        </div>
+
+        <div class="useful-links">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>Payment Issues</li>
+            <li>Net Banking</li>
+            <li>Custom Order</li>
+          </ul>
+        </div>
+
+        <!--Html code for mobile view begins here-->
+        <div class="footer-dropdown-content">
+          <div class="footer-dropdown">
+            <legend>About Us <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">About Cafe</a>
+              <a href="#">Careers</a>
+              <a href="#">FAQs</a>
+            </div>
+          </div>
+
+          <div class="footer-dropdown">
+            <legend>Term Of Use<i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">Copyright</a>
+              <a href="#">Terms Of Service</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+
+          <div class="footer-dropdown">
+            <legend>Services <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">Book A Table</a>
+              <a href="#">Net Banking</a>
+              <a href="#">Custom Order</a>
+            </div>
+          </div>
+
+          <div class="footer-dropdown">
+            <legend>Contact Us <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">Call Us</a>
+              <a href="#">Email Us</a>
+              <a href="#">Chat With Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <span>Follow Us On:</span>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.whatsapp.com/" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="https://www.twitter.com/" target="_blank"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+      </div>
+
+      <div class="copyright">
+        <h4>@2023 Railworld India. All Rights Reserved.</h4>
+      </div>
+    </footer>
+
+    <!-- Links Of External Js -->
+    <script src="../script/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8a4fbb7cf2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const contactInfoNameElements =
+          document.querySelectorAll(".contact-info-name");
+        const contactInfoEmailElement = document.querySelector(
+          ".contact-info-email"
+        );
+
+        // Check if contactInfoEmailElement exists before accessing its properties
+        if (contactInfoEmailElement) {
+          for (let i = 0; i < contactInfoNameElements.length; i++) {
+            contactInfoNameElements[i].textContent =
+              localStorage.getItem("FirstName") +
+              " " +
+              localStorage.getItem("LastName");
+          }
+
+          contactInfoEmailElement.textContent = localStorage.getItem("Email");
+        } else {
+          console.error("Element with class 'contact-info-email' not found.");
+        }
+      });
+    </script>
+  </body>
+</html>
