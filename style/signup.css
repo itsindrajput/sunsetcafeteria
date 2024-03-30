@@ -31,16 +31,16 @@ nav {
   z-index: 1000;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   text-align: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-size: 1.4rem;
   font-weight: 500;
   margin: 0 auto;
   user-select: none;
-  grid-gap: 0rem;
-  padding: 0% 5%;
+  grid-gap: 1rem;
+  padding: 0%;
   background-color: #000000;
 }
 nav.sticky {
@@ -50,11 +50,11 @@ nav.sticky {
 }
 .nav-logo {
   display: inline;
-  width: 20%;
+  width: 100px;
 }
 .nav-logo img {
-  width: 150px;
-  height: 55px;
+  width: 100%;
+  height: 50px;
   object-fit: fill;
   align-items: center;
   margin-top: 0.4rem;
@@ -94,6 +94,14 @@ nav.sticky {
   grid-gap: 4.5rem;
   list-style-type: none;
   margin-right: 5rem;
+  margin-left: 2rem;
+}
+@media only screen and (min-width: 1250px) {
+  .nav-menu-list ul,
+  .nav-user-info ul {
+    margin-right: 8rem;
+    margin-left: 3rem;
+  }
 }
 .nav-menu-list li a,
 .nav-user-info li a,
@@ -583,14 +591,19 @@ footer {
     color: #000000;
     mix-blend-mode: luminosity;
   }
-  .nav-logo img {
-    width: 140px;
-    margin-top: -5px;
-    padding-top: 12px;
-    height: 51px;
-    align-items: center;
-    object-fit: fill;
+  .nav-logo {
+    display: inline;
+    width: 100px;
   }
+  .nav-logo img {
+    width: 100%;
+    height: 45px;
+    object-fit: fill;
+    align-items: center;
+    margin-top: 0rem;
+    margin-bottom: -1rem;
+  }
+
   .nav-menu-list ul {
     display: flex;
     flex-direction: column;
@@ -757,27 +770,37 @@ footer {
   #forgot-img-mobile {
     display: none;
   }
-
+  #forgot-form {
+    padding: 5% 0% 1% 0%;
+  }
+  #forgot-form legend {
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: inherit;
+  }
   .forgot-form h1 {
     text-align: center;
     font-size: 35px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   #forgot-input input {
     width: 240px;
     height: 50px;
     margin-bottom: 1rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   #forgot-input button {
     width: 240px;
     height: 50px;
+    margin-bottom: 01rem;
   }
   @media only screen and (min-width: 501px) and (max-width: 700px) {
     .forgot-form h1 {
       text-align: center;
       font-size: 30px;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+      font-family: inherit;
     }
     #forgot-input input {
       width: 200px;
@@ -912,8 +935,9 @@ footer {
   .register-main h1 {
     text-align: center;
     font-weight: 700;
-    font-size: 45px;
-    margin-bottom: 1.5rem;
+    font-size: 40px;
+    margin-bottom: 1rem;
+    margin-top: 0.8rem;
   }
   .reservation-form {
     border: 1px solid black;
@@ -1019,7 +1043,8 @@ footer {
     text-align: center;
     font-weight: 700;
     font-size: 35px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.8rem;
   }
   .form {
     border: 1px solid black;
@@ -1116,9 +1141,10 @@ footer {
   }
   .forgot-form h1 {
     text-align: center;
-    font-size: 35px;
-    margin-bottom: 2rem;
+    font-size: 33px;
+    margin-bottom: 1rem;
     margin-top: 0.8rem;
+    font-family: inherit;
   }
   #forgot-form {
     border: 1px solid black;
@@ -1186,7 +1212,7 @@ footer {
 }
 
 /*Css for medium range devices begins here*/
-@media only screen and (min-width: 800px) and (max-width: 1236px) {
+@media only screen and (min-width: 801px) and (max-width: 1236px) {
   /*Style For Navbar Begins Here*/
   nav {
     width: 100%;
@@ -1206,6 +1232,8 @@ footer {
     margin: 0 auto;
     user-select: none;
     grid-gap: 0rem;
+    padding: 0%;
+    padding-left: 6%;
   }
   .nav-logo {
     display: inline;
@@ -1219,7 +1247,7 @@ footer {
     border-radius: 50px;
   }
   .nav-drawer {
-    width: 83%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1238,6 +1266,9 @@ footer {
   }
 
   @media only screen and (min-width: 800px) and (max-width: 900px) {
+    nav {
+      padding-left: 3%;
+    }
     .nav-logo img {
       margin-left: 1rem;
       margin-right: 0.5rem;
@@ -1251,6 +1282,14 @@ footer {
     grid-gap: 2rem;
     list-style-type: none;
     margin-right: 1rem;
+    margin-left: 0rem;
+  }
+  @media only screen and (min-width: 1000px) and (max-width: 1236px) {
+    .nav-menu-list ul,
+    .nav-user-info ul {
+      grid-gap: 4rem;
+      margin-right: 1rem;
+    }
   }
   .nav-icons {
     display: none;

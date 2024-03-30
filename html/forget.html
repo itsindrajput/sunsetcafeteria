@@ -1,190 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunset Cafe | Reset Password</title>
-  <meta http-equiv="author" content="Rishabh Singh">
-  <meta http-equiv="pragma" content="cache"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunset Cafe | Reset Password</title>
+    <meta http-equiv="author" content="Rishabh Singh" />
+    <meta http-equiv="pragma" content="cache" />
 
-  <!-- Favicons -->
-  <link href="../images/other-images/sunset-cafe-tab-logo.png" rel="icon">
-  <link href="../images/other-images/sunset-cafe-tab-logo.png" rel="touch-icon">
+    <!-- Favicons -->
+    <link href="../images/other-images/sunset-cafe-tab-logo.png" rel="icon" />
+    <link
+      href="../images/other-images/sunset-cafe-tab-logo.png"
+      rel="touch-icon"
+    />
 
-  <!--Link Of Google Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!--Link Of Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inspiration&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Links Of External Css -->
-  <link rel="stylesheet" href="../style/signup.css" type="text/css">
-
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo-hamburger-container">
-        <div class="nav-logo"><a href="#">
-          <img src="../images/other-images/sunset-cafe-logo.png" alt="Image contains the logo of Sunset Cafe"></a>
-        </div>
-        <!-- Hamburger icon and a search icon -->
-        <div class="nav-icons">
-          <div class="search-icon">
-            <a href="#"><i class="fa-solid fa-search"></i></a>
+    <!-- Links Of External Css -->
+    <link rel="stylesheet" href="../style/signup.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-hamburger-container">
+          <div class="nav-logo">
+            <a href="#">
+              <img
+                src="../images/other-images/sunset-cafe-logo.png"
+                alt="Image contains the logo of Sunset Cafe"
+            /></a>
           </div>
-          <div class="hamburger-icon" onclick="myHamburger()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+          <!-- Hamburger icon and a search icon -->
+          <div class="nav-icons">
+            <div class="search-icon">
+              <a href="#"><i class="fa-solid fa-search"></i></a>
+            </div>
+            <div class="hamburger-icon" onclick="myHamburger()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
           </div>
         </div>
+
+        <div class="nav-drawer" id="navDrawer">
+          <div class="close-btn" onclick="myHamburger()">Close ❌</div>
+          <div class="nav-logo-in-text">
+            <h3>SUNSET</h3>
+            <h2>CAFE</h2>
+          </div>
+          <div class="nav-menu-list">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../html/menu.html">Menu</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="search-input">
+            <input
+              type="search"
+              name="search"
+              id="search-icon"
+              placeholder="&#128269; Search Items"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="forgot-form-container">
+      <div class="forgot-img" id="forgot-img">
+        <img
+          src="../images/other-images/Forgot-password.png"
+          alt="Image Of User Entering the Email address associated with your account to get a code."
+        />
       </div>
 
-      <div class="nav-drawer" id="navDrawer">
-        <div class="close-btn" onclick="myHamburger()">Close ❌</div> 
-        <div class="nav-logo-in-text">
-          <h3>SUNSET</h3>
-          <h2>CAFE</h2>
+      <div class="forgot-form">
+        <h1>Forgot Password?</h1>
+        <form action="#" method="post" id="forgot-form">
+          <legend>
+            Enter the Email address associated with your account to get a code.
+          </legend>
+          <div class="input" id="forgot-input">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter email address"
+              required="required"
+            />
+            <button type="button" onclick="generateOTP()">Send Code</button>
+          </div>
+
+          <h4><a href="../html/login.html">Back to Login</a></h4>
+        </form>
+      </div>
+
+      <div class="forgot-img" id="forgot-img-mobile">
+        <img
+          src="../images/other-images/Forgot-password.png"
+          alt="Image Of User Entering the Email address associated with your account to get a code."
+        />
+      </div>
+    </main>
+
+    <!-- Html code for footer section begins here -->
+    <footer>
+      <div class="footer">
+        <div class="address">
+          <address>
+            <h3>Address</h3>
+            <ul>
+              <li>Cafe</li>
+              <li>Plot No. 45, Street No.14</li>
+              <li>Marol MIDC Industry Estate,</li>
+              <li>Andheri East,Mumbai-400093</li>
+            </ul>
+          </address>
         </div>
-        <div class="nav-menu-list">
+
+        <div class="help-info">
+          <h3>Help & Info</h3>
           <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../html/menu.html">Menu</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Blog</a></li>
+            <li>About Cafe</li>
+            <li>Careers</li>
+            <li>FAQs</li>
           </ul>
         </div>
-        <div class="search-input">
-          <input type="search" name="search" id="search-icon" placeholder="&#128269; Search Items" />
-        </div>
-      </div>
-    </nav>  
-  </header>
 
-  
-  <main id="forgot-form-container">
-    <div class="forgot-img" id="forgot-img">
-      <img src="../images/other-images/Forgot-password.png" alt="Image Of User Entering the Email address associated with your account to get a code.">
-    </div>
-
-    <div class="forgot-form">
-      <h1>Forgot Password?</h1>
-      <form action="#" method="post" id="forgot-form">
-        <legend>Enter the Email address associated with your account to get a code.</legend>
-        <div class="input" id="forgot-input">
-          <input type="email" name="email" placeholder="Enter email address" required="required" />
-          <button type="button" onclick="generateOTP()">Send Code</button>
-        </div>
-        
-        <h4><a href="../html/login.html">Back to Login</a></h4>
-      </form>
-    </div> 
-
-    <div class="forgot-img" id="forgot-img-mobile">
-      <img src="../images/other-images/Forgot-password.png" alt="Image Of User Entering the Email address associated with your account to get a code.">
-    </div>
-  </main>
-
-  <!-- Html code for footer section begins here -->
-  <footer>
-    <div class="footer">
-      <div class="address">
-        <address>
-          <h3>Address</h3>
+        <div class="contact-us">
+          <h3>Contact Us</h3>
           <ul>
-            <li>Cafe</li>
-            <li>Plot No. 45, Street No.14</li>
-            <li>Marol MIDC Industry Estate,</li>
-            <li>Andheri East,Mumbai-400093</li>
+            <li>1809-908-5647</li>
+            <li>Get in Touch</li>
+            <li>Chat With Us</li>
           </ul>
-        </address>
-      </div>
-
-      <div class="help-info">
-        <h3>Help & Info</h3>
-        <ul>
-          <li>About Cafe</li>
-          <li>Careers</li>
-          <li>FAQs</li>
-        </ul>
-      </div>
-
-      <div class="contact-us">
-        <h3>Contact Us</h3>
-        <ul>
-          <li>1809-908-5647</li>
-          <li>Get in Touch</li>
-          <li>Chat With Us</li>
-        </ul>
-      </div>
-
-      <div class="useful-links">
-        <h3>Useful Links</h3>
-        <ul>
-          <li>Privacy Policy</li>
-          <li>Terms of Service</li>
-          <li>Payment Issues</li>
-          <li>Net Banking</li>
-          <li>Custom Order</li>
-        </ul>
-      </div>
-
-      <!--Html code for mobile view begins here-->
-      <div class="footer-dropdown-content">
-        <div class="footer-dropdown">
-          <legend>About Us <i class="fa-solid fa-angle-down"></i></legend>
-          <div class="dropdown-options">
-            <a href="#">About Cafe</a>
-            <a href="#">Careers</a>
-            <a href="#">FAQs</a>
-          </div>
         </div>
 
-        <div class="footer-dropdown">
-          <legend>Term Of Use<i class="fa-solid fa-angle-down"></i></legend>
-          <div class="dropdown-options">
-            <a href="#">Copyright</a>
-            <a href="#">Terms Of Service</a>
-            <a href="#">Privacy Policy</a>
-          </div>
+        <div class="useful-links">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>Payment Issues</li>
+            <li>Net Banking</li>
+            <li>Custom Order</li>
+          </ul>
         </div>
 
-        <div class="footer-dropdown">
-          <legend>Services <i class="fa-solid fa-angle-down"></i></legend>
-          <div class="dropdown-options">
-            <a href="#">Book A Table</a>
-            <a href="#">Net Banking</a>
-            <a href="#">Custom Order</a>
+        <!--Html code for mobile view begins here-->
+        <div class="footer-dropdown-content">
+          <div class="footer-dropdown">
+            <legend>About Us <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">About Cafe</a>
+              <a href="#">Careers</a>
+              <a href="#">FAQs</a>
+            </div>
           </div>
-        </div>
 
-        <div class="footer-dropdown">
-          <legend>Contact Us <i class="fa-solid fa-angle-down"></i></legend>
-          <div class="dropdown-options">
-            <a href="#">Call Us</a>
-            <a href="#">Email Us</a>
-            <a href="#">Chat With Us</a>
+          <div class="footer-dropdown">
+            <legend>Terms <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">Copyright</a>
+              <a href="#">Terms Of Service</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+
+          <div class="footer-dropdown">
+            <legend>Services <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">Book A Table</a>
+              <a href="#">Net Banking</a>
+              <a href="#">Custom Order</a>
+            </div>
+          </div>
+
+          <div class="footer-dropdown">
+            <legend>Contact Us <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">Call Us</a>
+              <a href="#">Email Us</a>
+              <a href="#">Chat With Us</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="social-icons">
-      <span>Follow Us On:</span>
-        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-    </div>
+      <div class="social-icons">
+        <span>Follow Us On:</span>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.whatsapp.com/" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="https://www.twitter.com/" target="_blank"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+      </div>
 
-    <div class="copyright">
-      <h4>@2023 Railworld India. All Rights Reserved.</h4>
-    </div>
-  </footer>
+      <div class="copyright">
+        <h4>@2023 Railworld India. All Rights Reserved.</h4>
+      </div>
+    </footer>
 
-
-   <!-- Links Of External Js -->
-   <script src="../script/authentication.js"></script> 
-   <script src="https://kit.fontawesome.com/8a4fbb7cf2.js" crossorigin="anonymous"></script>
-</body>
+    <!-- Links Of External Js -->
+    <script src="../script/authentication.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8a4fbb7cf2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
