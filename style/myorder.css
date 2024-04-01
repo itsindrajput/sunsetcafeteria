@@ -1,0 +1,264 @@
+.order-container {
+  width: 55%;
+  margin: 0 auto;
+  float: right;
+}
+.order-container h1 {
+  font-size: 30px;
+}
+.order-history {
+  margin-top: 10.5%;
+}
+.your-order h2,
+.order-history h2 {
+  font-size: 25px;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+.your-order h2::after,
+.order-history h2::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.7;
+  margin-top: 3px;
+}
+.order-details {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.19);
+  width: 90%;
+  margin-bottom: 2rem;
+  padding: 10px 0px;
+}
+.order-details img {
+  width: 100px;
+  height: 100px;
+  margin: -10px 0px;
+  object-fit: cover;
+  object-position: center;
+}
+.not-order-txt {
+  font-size: 2rem;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  word-spacing: 2px;
+  font-style: oblique;
+}
+#order-detail-container {
+  width: 100%;
+  height: 360px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+#order-detail-container::-webkit-scrollbar {
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+  width: 10px;
+}
+#order-detail-container::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  cursor: move;
+}
+.menu-single-item {
+  padding-left: 20px;
+}
+.menu-single-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+.menu-single-item p {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+.order-hr-line {
+  margin-top: 8%;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+  .order-container h1 {
+    font-size: 25px;
+  }
+  .order-history {
+    margin-top: 15%;
+  }
+  .your-order h2,
+  .order-history h2 {
+    font-size: 21px;
+  }
+  .order-details {
+    width: 95%;
+    margin-bottom: 2rem;
+    padding: 10px 0px;
+  }
+  .order-details img {
+    width: 95px;
+    height: 95px;
+    padding: 0px 0px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .not-order-txt {
+    font-size: 1.4rem;
+    padding-bottom: 0px;
+    padding-top: 8px;
+    padding-left: 20px;
+    word-spacing: 2px;
+    font-style: oblique;
+  }
+  .order-hr-line {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .order-container h1 {
+    font-size: 21px;
+  }
+  .order-history {
+    margin-top: 15%;
+  }
+  .your-order h2,
+  .order-history h2 {
+    font-size: 18px;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .order-details {
+    width: 95%;
+    margin-bottom: 1.5rem;
+    padding: 10px 0px;
+  }
+  .order-details img {
+    width: 80px;
+    height: 90px;
+    padding: 0px 0px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .not-order-txt {
+    font-size: 1rem;
+    padding-bottom: 0px;
+    padding-top: 13px;
+    padding-left: 20px;
+    word-spacing: 2px;
+    font-style: oblique;
+  }
+  .menu-single-item {
+    padding-left: 5px;
+  }
+  .menu-single-item h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .menu-single-item p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-top: 6px;
+  }
+  #order-detail-container {
+    width: 100%;
+    height: 315px;
+  }
+  .order-hr-line {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .side-nav {
+    display: none;
+  }
+  .order-container {
+    width: 100%;
+    margin: 0 auto;
+    float: right;
+    margin-top: -1rem;
+  }
+  .order-container h1 {
+    font-size: 21px;
+  }
+  .order-history {
+    margin-top: 10%;
+  }
+  .your-order h2,
+  .order-history h2 {
+    font-size: 18px;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .your-order h2::after {
+    width: 7em;
+  }
+  .order-history h2::after {
+    width: 8.4em;
+  }
+  .order-details {
+    width: 95%;
+    margin-bottom: 1.5rem;
+    padding: 10px 0px;
+  }
+  .order-details img {
+    width: 80px;
+    height: 90px;
+    padding: 0px 0px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .not-order-txt {
+    font-size: 1rem;
+    padding-bottom: 0px;
+    padding-top: 13px;
+    padding-left: 20px;
+    word-spacing: 2px;
+    font-style: oblique;
+  }
+  .menu-single-item {
+    padding-left: 20px;
+  }
+  .menu-single-item h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .menu-single-item p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-top: 6px;
+  }
+  #order-detail-container {
+    width: 100%;
+    height: 330px;
+  }
+  .order-hr-line {
+    margin-top: 15%;
+  }
+  .subscription {
+    width: 90%;
+    font-size: 1.5rem;
+    padding: 2rem 0rem;
+  }
+  .subscription label {
+    font-size: 1.5rem;
+  }
+  .subscription .txt-input {
+    font-size: 1rem;
+    width: 93%;
+    height: 35px;
+    margin-top: 0.5rem;
+    padding: 0px 20px;
+    margin-top: 1rem;
+  }
+  .subscription .submit-input {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 30%;
+    height: 34px;
+    margin-top: 0.5rem;
+  }
+}

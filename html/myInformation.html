@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sunset Cafe | My Account</title>
+    <title>Sunset Cafe | My Information</title>
 
     <meta
       name="description"
@@ -40,11 +40,7 @@
       href="../style/myAccountDesktop.css"
       type="text/css"
     />
-    <link
-      rel="stylesheet"
-      href="../style/myAccountMobile.css"
-      type="text/css"
-    />
+    <link rel="stylesheet" href="../style/myInformation.css" type="text/css" />
   </head>
   <body>
     <header>
@@ -113,127 +109,106 @@
         <div class="account-container">
           <div class="side-nav">
             <ul>
-              <li><a href="#" id="active-side-nav">My Account</a></li>
-              <li><a href="myInformation.html">Account Information</a></li>
+              <li><a href="myAccount.html">My Account</a></li>
+              <li><a href="#" id="active-side-nav">Account Information</a></li>
               <li><a href="myOrder.html">Your Order</a></li>
             </ul>
           </div>
+
           <div class="account-content">
-            <h1>MY ACCOUNT</h1>
-            <h2>ACCOUNT INFORMATION</h2>
-
-            <div class="contact-container">
-              <h3>CONTACT INFORMATION</h3>
-              <p class="contact-info-name">Username:</p>
-              <p class="contact-info-email">Useremail:</p>
-
-              <div class="address-book">
-                <h3>ADDRESS BOOK</h3>
-                <h3>
-                  <a href="myInformation.html#user-address">Manage Addresses</a>
-                </h3>
+            <form action="#" method="get">
+              <h1>EDIT ACCOUNT INFORMATION</h1>
+              <h2>ACCOUNT INFORMATION</h2>
+              <div class="basic-details">
+                <div>
+                  <label for="firstName">First Name *</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    placeholder="ABC"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="lastName">Last Name *</label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    placeholder="XYZ"
+                    required
+                  />
+                </div>
+                <div id="user-address">
+                  <label for="phone">Phone Number *</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="+91"
+                    minlength="10"
+                    maxlength="14"
+                    required
+                  />
+                </div>
               </div>
-            </div>
 
-            <div class="billing-address">
-              <h3>DEFAULT BILLING ADDRESS</h3>
-              <p>You have not set a default billing address.</p>
-              <h4><a href="#">Edit Address</a></h4>
-            </div>
-
-            <div class="billing-address">
-              <h3>DEFAULT SHIPPING ADDRESS</h3>
-              <p>You have not set a default shipping address.</p>
-              <h4><a href="#">Edit Address</a></h4>
-            </div>
+              <div class="user-address">
+                <h2>ADDRESS</h2>
+                <div class="basic-details">
+                  <div>
+                    <label for="streetAddress">Street Address *</label>
+                    <input
+                      type="text"
+                      name="streetAddress"
+                      id="streetAddress"
+                      placeholder="i.e. 11/42"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="city">City *</label>
+                    <input
+                      type="text"
+                      name="city"
+                      id="city"
+                      placeholder="Eg: Gorakhpur"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="state">State *</label>
+                    <input
+                      type="text"
+                      name="state"
+                      id="state"
+                      placeholder="Eg: Uttar Pradesh"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="zip">Zip Code *</label>
+                    <input
+                      type="tel"
+                      name="zip"
+                      id="zip"
+                      placeholder="i.e. 274304"
+                      minlength="6"
+                      maxlength="6"
+                      required
+                    />
+                  </div>
+                  <div class="basic-details-btn">
+                    <button type="submit" onclick="updateInfo(event)">
+                      Update Account
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-
-        <hr />
-        <form action="#" method="get" id="form">
-          <div class="subscription">
-            <label for="email">Let us reach you!</label><br />
-            <input
-              class="txt-input"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Your E-mail Id..."
-              required
-            />
-            <input class="submit-input" type="submit" value="Submit" />
-          </div>
-        </form>
-      </div>
-
-      <!-- Html code for Mobile view begins here -->
-      <div class="mobile-view" id="mobile-view">
-        <div class="account-sec">
-          <i class="fa-solid fa-user-gear" style="padding-left: 4px"></i>
-          <ul>
-            <li class="contact-info-name">Username:</li>
-            <li><a href="myInformation.html">Account</a></li>
-          </ul>
-        </div>
-        <div class="account-sec" style="background-color: transparent">
-          <ul class="track-it">
-            <li><i class="fa-regular fa-heart"></i></li>
-            <li class="track-it-txt">Favourites</li>
-          </ul>
-          <ul class="track-it">
-            <li><i class="fa-solid fa-indian-rupee-sign"></i></li>
-            <li class="track-it-txt">Money</li>
-          </ul>
-        </div>
-        <div class="account-sec">
-          <i class="fa-solid fa-user-tie"></i>
-          <h4 onclick="window.location.href='./myAccount.html'">
-            Your Profile
-          </h4>
-        </div>
-        <div class="account-sec">
-          <i class="fa-regular fa-star"></i>
-          <h4>Your Rating</h4>
-        </div>
-        <div class="food-orders">
-          <legend>Food Orders</legend>
-          <ul>
-            <li
-              id="special-line"
-              onclick="window.location.href='./myOrder.html'"
-            >
-              <i class="fa-solid fa-cart-arrow-down"></i> Your Order
-            </li>
-            <li><i class="fa-solid fa-bookmark"></i> Favorite Orders</li>
-            <li><i class="fa-solid fa-address-book"></i> Address Book</li>
-            <li>
-              <i class="fa-solid fa-circle-info"></i> Online Ordering Help
-            </li>
-          </ul>
-        </div>
-        <div class="food-orders">
-          <legend>Money</legend>
-          <ul>
-            <li id="special-line">
-              <i class="fa-solid fa-wallet"></i> Sunset Wallet
-            </li>
-            <li><i class="fa-solid fa-gift"></i> Buy Gift Card</li>
-            <li>
-              <i class="fa-solid fa-circle-dollar-to-slot"></i> Claim Gift Card
-            </li>
-            <li>
-              <i class="fa-solid fa-hand-holding-dollar"></i> Sunset Credits
-            </li>
-            <li>
-              <i class="fa-brands fa-cc-amazon-pay"></i> Manage Payment Methods
-            </li>
-          </ul>
-        </div>
-        <div class="account-sec" style="margin-bottom: 0rem">
-          <i class="fa-solid fa-ticket"></i>
-          <h4>Coupons</h4>
-        </div>
-        <div style="padding-top: 2rem"></div>
       </div>
     </header>
 

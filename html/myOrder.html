@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sunset Cafe | My Account</title>
+    <title>Sunset Cafe | My Order</title>
 
     <meta
       name="description"
@@ -40,11 +40,7 @@
       href="../style/myAccountDesktop.css"
       type="text/css"
     />
-    <link
-      rel="stylesheet"
-      href="../style/myAccountMobile.css"
-      type="text/css"
-    />
+    <link rel="stylesheet" href="../style/myorder.css" type="text/css" />
   </head>
   <body>
     <header>
@@ -113,43 +109,107 @@
         <div class="account-container">
           <div class="side-nav">
             <ul>
-              <li><a href="#" id="active-side-nav">My Account</a></li>
+              <li><a href="myAccount.html">My Account</a></li>
               <li><a href="myInformation.html">Account Information</a></li>
-              <li><a href="myOrder.html">Your Order</a></li>
+              <li>
+                <a href="#" id="active-side-nav">Your Order</a>
+              </li>
             </ul>
           </div>
-          <div class="account-content">
-            <h1>MY ACCOUNT</h1>
-            <h2>ACCOUNT INFORMATION</h2>
-
-            <div class="contact-container">
-              <h3>CONTACT INFORMATION</h3>
-              <p class="contact-info-name">Username:</p>
-              <p class="contact-info-email">Useremail:</p>
-
-              <div class="address-book">
-                <h3>ADDRESS BOOK</h3>
-                <h3>
-                  <a href="myInformation.html#user-address">Manage Addresses</a>
-                </h3>
+          <div class="order-container">
+            <h1>TRACK ORDER HISTORY</h1>
+            <div class="your-order">
+              <h2>YOUR ORDER</h2>
+              <div class="order-details">
+                <img
+                  src="../images/other-images/not-order-yet.png"
+                  alt="Not Order Yet"
+                />
+                <p class="not-order-txt">
+                  Seems like you have yet to place an order. 😥
+                </p>
               </div>
             </div>
+            <div class="order-history">
+              <h2>ORDER HISTORY</h2>
+              <div id="order-detail-container">
+                <div class="order-details">
+                  <img
+                    src="../images/menu-images/sandwich.jpg"
+                    alt="Not Order Yet"
+                  />
+                  <div class="menu-single-item">
+                    <h3>Bombay Masala Sandwich</h3>
+                    <p>Data: 02-01-24 12:14pm</p>
+                    <p>Payment: UPI</p>
+                  </div>
+                </div>
 
-            <div class="billing-address">
-              <h3>DEFAULT BILLING ADDRESS</h3>
-              <p>You have not set a default billing address.</p>
-              <h4><a href="#">Edit Address</a></h4>
-            </div>
+                <div class="order-details">
+                  <img
+                    src="../images/offer-images/burger.jpg"
+                    alt="Not Order Yet"
+                  />
+                  <div class="menu-single-item">
+                    <h3>Burger</h3>
+                    <p>Data: 01-01-24 1:40pm</p>
+                    <p>Payment: UPI</p>
+                  </div>
+                </div>
 
-            <div class="billing-address">
-              <h3>DEFAULT SHIPPING ADDRESS</h3>
-              <p>You have not set a default shipping address.</p>
-              <h4><a href="#">Edit Address</a></h4>
+                <div class="order-details">
+                  <img
+                    src="../images/menu-images/sandwich 2.jpg"
+                    alt="Not Order Yet"
+                  />
+                  <div class="menu-single-item">
+                    <h3>Corn Sandwich</h3>
+                    <p>Data: 20-12-23 12:04pm</p>
+                    <p>Payment: UPI</p>
+                  </div>
+                </div>
+
+                <div class="order-details">
+                  <img
+                    src="../images/menu-images/Spring-roll.jpg"
+                    alt="Not Order Yet"
+                  />
+                  <div class="menu-single-item">
+                    <h3>Spring Rolls Trio</h3>
+                    <p>Data: 10-11-23 4:14pm</p>
+                    <p>Payment: Phone Pay</p>
+                  </div>
+                </div>
+
+                <div class="order-details">
+                  <img
+                    src="../images/menu-images/news.jpg"
+                    alt="Not Order Yet"
+                  />
+                  <div class="menu-single-item">
+                    <h3>Paneer Tikka Skewers</h3>
+                    <p>Data: 01-11-23 9:01pm</p>
+                    <p>Payment: UPI</p>
+                  </div>
+                </div>
+
+                <div class="order-details" style="margin-bottom: 0rem">
+                  <img
+                    src="../images/next-menu-images/dessert_01.png"
+                    alt="Not Order Yet"
+                  />
+                  <div class="menu-single-item">
+                    <h3>Classic Cheese Cake</h3>
+                    <p>Data: 25-10-23 12:34pm</p>
+                    <p>Payment: GPay</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <hr />
+        <hr class="order-hr-line" />
         <form action="#" method="get" id="form">
           <div class="subscription">
             <label for="email">Let us reach you!</label><br />
@@ -164,76 +224,6 @@
             <input class="submit-input" type="submit" value="Submit" />
           </div>
         </form>
-      </div>
-
-      <!-- Html code for Mobile view begins here -->
-      <div class="mobile-view" id="mobile-view">
-        <div class="account-sec">
-          <i class="fa-solid fa-user-gear" style="padding-left: 4px"></i>
-          <ul>
-            <li class="contact-info-name">Username:</li>
-            <li><a href="myInformation.html">Account</a></li>
-          </ul>
-        </div>
-        <div class="account-sec" style="background-color: transparent">
-          <ul class="track-it">
-            <li><i class="fa-regular fa-heart"></i></li>
-            <li class="track-it-txt">Favourites</li>
-          </ul>
-          <ul class="track-it">
-            <li><i class="fa-solid fa-indian-rupee-sign"></i></li>
-            <li class="track-it-txt">Money</li>
-          </ul>
-        </div>
-        <div class="account-sec">
-          <i class="fa-solid fa-user-tie"></i>
-          <h4 onclick="window.location.href='./myAccount.html'">
-            Your Profile
-          </h4>
-        </div>
-        <div class="account-sec">
-          <i class="fa-regular fa-star"></i>
-          <h4>Your Rating</h4>
-        </div>
-        <div class="food-orders">
-          <legend>Food Orders</legend>
-          <ul>
-            <li
-              id="special-line"
-              onclick="window.location.href='./myOrder.html'"
-            >
-              <i class="fa-solid fa-cart-arrow-down"></i> Your Order
-            </li>
-            <li><i class="fa-solid fa-bookmark"></i> Favorite Orders</li>
-            <li><i class="fa-solid fa-address-book"></i> Address Book</li>
-            <li>
-              <i class="fa-solid fa-circle-info"></i> Online Ordering Help
-            </li>
-          </ul>
-        </div>
-        <div class="food-orders">
-          <legend>Money</legend>
-          <ul>
-            <li id="special-line">
-              <i class="fa-solid fa-wallet"></i> Sunset Wallet
-            </li>
-            <li><i class="fa-solid fa-gift"></i> Buy Gift Card</li>
-            <li>
-              <i class="fa-solid fa-circle-dollar-to-slot"></i> Claim Gift Card
-            </li>
-            <li>
-              <i class="fa-solid fa-hand-holding-dollar"></i> Sunset Credits
-            </li>
-            <li>
-              <i class="fa-brands fa-cc-amazon-pay"></i> Manage Payment Methods
-            </li>
-          </ul>
-        </div>
-        <div class="account-sec" style="margin-bottom: 0rem">
-          <i class="fa-solid fa-ticket"></i>
-          <h4>Coupons</h4>
-        </div>
-        <div style="padding-top: 2rem"></div>
       </div>
     </header>
 
