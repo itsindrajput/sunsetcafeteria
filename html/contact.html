@@ -65,7 +65,7 @@
             </ul>
           </div>
           <div class="user-and-cart">
-            <a href="#" id="user-check" onclick="userCheck()"
+            <a href="#" onclick="userCheck()"
               ><i class="fa-solid fa-circle-user"></i
             ></a>
             <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -277,7 +277,6 @@
     ></script>
     <script>
       function userCheck() {
-        let userCheck = document.querySelector("#user-check");
         let userCheckValue = localStorage.getItem("True");
         if (userCheckValue) {
           window.location.href = "../html/myAccount.html";

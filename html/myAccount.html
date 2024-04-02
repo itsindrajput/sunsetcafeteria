@@ -169,7 +169,11 @@
       <!-- Html code for Mobile view begins here -->
       <div class="mobile-view" id="mobile-view">
         <div class="account-sec">
-          <i class="fa-solid fa-user-gear" style="padding-left: 4px"></i>
+          <i
+            class="fa-solid fa-user-gear"
+            style="padding-left: 4px"
+            onclick="window.location.href='./myInformation.html'"
+          ></i>
           <ul>
             <li class="contact-info-name">Username:</li>
             <li><a href="myInformation.html">Account</a></li>
@@ -186,7 +190,10 @@
           </ul>
         </div>
         <div class="account-sec">
-          <i class="fa-solid fa-user-tie"></i>
+          <i
+            class="fa-solid fa-user-tie"
+            onclick="window.location.href='./myAccount.html'"
+          ></i>
           <h4 onclick="window.location.href='./myAccount.html'">
             Your Profile
           </h4>
@@ -201,6 +208,7 @@
             <li
               id="special-line"
               onclick="window.location.href='./myOrder.html'"
+              style="cursor: pointer"
             >
               <i class="fa-solid fa-cart-arrow-down"></i> Your Order
             </li>

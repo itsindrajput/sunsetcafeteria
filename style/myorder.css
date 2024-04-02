@@ -171,6 +171,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  header {
+    background: #2c3838;
+  }
   .side-nav {
     display: none;
   }
@@ -178,13 +181,13 @@
     width: 100%;
     margin: 0 auto;
     float: right;
-    margin-top: -1rem;
+    margin-top: -1.4rem;
   }
   .order-container h1 {
     font-size: 21px;
   }
   .order-history {
-    margin-top: 10%;
+    margin-top: 15%;
   }
   .your-order h2,
   .order-history h2 {
@@ -252,6 +255,7 @@
     margin-top: 0.5rem;
     padding: 0px 20px;
     margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.19);
   }
   .subscription .submit-input {
     display: block;

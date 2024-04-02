@@ -2,6 +2,9 @@
   header {
     background: #2c3838;
   }
+  h4 {
+    cursor: pointer;
+  }
   .nav-cart-btn ul li a i {
     color: #000000;
   }
