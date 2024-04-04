@@ -1,12 +1,12 @@
 # 🌅 Welcome to Sunset Cafeteria - Where Culinary Elegance Meets Unforgettable Experiences!
 
-Embark on a journey of taste and ambiance as we proudly present Sunset Cafeteria, a haven where every sip and bite unveils a symphony of flavors and moments. 
-Nestled at the intersection of culinary delight and serenity, our cafe is more than just a place; it's an immersive experience that invites you to discover a world where ambiance, flavor, 
+Embark on a journey of taste and ambiance as we proudly present Sunset Cafeteria, a haven where every sip and bite unveils a symphony of flavors and moments.
+Nestled at the intersection of culinary delight and serenity, our cafe is more than just a place; it's an immersive experience that invites you to discover a world where ambiance, flavor,
 and warmth converge to create memories that linger long after you leave.
 
 ## 🚀 About the Project
 
-Café Sunset is a testament to the artistry of culinary craftsmanship. Each visit is an opportunity to explore an exquisite symphony of flavors and moments, 
+Café Sunset is a testament to the artistry of culinary craftsmanship. Each visit is an opportunity to explore an exquisite symphony of flavors and moments,
 transforming the act of dining into a homecoming experience. Our journey began with a commitment to creating a space where every guest feels a sense of belonging.
 
 ## Explore These Live Links Of Fitness Star Gym 🎉
@@ -16,9 +16,9 @@ transforming the act of dining into a homecoming experience. Our journey began w
 
 ## 🎨 Design Inspiration
 
-Check out our Figma design to see the inspiration behind the Fitness Star Gym website:
+Check out our Figma design to see the inspiration behind the Sunset Cafeteria:
 
-[Sunset Cafe Figma Design](https://www.figma.com/file/OEeJGA44EjmZADN82vdnzv/Sunset-(Copy)?type=design&node-id=804-2387&mode=design&t=wNh6aH2cjuvMBlJP-0)
+[Sunset Cafe Figma Design](<https://www.figma.com/file/OEeJGA44EjmZADN82vdnzv/Sunset-(Copy)?type=design&node-id=804-2387&mode=design&t=wNh6aH2cjuvMBlJP-0>)
 
 ## 🚀 About the Project
 
@@ -74,7 +74,6 @@ We're actively working on improving Sunset Cafeteria. Your feedback is invaluabl
 Our fitness extravaganza is powered by:
 
 - **HTML**: The backbone of our web pages.
-  
 - **CSS**: Adding that extra flair to make your fitness journey visually appealing.
 
 - **JavaScript**: Bringing the website to life with interactive elements, especially our dynamic "Join Fitness Star Gym" form.
