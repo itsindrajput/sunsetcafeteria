@@ -1,0 +1,318 @@
+.user-and-cart {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+.user-and-cart a {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.firstRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5%;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+.colOne {
+  width: 60%;
+}
+.selected-items-container {
+  margin-bottom: 8%;
+}
+.select-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.select-heading h2 a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+.select-heading h2 a:hover {
+  user-select: none;
+  cursor: pointer;
+  color: rgb(68, 68, 234);
+  opacity: 0.7;
+}
+.select-item {
+  background-color: rgba(217, 217, 217, 0.3);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 20px;
+}
+.child-item1 {
+  width: 25%;
+}
+.child-item1 img {
+  width: 100%;
+  height: 130px;
+  border: none;
+  border-radius: 15px;
+  object-fit: cover;
+  object-position: center;
+}
+.child-item2 {
+  width: 50%;
+}
+.child-item2 h4 {
+  margin-top: 5px;
+  font-size: 22px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.child-item2 p {
+  margin-top: 1rem;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}
+.child-item3 {
+  width: 10%;
+}
+.child-item3 h4 {
+  font-size: 23px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.child-item3 button {
+  width: 75px;
+  height: 40px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.child-item3 button i {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.child-item3 button i:hover {
+  color: blue;
+}
+.select-item1 {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  margin: 2rem auto;
+}
+
+/*Css For column two begins here*/
+.colTwo {
+  width: 30%;
+}
+.cart-address-container {
+  margin-bottom: 23%;
+}
+.cart-address-container h2 {
+  margin-bottom: 1.5rem;
+}
+.cart-address {
+  background: rgba(217, 217, 217, 0.3);
+}
+.cart-address section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.addLine::after {
+  position: absolute;
+  content: "";
+  width: 23%;
+  height: 1px;
+  opacity: 0.5;
+  background-color: #ffffff;
+  margin-top: 65px;
+}
+.cart-address section button {
+  background-color: #d9d9d9;
+  color: black;
+  border: none;
+  height: 28px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.cart-address section button:hover {
+  background-color: #b2afaf;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/*Css For column two offer section begins here*/
+.cart-offer-container {
+  margin-bottom: 23%;
+}
+.cart-offer-container h2 {
+  margin-bottom: 1.5rem;
+}
+.cart-offer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: rgba(217, 217, 217, 0.3);
+  padding: 30px;
+}
+.offer-item h4 {
+  font-size: 20px;
+}
+.offer-item p {
+  margin-top: 10px;
+}
+.cart-offer button {
+  background-color: #d9d9d9;
+  color: black;
+  border: none;
+  width: 15px;
+  height: 45px;
+  padding: 0px 0px;
+  margin-top: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.cart-offer button:hover {
+  background-color: #b2afaf;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/*Css For column two Price Details section begins here*/
+.price-details h2 {
+  margin-bottom: 1.5rem;
+}
+.price-details ul {
+  background: rgba(217, 217, 217, 0.3);
+  list-style-type: none;
+  padding: 5%;
+}
+.price-details ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+.addLine1::after {
+  position: absolute;
+  content: "";
+  width: 24.5%;
+  height: 1px;
+  opacity: 0.5;
+  background-color: #ffffff;
+  margin-top: 35px;
+}
+.price-details ul li button {
+  background-color: #d9d9d9;
+  color: black;
+  border: none;
+  width: 100%;
+  height: 37px;
+  padding: 0px 0px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.price-details ul li button:hover {
+  background-color: #b2afaf;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/*Css For Column One Carousel Section begins here*/
+#carousel-container,
+#carousel-container1 {
+  position: relative;
+  padding-top: 1rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#image-carousel,
+#image-carousel1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease-in-out;
+}
+#image-carousel img {
+  width: 245px;
+  height: 200px;
+  object-fit: fill;
+  object-position: center;
+  flex: 0 0 auto;
+  margin: 0rem 3rem;
+  margin-left: 0rem;
+  z-index: 0;
+}
+.carousel-btn {
+  position: absolute;
+  top: 42%;
+  z-index: 1;
+  color: black;
+  background-color: rgba(245, 245, 245, 0.71);
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 20px;
+  font-weight: bolder;
+  border-radius: 50%;
+  padding-left: 0px;
+  outline: none;
+  cursor: pointer;
+}
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+#prev-btn {
+  left: 0px;
+}
+#next-btn {
+  right: 0px;
+}
+
+.lastRow {
+  width: 90%;
+  margin: 0 auto;
+}
+.lastRow {
+  margin-top: 6%;
+  margin-bottom: 4%;
+}
+.lastRow h2 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+#image-carousel1 img {
+  width: 235px;
+  height: 180px;
+  object-fit: fill;
+  object-position: center;
+  flex: 0 0 auto;
+  margin: 0rem 3rem;
+  margin-left: 0rem;
+  z-index: 0;
+  border: none;
+  border-radius: 15px;
+}
+#prev-btn1 {
+  left: 5px;
+}
+#next-btn1 {
+  right: 5px;
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunset Cafe | Cart Page</title>
+    <meta http-equiv="author" content="Rishabh Singh" />
+    <meta http-equiv="pragma" content="cache" />
+
+    <!-- Favicons -->
+    <link href="../images/other-images/sunset-cafe-tab-logo.png" rel="icon" />
+    <link
+      href="../images/other-images/sunset-cafe-tab-logo.png"
+      rel="touch-icon"
+    />
+
+    <!--Link Of Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inspiration&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Links Of External Css -->
+    <link rel="stylesheet" href="../style/signup.css" type="text/css" />
+    <link rel="stylesheet" href="../style/cart.css" type="text/css" />
+  </head>
+  <body style="background-color: rgba(0, 0, 0, 0.88)">
+    <header style="background-color: transparent">
+      <nav>
+        <div class="logo-hamburger-container">
+          <div class="nav-logo">
+            <a href="#">
+              <img
+                src="../images/other-images/sunset-cafe-logo.png"
+                alt="Image contains the logo of Sunset Cafe"
+            /></a>
+          </div>
+          <!-- Hamburger icon and a search icon -->
+          <div class="nav-icons">
+            <div class="search-icon">
+              <a href="#"><i class="fa-solid fa-search"></i></a>
+            </div>
+            <div class="hamburger-icon" onclick="myHamburger()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-drawer" id="navDrawer">
+          <div class="close-btn" onclick="myHamburger()">Close ❌</div>
+          <div class="nav-logo-in-text">
+            <h3>SUNSET</h3>
+            <h2>CAFE</h2>
+          </div>
+          <div class="nav-menu-list">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="user-and-cart">
+            <a href="#" onclick="userCheck()"
+              ><i class="fa-solid fa-circle-user"></i
+            ></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="cart-container">
+      <div class="firstRow">
+        <div class="colOne">
+          <div class="selected-items-container">
+            <div class="select-heading">
+              <h2>3 Items Selected</h2>
+              <h2><a href="menu.html">Explore Menu</a></h2>
+            </div>
+            <div class="select-item">
+              <div class="child-item1">
+                <img src="../images/menu-images/sandwich.jpg" alt="Sandwich" />
+              </div>
+              <div class="child-item2">
+                <h4>Bombay Masala Grilled Cheese</h4>
+                <p>
+                  A delightful plant-based option with a savory patty crafted
+                  from vegetables and onions, promising a deliciously satisfying
+                  bite.
+                </p>
+              </div>
+              <div class="child-item3">
+                <h4>Rs.40</h4>
+                <button>
+                  <i class="fa-solid fa-trash-can"></i>
+                  1
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="select-item1">
+              <div class="child-item1">
+                <img src="../images/menu-images/Seekh.jpg" alt="Sandwich" />
+              </div>
+              <div class="child-item2">
+                <h4>Chicken Seekh Kebab Sandwich</h4>
+                <p>
+                  A classic favorite featuring tender slices of turkey nestled
+                  between soft bread, offering a comforting and fulfilling meal
+                  option.
+                </p>
+              </div>
+              <div class="child-item3">
+                <h4>Rs.70</h4>
+                <button>
+                  <i class="fa-solid fa-trash-can"></i>
+                  1
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="select-item">
+              <div class="child-item1">
+                <img src="../images/menu-images/Vadapav.jpg" alt="Sandwich" />
+              </div>
+              <div class="child-item2">
+                <h4>Mumbai Vadapav</h4>
+                <p>
+                  A timeless choice showcasing succulent ham slices tucked
+                  between fresh bread, delivering a satisfying and hearty meal
+                  experience.
+                </p>
+              </div>
+              <div class="child-item3">
+                <h4>Rs.80</h4>
+                <button>
+                  <i class="fa-solid fa-trash-can"></i>
+                  1
+                  <i class="fa-solid fa-circle-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="complete-meal-slider">
+            <h2>Complete Your Meal With</h2>
+            <div id="carousel-container">
+              <button
+                id="prev-btn"
+                class="carousel-btn"
+                onclick="changeSlide(-1)"
+              >
+                &#10094;
+              </button>
+
+              <div id="image-carousel">
+                <img
+                  src="../images/menu-images/beverages.jpg"
+                  alt="Beverages"
+                />
+                <img
+                  src="../images/menu-images/sandwich_2.jpg"
+                  alt="Sandwich"
+                />
+                <img
+                  src="../images/offer-images/burger.jpg"
+                  alt="Delicious Sandwich"
+                />
+                <img
+                  src="../images/offer-images/Hot_Beverage_2.jpeg"
+                  alt="Hot Beverages"
+                />
+                <img src="../images/offer-images/Salad.jpeg" alt="Salad" />
+                <img src="../images/offer-images/past.jpg" alt="Cake" />
+                <img src="../images/offer-images/banner7.png" alt="Pizza" />
+              </div>
+
+              <button
+                id="next-btn"
+                class="carousel-btn"
+                onclick="changeSlide(1)"
+              >
+                &#10095;
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="colTwo">
+          <div class="cart-address-container">
+            <h2>Choose A Delivery Address</h2>
+            <div class="cart-address">
+              <section class="addLine">
+                <div>
+                  <h4>Current Address</h4>
+                  <p>Samta Colony, Raipur</p>
+                </div>
+                <button class="address-btn">Change</button>
+              </section>
+              <section>
+                <h4>
+                  Login to use your <br />
+                  saved addresses
+                </h4>
+                <button class="address-btn">My Address</button>
+              </section>
+            </div>
+          </div>
+
+          <div class="cart-offer-container">
+            <h2>Offers</h2>
+            <div class="cart-offer">
+              <div class="offer-item">
+                <h4>Select offer / Apply coupon</h4>
+                <p>Get discount with your order</p>
+              </div>
+              <div>
+                <button>&#x276F;</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-details">
+            <h2>Price Details</h2>
+            <ul>
+              <li>
+                <h4>Sub Total</h4>
+                <h4>190</h4>
+              </li>
+              <li>
+                <h4>Discount</h4>
+                <h4>-</h4>
+              </li>
+              <li class="addLine1">
+                <h4>Taxes and Charges</h4>
+                <h4>32.2</h4>
+              </li>
+              <li style="margin: 10px 0px">
+                <h3>Grand Total</h3>
+                <h3>222.2</h3>
+              </li>
+              <li>
+                <button>Place Order</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lastRow">
+        <h2>Recently ordered</h2>
+        <div id="carousel-container1">
+          <button
+            id="prev-btn1"
+            class="carousel-btn"
+            onclick="orderedSlide(-1)"
+          >
+            &#10094;
+          </button>
+
+          <div id="image-carousel1">
+            <img src="../images/offer-images/past.jpg" alt="Cake" />
+            <img src="../images/menu-images/deserts.jpg" alt="Deserts" />
+            <img
+              src="../images/offer-images/Special_Drink1.jpeg"
+              alt="Special Drink"
+            />
+            <img src="../images/next-menu-images/burger3.png" alt="Burger" />
+            <img
+              src="../images/next-menu-images/Spring_rolls.png"
+              alt="Spring Rolls"
+            />
+            <img src="../images/next-menu-images/vadapav3.png" alt="Vadapav" />
+            <img
+              src="../images/next-menu-images/value_combo_01.jpeg"
+              alt="Value Combo"
+            />
+            <img src="../images/next-menu-images/salad-veg-3.png" alt="Salad" />
+            <img src="../images/offer-images/image4.png" alt="Momos" />
+            <img src="../images/menu-images/de.jpg" alt="Desert" />
+          </div>
+
+          <button id="next-btn1" class="carousel-btn" onclick="orderedSlide(1)">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Html code for footer section begins here -->
+    <footer>
+      <div class="footer">
+        <div class="address">
+          <address>
+            <h3>Address</h3>
+            <ul>
+              <li>Cafe</li>
+              <li>Plot No. 45, Street No.14</li>
+              <li>Marol MIDC Industry Estate,</li>
+              <li>Andheri East,Mumbai-400093</li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="help-info">
+          <h3>Help & Info</h3>
+          <ul>
+            <li>About Cafe</li>
+            <li>Careers</li>
+            <li>FAQs</li>
+          </ul>
+        </div>
+
+        <div class="contact-us">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>1809-908-5647</li>
+            <li>Get in Touch</li>
+            <li>Chat With Us</li>
+          </ul>
+        </div>
+
+        <div class="useful-links">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>Payment Issues</li>
+            <li>Net Banking</li>
+            <li>Custom Order</li>
+          </ul>
+        </div>
+
+        <!--Html code for mobile view begins here-->
+        <div class="footer-dropdown-content">
+          <div class="footer-dropdown">
+            <legend>About Us <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">About Cafe</a>
+              <a href="#">Careers</a>
+              <a href="#">FAQs</a>
+            </div>
+          </div>
+
+          <div class="footer-dropdown">
+            <legend>Terms <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">Copyright</a>
+              <a href="#">Terms Of Service</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+
+          <div class="footer-dropdown">
+            <legend>Services <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">Book A Table</a>
+              <a href="#">Net Banking</a>
+              <a href="#">Custom Order</a>
+            </div>
+          </div>
+
+          <div class="footer-dropdown">
+            <legend>Contact Us <i class="fa-solid fa-angle-down"></i></legend>
+            <div class="dropdown-options">
+              <a href="#">Call Us</a>
+              <a href="#">Email Us</a>
+              <a href="#">Chat With Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <span>Follow Us On:</span>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.whatsapp.com/" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="https://www.twitter.com/" target="_blank"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+      </div>
+
+      <div class="copyright">
+        <h4>@2023 Railworld India. All Rights Reserved.</h4>
+      </div>
+    </footer>
+
+    <!-- Links Of External Js -->
+    <script src="../script/cart.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8a4fbb7cf2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
