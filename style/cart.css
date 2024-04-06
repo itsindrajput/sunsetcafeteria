@@ -7,7 +7,6 @@
   color: #ffffff;
   font-size: 1.6rem;
 }
-
 .firstRow {
   display: flex;
   flex-direction: row;
@@ -84,6 +83,7 @@
   font-family: "Josefin Sans", sans-serif;
   margin-top: 5px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .child-item3 button {
   width: 75px;
@@ -289,9 +289,7 @@
 .lastRow {
   width: 90%;
   margin: 0 auto;
-}
-.lastRow {
-  margin-top: 6%;
+  margin-top: 5%;
   margin-bottom: 4%;
 }
 .lastRow h2 {
@@ -315,4 +313,766 @@
 }
 #next-btn1 {
   right: 5px;
+}
+
+/*-----------------------Css For -----------------------------------
+-------------------------Mediam Range device -----------------------
+-------------------------begins here--------------------------------*/
+
+@media only screen and (min-width: 800px) and (max-width: 1300px) {
+  .firstRow {
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 6%;
+  }
+  .selected-items-container {
+    margin-bottom: 10%;
+  }
+  .select-heading {
+    margin-bottom: 1rem;
+  }
+  .select-heading h2 {
+    font-size: 1.5rem;
+  }
+  .select-item {
+    padding: 10px;
+  }
+  .child-item1 img {
+    width: 100%;
+    height: 6.5em;
+  }
+  @media only screen and (min-width: 800px) and (max-width: 1050px) {
+    .child-item1 img {
+      width: 100%;
+      height: 9em;
+    }
+  }
+  .child-item2 h4 {
+    margin-top: 5px;
+    font-size: 20px;
+  }
+
+  .child-item2 p {
+    margin-top: 1rem;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .child-item3 {
+    width: 15%;
+  }
+  .child-item3 h4 {
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 5px;
+    margin-bottom: 2.5rem;
+    text-align: left;
+  }
+  .child-item3 button {
+    width: 70px;
+    height: 35px;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .child-item3 button i {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  /*Css For column two begins here*/
+  .cart-address-container {
+    margin-bottom: 23%;
+  }
+  .cart-address-container h2 {
+    margin-bottom: 1.15rem;
+    font-size: 1.35rem;
+  }
+  .cart-address section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+    padding-bottom: 15px;
+  }
+  .addLine::after {
+    position: absolute;
+    content: "";
+    width: 29.8%;
+    margin-left: -14px;
+    height: 1.5px;
+    margin-top: 115px;
+  }
+
+  /*Css For column two offer section begins here*/
+  .cart-offer-container h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .cart-offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: rgba(217, 217, 217, 0.3);
+    padding: 25px 15px;
+  }
+  @media only screen and (min-width: 800px) and (max-width: 1050px) {
+    .cart-offer button {
+      width: 20px;
+      height: 75px;
+      padding: 0px 0px;
+      margin-top: 0px;
+      margin-left: 10px;
+      font-size: 2rem;
+    }
+  }
+
+  /*Css For column two Price Details section begins here*/
+  .price-details h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .addLine1::after {
+    position: absolute;
+    content: "";
+    width: 27%;
+    margin-left: 4px;
+    height: 1.5px;
+    margin-top: 35px;
+  }
+
+  .complete-meal-slider h2 {
+    font-size: 1.5rem;
+  }
+  #image-carousel img {
+    width: 45%;
+    height: 195px;
+    object-fit: fill;
+    object-position: center;
+    flex: 0 0 auto;
+    margin: 0rem 5rem;
+    margin-left: 0rem;
+    z-index: 0;
+  }
+  .lastRow {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 4%;
+  }
+  @media only screen and (min-width: 800px) and (max-width: 1050px) {
+    #image-carousel img {
+      width: 45%;
+      height: 160px;
+      object-fit: cover;
+      object-position: center;
+      flex: 0 0 auto;
+      margin: 0rem 4rem;
+      margin-left: 0rem;
+      z-index: 0;
+    }
+    .carousel-btn {
+      position: absolute;
+      top: 42%;
+      z-index: 1;
+      color: black;
+      background-color: rgba(245, 245, 245, 0.71);
+      border: none;
+      width: 30px;
+      height: 30px;
+      margin: 0 auto;
+      font-size: 20px;
+      line-height: 15px;
+      font-weight: bolder;
+      border-radius: 50%;
+      padding-left: 0px;
+      outline: none;
+      cursor: pointer;
+    }
+    .lastRow {
+      width: 95%;
+      margin: 0 auto;
+      margin-top: 6%;
+      margin-bottom: 4%;
+    }
+  }
+
+  #image-carousel1 img {
+    width: 255px;
+    height: 180px;
+    object-fit: fill;
+    object-position: center;
+    flex: 0 0 auto;
+    margin: 0rem 4rem;
+    margin-left: 0rem;
+    z-index: 0;
+    border: none;
+    border-radius: 15px;
+  }
+}
+
+/*-----------------------Css For -----------------------------------
+-------------------------Tablet device -----------------------
+-------------------------begins here--------------------------------*/
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .firstRow {
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 6%;
+  }
+  .selected-items-container {
+    margin-bottom: 12%;
+  }
+  .select-heading {
+    margin-bottom: 1rem;
+  }
+  .select-heading h2 {
+    font-size: 1.2rem;
+  }
+  .select-item {
+    padding: 10px;
+  }
+  .child-item1 {
+    width: 30%;
+  }
+  .child-item1 img {
+    width: 100%;
+    height: 10em;
+  }
+  @media only screen and (min-width: 600px) and (max-width: 700px) {
+    .child-item1 img {
+      width: 100%;
+      height: 10.5em;
+    }
+  }
+  .child-item2 h4 {
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  .child-item2 p {
+    margin-top: 0.7rem;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .child-item3 {
+    width: 14%;
+  }
+  .child-item3 h4 {
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 2.4rem;
+    text-align: left;
+  }
+  .child-item3 button {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: auto;
+    gap: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .child-item3 button i {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  /*Css For column two begins here*/
+  .cart-address-container {
+    margin-bottom: 25%;
+  }
+  .cart-address-container h2 {
+    margin-bottom: 1.15rem;
+    font-size: 1.2rem;
+  }
+  .cart-address section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+    padding-bottom: 15px;
+  }
+  .addLine::after {
+    position: absolute;
+    content: "";
+    width: 29.8%;
+    margin-left: -14px;
+    height: 1.5px;
+    margin-top: 115px;
+  }
+  @media only screen and (min-width: 600px) and (max-width: 668px) {
+    .addLine::after {
+      position: absolute;
+      content: "";
+      width: 29.8%;
+      margin-left: -14px;
+      height: 1.5px;
+      margin-top: 130px;
+    }
+  }
+
+  /*Css For column two offer section begins here*/
+  .cart-offer-container {
+    margin-bottom: 25%;
+  }
+  .cart-offer-container h2 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+  .cart-offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: rgba(217, 217, 217, 0.3);
+    padding: 25px 15px;
+  }
+  @media only screen and (min-width: 800px) and (max-width: 1050px) {
+    .cart-offer button {
+      width: 20px;
+      height: 75px;
+      padding: 0px 0px;
+      margin-top: 0px;
+      margin-left: 10px;
+      font-size: 2rem;
+    }
+  }
+
+  /*Css For column two Price Details section begins here*/
+  .price-details h2 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  .price-details ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
+  .addLine1::after {
+    position: absolute;
+    content: "";
+    width: 27%;
+    margin-left: 2px;
+    height: 1.5px;
+    margin-top: 32px;
+  }
+  @media only screen and (min-width: 600px) and (max-width: 700px) {
+    .addLine1::after {
+      position: absolute;
+      content: "";
+      width: 27%;
+      margin-left: 2px;
+      height: 1.5px;
+      margin-top: 50px;
+    }
+    .price-details ul li h4:nth-last-child(1) {
+      margin-left: 2rem;
+    }
+  }
+  .price-details ul li button {
+    background-color: #d9d9d9;
+    color: black;
+    border: none;
+    width: 100%;
+    height: 32px;
+    padding: 0px 0px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: -10px;
+  }
+
+  .complete-meal-slider h2 {
+    font-size: 1.5rem;
+  }
+  #image-carousel img {
+    width: 46%;
+    height: 155px;
+    object-fit: fill;
+    object-position: center;
+    flex: 0 0 auto;
+    margin: 0rem 2.5rem;
+    margin-left: 0rem;
+    z-index: 0;
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 42%;
+    z-index: 1;
+    color: black;
+    background-color: rgba(245, 245, 245, 0.71);
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 15px;
+    font-weight: bolder;
+    border-radius: 50%;
+    padding-left: 0px;
+    outline: none;
+    cursor: pointer;
+  }
+  .lastRow {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 6%;
+    margin-bottom: 4%;
+  }
+  .lastRow h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+  }
+  #image-carousel1 img {
+    width: 216px;
+    height: 150px;
+    object-fit: fill;
+    object-position: center;
+    flex: 0 0 auto;
+    margin: 0rem 2.5rem;
+    margin-left: 0rem;
+    z-index: 0;
+    border: none;
+    border-radius: 15px;
+  }
+}
+
+/*-----------------------Css For -----------------------------------
+-------------------------Mobile Device -----------------------
+-------------------------begins here--------------------------------*/
+@media only screen and (max-width: 600px) {
+  .firstRow {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10%;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+  }
+  .colOne {
+    width: 100%;
+  }
+  .selected-items-container {
+    margin-bottom: 3rem;
+  }
+  .select-heading h2 {
+    font-size: 1.3rem;
+  }
+  .select-item {
+    background-color: rgba(217, 217, 217, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+  }
+  .child-item1 {
+    width: 100%;
+  }
+  .child-item1 img {
+    width: 100%;
+    height: 170px;
+    border: none;
+    border-radius: 0px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .child-item2 {
+    width: 100%;
+  }
+  .child-item2 h4 {
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 10px;
+  }
+  .child-item2 p {
+    margin-top: 0.7rem;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  .child-item3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .child-item3 h4 {
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .child-item3 button {
+    width: 75px;
+    height: 30px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  .child-item3 button i {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .child-item3 button i:hover {
+    color: blue;
+  }
+  .select-item1 {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    margin: 2rem auto;
+    margin-bottom: 1.5rem;
+  }
+
+  /*Css For column two begins here*/
+  .colTwo {
+    width: 100%;
+  }
+  .cart-address-container {
+    margin: 3.5rem 0rem;
+  }
+  .cart-address-container h2 {
+    margin-bottom: 1.1rem;
+    font-size: 1.4rem;
+  }
+  .cart-address {
+    background: rgba(217, 217, 217, 0.3);
+  }
+  .cart-address section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    padding-bottom: 15px;
+  }
+  .addLine::after {
+    position: absolute;
+    content: "";
+    width: 87%;
+    margin-left: 0px;
+    height: 1px;
+    opacity: 0.7;
+    margin-top: 100px;
+  }
+  .cart-address section button {
+    background-color: #d9d9d9;
+    color: black;
+    border: none;
+    height: 28px;
+    padding: 5px 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .cart-address section button:hover {
+    background-color: #b2afaf;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  /*Css For column two offer section begins here*/
+  .cart-offer-container {
+    margin-bottom: 3.5rem;
+  }
+  .cart-offer-container h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .cart-offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: rgba(217, 217, 217, 0.3);
+    padding: 30px 10px 35px 10px;
+  }
+  .offer-item h4 {
+    font-size: 18px;
+  }
+  .offer-item p {
+    margin-top: 10px;
+  }
+  .cart-offer button {
+    background-color: #d9d9d9;
+    color: black;
+    border: none;
+    width: 15px;
+    height: 45px;
+    padding: 0px 0px;
+    margin-top: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .cart-offer button:hover {
+    background-color: #b2afaf;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  /*Css For column two Price Details section begins here*/
+  .price-details h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .price-details ul {
+    background: rgba(217, 217, 217, 0.3);
+    list-style-type: none;
+    padding: 7%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .price-details ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 13px;
+    font-size: 17px;
+  }
+  .addLine1::after {
+    position: absolute;
+    content: "";
+    width: 83%;
+    margin: 0 auto;
+    margin-left: 0px;
+    height: 1px;
+    margin-top: 32px;
+  }
+  .price-details ul li button {
+    background-color: #d9d9d9;
+    color: black;
+    border: none;
+    width: 100%;
+    height: 31px;
+    padding: 0px 0px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: -10px;
+  }
+  .price-details ul li button:hover {
+    background-color: #b2afaf;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  /*Css For Column One Carousel Section begins here*/
+  #carousel-container {
+    padding-top: 1.5rem;
+  }
+  #image-carousel img {
+    width: 245px;
+    height: 200px;
+    object-fit: fill;
+    object-position: center;
+    flex: 0 0 auto;
+    margin: 0rem 3rem;
+    margin-left: 0rem;
+    z-index: 0;
+  }
+  #image-carousel img {
+    width: 45.5%;
+    height: 155px;
+    object-fit: fill;
+    object-position: center;
+    flex: 0 0 auto;
+    margin: 0rem 2rem;
+    margin-left: 0rem;
+    z-index: 0;
+  }
+  @media only screen and (min-width: 390px) and (max-width: 600px) {
+    #image-carousel img {
+      width: 47%;
+      height: 155px;
+      object-fit: fill;
+      object-position: center;
+      flex: 0 0 auto;
+      margin: 0rem 2rem;
+      margin-left: 0rem;
+      z-index: 0;
+    }
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+    color: black;
+    background-color: rgba(245, 245, 245, 0.71);
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 15px;
+    font-weight: bolder;
+    border-radius: 50%;
+    padding-left: 0px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .lastRow {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .lastRow h2 {
+    color: #ffffff;
+    margin-bottom: 0rem;
+    font-size: 1.5rem;
+  }
+  #image-carousel1 img {
+    width: 46%;
+    height: 150px;
+    object-fit: fill;
+    object-position: center;
+    flex: 0 0 auto;
+    margin: 0rem 1.7rem;
+    margin-left: 0rem;
+    z-index: 0;
+    border: none;
+    border-radius: 15px;
+  }
+  #prev-btn1 {
+    left: 0px;
+  }
+  #next-btn1 {
+    right: 0px;
+  }
+  @media only screen and (min-width: 390px) and (max-width: 600px) {
+    #image-carousel1 img {
+      width: 47%;
+      height: 150px;
+      object-fit: fill;
+      object-position: center;
+      flex: 0 0 auto;
+      margin: 0rem 2rem;
+      margin-left: 0rem;
+      z-index: 0;
+      border: none;
+      border-radius: 15px;
+    }
+  }
 }
