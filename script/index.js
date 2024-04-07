@@ -270,3 +270,13 @@ function userCheck() {
 This Page Requires You To Be Logged In.!`);
   }
 }
+
+function userCheck1() {
+  let userCheckValue = localStorage.getItem("True");
+  if (userCheckValue) {
+    window.location.href = "./html/myAccount.html";
+  } else {
+    alert(`Access Denied: Please Login First 🚫
+This Page Requires You To Be Logged In.!`);
+  }
+}
