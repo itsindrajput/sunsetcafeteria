@@ -57,3 +57,14 @@ function orderedSlide(direction) {
   const translateValue = -currentIndex1 * 20.5 + "%";
   carousel1.style.transform = "translateX(" + translateValue + ")";
 }
+
+//Js function on user icon:
+function userCheck() {
+  let userCheckValue = localStorage.getItem("True");
+  if (userCheckValue) {
+    window.location.href = "../html/myAccount.html";
+  } else {
+    alert(`Access Denied: Please Login First 🚫
+This Page Requires You To Be Logged In.!`);
+  }
+}

@@ -7,6 +7,17 @@
   color: #ffffff;
   font-size: 1.6rem;
 }
+@media only screen and (max-width: 800px) {
+  .user-and-cart {
+    gap: 2rem;
+    justify-content: center;
+    margin: 2.2rem 0rem 0rem 0.5rem;
+  }
+  .user-and-cart a {
+    color: #000000;
+    font-size: 1.8rem;
+  }
+}
 .firstRow {
   display: flex;
   flex-direction: row;
