@@ -22,9 +22,15 @@
       rel="stylesheet"
     />
 
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
     <!-- Links Of External Css -->
     <link rel="stylesheet" href="../style/signup.css" type="text/css" />
-    <link rel="stylesheet" href="../style/cart.css" type="text/css" />
+    <link rel="stylesheet" href="../style/aboutCafe.css" type="text/css" />
   </head>
   <body style="background-color: rgba(0, 0, 0, 0.88)">
     <header style="background-color: transparent">
@@ -74,224 +80,172 @@
       </nav>
     </header>
 
-    <main class="cart-container">
-      <div class="firstRow">
-        <div class="colOne">
-          <div class="selected-items-container">
-            <div class="select-heading">
-              <h2>3 Items Selected</h2>
-              <h2><a href="menu.html">Explore Menu</a></h2>
-            </div>
-            <div class="select-item">
-              <div class="child-item1">
-                <img src="../images/menu-images/sandwich.jpg" alt="Sandwich" />
-              </div>
-              <div class="child-item2">
-                <h4>Bombay Masala Grilled Cheese</h4>
-                <p>
-                  A delightful plant-based option with a savory patty crafted
-                  from vegetables and onions, promising a deliciously satisfying
-                  bite.
-                </p>
-              </div>
-              <div class="child-item3">
-                <h4>Rs.40</h4>
-                <button>
-                  <i class="fa-solid fa-trash-can"></i>
-                  1
-                  <i class="fa-solid fa-circle-plus"></i>
-                </button>
-              </div>
-            </div>
-
-            <div class="select-item1">
-              <div class="child-item1">
-                <img src="../images/menu-images/Seekh.jpg" alt="Sandwich" />
-              </div>
-              <div class="child-item2">
-                <h4>Chicken Seekh Kebab Sandwich</h4>
-                <p>
-                  A classic favorite featuring tender slices of turkey nestled
-                  between soft bread, offering a comforting and fulfilling meal
-                  option.
-                </p>
-              </div>
-              <div class="child-item3">
-                <h4>Rs.70</h4>
-                <button>
-                  <i class="fa-solid fa-trash-can"></i>
-                  1
-                  <i class="fa-solid fa-circle-plus"></i>
-                </button>
-              </div>
-            </div>
-
-            <div class="select-item">
-              <div class="child-item1">
-                <img src="../images/menu-images/Vadapav.jpg" alt="Sandwich" />
-              </div>
-              <div class="child-item2">
-                <h4>Mumbai Vadapav</h4>
-                <p>
-                  A timeless choice showcasing succulent ham slices tucked
-                  between fresh bread, delivering a satisfying and hearty meal
-                  experience.
-                </p>
-              </div>
-              <div class="child-item3">
-                <h4>Rs.80</h4>
-                <button>
-                  <i class="fa-solid fa-trash-can"></i>
-                  1
-                  <i class="fa-solid fa-circle-plus"></i>
-                </button>
-              </div>
-            </div>
+    <main>
+      <!-- Html code for about us section begins here -->
+      <div class="about-container">
+        <div id="about-div">
+          <div class="first-about-div">
+            <h1>The Story Behind Sunset.<span>..</span></h1>
           </div>
-
-          <div class="complete-meal-slider">
-            <h2>Complete Your Meal With</h2>
-            <div id="carousel-container">
-              <button
-                id="prev-btn"
-                class="carousel-btn"
-                onclick="changeSlide(-1)"
+          <div id="about-img1">
+            <img
+              class="about-img"
+              src="../images/other-images/Chef.jpg"
+              alt="Image Of Chef Andre"
+            />
+          </div>
+          <div class="second-about-div">
+            <p>
+              Welcome to Sunset Café, where our journey began with Chef André's
+              bold decision to depart from the world of haute cuisine and create
+              a culinary sanctuary rooted in simplicity and heartfelt
+              connection.
+            </p>
+            <p>
+              <span
+                >Inspired by a chance encounter with a charming café bathed in
+                the warm glow of twilight, Chef André envisioned a place where
+                genuine hospitality and exceptional flavors intertwine. At
+                Sunset Café, each dish is a reflection of Chef André's
+                dedication to crafting culinary experiences that nourish both
+                body and soul.</span
               >
-                &#10094;
-              </button>
-
-              <div id="image-carousel">
-                <img
-                  src="../images/menu-images/beverages.jpg"
-                  alt="Beverages"
-                />
-                <img
-                  src="../images/menu-images/sandwich_2.jpg"
-                  alt="Sandwich"
-                />
-                <img
-                  src="../images/offer-images/burger.jpg"
-                  alt="Delicious Sandwich"
-                />
-                <img
-                  src="../images/offer-images/Hot_Beverage_2.jpeg"
-                  alt="Hot Beverages"
-                />
-                <img src="../images/offer-images/Salad.jpeg" alt="Salad" />
-                <img src="../images/offer-images/past.jpg" alt="Cake" />
-                <img src="../images/offer-images/banner7.png" alt="Pizza" />
-              </div>
-
-              <button
-                id="next-btn"
-                class="carousel-btn"
-                onclick="changeSlide(1)"
-              >
-                &#10095;
-              </button>
-            </div>
+            </p>
           </div>
         </div>
-
-        <div class="colTwo">
-          <div class="cart-address-container">
-            <h2>Choose A Delivery Address</h2>
-            <div class="cart-address">
-              <section class="addLine">
-                <div>
-                  <h4>Current Address</h4>
-                  <p>Samta Colony, Raipur</p>
-                </div>
-                <button class="address-btn">Change</button>
-              </section>
-              <section>
-                <h4>
-                  Login to use your <br />
-                  saved addresses
-                </h4>
-                <button class="address-btn">My Address</button>
-              </section>
-            </div>
-          </div>
-
-          <div class="cart-offer-container">
-            <h2>Offers</h2>
-            <div class="cart-offer">
-              <div class="offer-item">
-                <h4>Select offer / Apply coupon</h4>
-                <p>Get discount with your order</p>
-              </div>
-              <div>
-                <button>&#x276F;</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="price-details">
-            <h2>Price Details</h2>
-            <ul>
-              <li>
-                <h4>Sub Total</h4>
-                <h4>190</h4>
-              </li>
-              <li>
-                <h4>Discount</h4>
-                <h4>-</h4>
-              </li>
-              <li class="addLine1">
-                <h4>Taxes and Charges</h4>
-                <h4>32.2</h4>
-              </li>
-              <li style="margin: 10px 0px">
-                <h3>Grand Total</h3>
-                <h3>222.2</h3>
-              </li>
-              <li>
-                <button>Place Order</button>
-              </li>
-            </ul>
-          </div>
+        <div id="about-img2">
+          <img
+            class="about-img"
+            src="../images/other-images/Chef.jpg"
+            alt="Image Of Chef Andre"
+          />
         </div>
       </div>
 
-      <div class="lastRow">
-        <h2>Recently Ordered</h2>
-        <div id="carousel-container1">
-          <button
-            id="prev-btn1"
-            class="carousel-btn"
-            onclick="orderedSlide(-1)"
-          >
-            &#10094;
-          </button>
-
-          <div id="image-carousel1">
-            <img src="../images/offer-images/past.jpg" alt="Cake" />
-            <img src="../images/menu-images/deserts.jpg" alt="Deserts" />
-            <img
-              src="../images/offer-images/Special_Drink1.jpeg"
-              alt="Special Drink"
-            />
-            <img src="../images/next-menu-images/burger3.png" alt="Burger" />
-            <img
-              src="../images/next-menu-images/Spring_rolls.png"
-              alt="Spring Rolls"
-            />
-            <img src="../images/next-menu-images/vadapav3.png" alt="Vadapav" />
-            <img
-              src="../images/next-menu-images/value_combo_01.jpeg"
-              alt="Value Combo"
-            />
-            <img src="../images/next-menu-images/salad-veg-3.png" alt="Salad" />
-            <img src="../images/offer-images/image4.png" alt="Momos" />
-            <img src="../images/menu-images/de.jpg" alt="Desert" />
-          </div>
-
-          <button id="next-btn1" class="carousel-btn" onclick="orderedSlide(1)">
-            &#10095;
-          </button>
+      <!-- Html code for mission section begins here -->
+      <div class="mission-container">
+        <div class="mission-img">
+          <img
+            src="../images/other-images/daan-header-bg.jpeg"
+            alt="Sunset Cafe"
+          />
+        </div>
+        <div class="mission-txt">
+          <p>
+            At Sunset Café, our mission is deeply personal. Inspired by Chef
+            André's journey and fueled by his passion for heartfelt connection,
+            we've crafted a culinary sanctuary where every bite tells a story
+            and every moment is cherished. With a commitment to authenticity,
+            warmth, and sustainability, we invite you to join us in creating
+            memories over delicious dishes that nourish both body and soul.
+            Here, amidst the comforting glow of twilight, we celebrate community
+            and the simple joys of shared meals. Welcome to our table; we can't
+            wait to share our story with you.
+          </p>
         </div>
       </div>
+
+      <!-- Html code for share meal section begins here -->
+      <div class="share-meal-container">
+        <div class="share-meal-img" id="mobileImg">
+          <img src="../images/other-images/share_food.jpeg" alt="share-meal" />
+        </div>
+        <div class="share-meal-txt">
+          <h1>Sharing Meals, Sharing Hope</h1>
+          <p>
+            At Sunset Café, we believe in giving back to our community. That's
+            why we're proud to share that 1% of our profits go towards providing
+            food for orphanages. Because at Sunset, you never eat alone; every
+            meal you enjoy is shared with hundreds of orphaned children,
+            spreading warmth and nourishment to those who need it most. Join us
+            in making a difference, one meal at a time.
+          </p>
+        </div>
+        <div class="share-meal-img" id="desktopImg">
+          <img src="../images/other-images/share_food.jpeg" alt="share-meal" />
+        </div>
+      </div>
+
+      <section class="swiper mySwiper">
+        <h1>Meet Our Sunset Family</h1>
+        <div class="swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img
+                src="../images/other-images/Chef_Head.png"
+                alt="Chef Watson"
+              />
+            </div>
+
+            <div class="card__content">
+              <p class="card__text">
+                "Chef Watson leads the kitchen at Sunset Café, creating
+                delicious dishes with skill and passion.
+                <i
+                  >From starters to desserts, his creations impress diners with
+                  their flavor and presentation</i
+                >."
+              </p>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img
+                src="../images/other-images/family_img_1.jpeg"
+                alt="Rohit, the friendly waiter"
+              />
+            </div>
+
+            <div class="card__content">
+              <p class="card__text">
+                "Rohit, the friendly waiter at Sunset Café, effortlessly
+                connects with regulars, showcasing exceptional communication
+                skills and spreading warmth to all."
+              </p>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="../images/other-images/Chef.jpg" alt="Chef Andre" />
+            </div>
+
+            <div class="card__content">
+              <p class="card__text">
+                "Chef André is a fantastic cook at Sunset Café. He makes amazing
+                dishes with care and skill. Each dish tastes delicious and makes
+                diners happy.
+                <i>
+                  Dining at Sunset Café with his food is always a special
+                  experience</i
+                >."
+              </p>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img
+                src="../images/blog-images/Sunset_Singing_Events.jpeg"
+                alt="Abhishek our talented musicians"
+              />
+            </div>
+
+            <div class="card__content">
+              <p class="card__text">
+                "Abhishek our talented musicians, whose soulful tunes set the
+                perfect backdrop for an evening. From acoustic melodies to
+                vibrant rhythms
+                <i
+                  >, each performance is a curated experience designed to
+                  enhance your dining pleasure</i
+                >."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Html code for footer section begins here -->
@@ -412,5 +366,27 @@
       src="https://kit.fontawesome.com/8a4fbb7cf2.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 300,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>

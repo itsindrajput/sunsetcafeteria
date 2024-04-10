@@ -1,0 +1,615 @@
+.user-and-cart {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+.user-and-cart a {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+@media only screen and (max-width: 800px) {
+  .user-and-cart {
+    gap: 2rem;
+    justify-content: center;
+    margin: 2.2rem 0rem 0rem 0.5rem;
+  }
+  .user-and-cart a {
+    color: #000000;
+    font-size: 1.8rem;
+  }
+}
+
+/*----------------------------------------
+Style for about us section begins here
+------------------------------------------*/
+.about-container {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: left;
+  justify-content: space-between;
+  position: relative;
+  padding: 3%;
+  padding-bottom: 2%;
+}
+.first-about-div span {
+  display: inline;
+}
+.first-about-div h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  margin-bottom: 1.3rem;
+  font-size: 40px;
+}
+.second-about-div p {
+  font-size: 23px;
+  font-family: "Inter", sans-serif;
+  text-align: justify;
+  line-height: 32px;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 2.2rem;
+  color: #ffffff;
+  padding-right: 10%;
+}
+#about-img1 {
+  display: none;
+}
+#about-img2 {
+  display: block;
+  width: 310px;
+  height: 290px;
+  border-radius: 50%;
+  margin-top: 2%;
+  object-fit: contain;
+  background-color: #000000;
+}
+.about-img {
+  width: 300px;
+  height: 288px;
+  margin-top: 0%;
+  padding-right: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1381px) {
+  #about-img2 {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (min-width: 954px) and (max-width: 1100px) {
+  #about-img2 {
+    margin-top: 6rem;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 954px) {
+  #about-img2 {
+    margin-top: 9rem;
+  }
+  .first-about-div h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    margin-bottom: 1.3rem;
+    margin-right: -1.5rem;
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .first-about-div h1 {
+    opacity: 1;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  .second-about-div p {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    text-align: justify;
+    line-height: 1.7rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    padding: 0%;
+    padding-right: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  #about-img2 {
+    display: block;
+    width: 170px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    object-fit: cover;
+    background-color: #000000;
+  }
+  .about-img {
+    width: 170px;
+    height: 295px;
+    margin-top: 0%;
+    padding-right: 0.5rem;
+    border-radius: 20px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+  }
+  @media only screen and (min-width: 721px) and (max-width: 800px) {
+    #about-img2 {
+      width: 170px;
+      height: 270px;
+      border-radius: 20px;
+      margin-top: 3.5rem;
+    }
+    .about-img {
+      width: 170px;
+      height: 265px;
+      margin-top: 0%;
+      padding-right: 0.5rem;
+      border-radius: 20px;
+      border-bottom-left-radius: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-container {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1.2rem 0rem 0rem 0rem;
+  }
+  .first-about-div span {
+    display: none;
+  }
+  .first-about-div {
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  .first-about-div > * {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 0.6rem;
+    font-size: 25px;
+  }
+  .first-about-div h1 {
+    opacity: 1;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  .second-about-div p {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    text-align: justify;
+    line-height: 1.7rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    padding: 0% 4.5%;
+    margin-top: 1.5rem;
+  }
+  .second-about-div p span {
+    display: none;
+  }
+  #about-img1 {
+    display: block;
+    width: 250px;
+    height: 232px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 3%;
+    object-fit: cover;
+    background-color: #000000;
+  }
+  .about-img {
+    width: 250px;
+    height: 230px;
+    margin-top: 0%;
+    padding-right: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  #about-img2 {
+    display: none;
+  }
+}
+
+/*----------------------------------------
+Style for mission section begins here
+------------------------------------------*/
+.mission-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #8f8f8f;
+  margin-bottom: 4rem;
+}
+.mission-img {
+  width: 100%;
+  height: auto;
+}
+.mission-img img {
+  width: 100%;
+  height: 100%;
+}
+.mission-txt {
+  font-size: 22px;
+  line-height: 32px;
+  text-align: justify;
+  padding: 5%;
+  font-family: "Inter", sans-serif;
+}
+
+@media only screen and (min-width: 1200px) {
+  .mission-txt {
+    padding: 4rem;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 35px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .mission-txt {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .mission-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #8f8f8f;
+    margin-bottom: 3rem;
+  }
+  .mission-txt {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .mission-img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/*----------------------------------------
+Style for share-meal-container begins here
+------------------------------------------*/
+.share-meal-container {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  background-color: transparent;
+  color: #ffffff;
+  width: 90%;
+  gap: 4rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+#mobileImg {
+  display: none;
+}
+.share-meal-txt h1 {
+  font-size: 40px;
+  text-align: justify;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 1.5rem;
+}
+.share-meal-txt p {
+  font-size: 25px;
+  line-height: 40px;
+  text-align: justify;
+  font-family: "Inter", sans-serif;
+}
+.share-meal-img img {
+  width: 100%;
+  height: auto;
+}
+.share-meal-img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1016px) {
+  .share-meal-container {
+    width: 90%;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .share-meal-txt h1 {
+    font-size: 30px;
+    margin-top: -5px;
+  }
+  .share-meal-txt p {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .mission-container {
+    margin-bottom: 3rem;
+  }
+  .share-meal-container {
+    width: 90%;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .share-meal-txt h1 {
+    font-size: 23px;
+  }
+  .share-meal-txt p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .share-meal-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    background-color: transparent;
+    color: #ffffff;
+    width: 100%;
+    gap: 0rem;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+  .share-meal-txt {
+    padding: 5%;
+  }
+  .share-meal-txt h1 {
+    font-size: 22px;
+    margin-bottom: 1rem;
+  }
+  .share-meal-txt p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+  #desktopImg {
+    display: none;
+  }
+  #mobileImg {
+    display: block;
+  }
+  .share-meal-img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/*----------------------------------------
+Style for family-carousel begins here
+------------------------------------------*/
+.swiper {
+  width: 100%;
+  overflow: hidden;
+  background-color: #8f8f8f;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 4rem;
+}
+.swiper h1 {
+  color: #000000;
+  text-align: center;
+  font-size: 40px;
+  margin: 2rem 0rem 2.5rem 0rem;
+}
+.swiper-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.card {
+  width: 30%;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 0em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+  padding: 0em;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin-left: 7.3em;
+}
+.card__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  border: 5px solid var(--color);
+  padding: 0px;
+  margin-bottom: 0em;
+}
+.card__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  object-fit: cover;
+  object-position: center;
+}
+.card__text {
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  margin: 0em;
+  padding: 0% 10%;
+}
+.card__text i {
+  font-style: normal;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+  .swiper {
+    width: 100%;
+    overflow: hidden;
+    background-color: #8f8f8f;
+    font-family: "Inter", sans-serif;
+    padding-bottom: 3rem;
+  }
+  .swiper h1 {
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+    margin: 2rem 0rem 1.5rem 0rem;
+  }
+  .card {
+    width: 32%;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 0em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+    padding: 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2em;
+  }
+  .card__image {
+    width: 100%;
+    height: 50%;
+    border-radius: 0%;
+    border: 5px solid var(--color);
+    padding: 0px;
+    margin-bottom: 0em;
+  }
+  .card__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    border: 5px solid var(--color);
+    padding: 0px;
+    margin-bottom: 0em;
+  }
+  .card__text {
+    width: 100%;
+    height: 50%;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin: 0em;
+    padding: 7% 7% 0% 7%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .swiper {
+    padding-bottom: 2rem;
+  }
+  .swiper h1 {
+    color: #000000;
+    text-align: center;
+    font-size: 35px;
+    margin: 2rem 0rem 1.5rem 0rem;
+  }
+  .card {
+    width: 33%;
+    height: 380px;
+    background-color: #fff;
+    border-radius: 0em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+    padding: 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2em;
+  }
+  .card__image {
+    width: 100%;
+    height: 50%;
+    border-radius: 0%;
+    border: 5px solid var(--color);
+    padding: 0px;
+    margin-bottom: 0em;
+  }
+  .card__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    border: 5px solid var(--color);
+    padding: 0px;
+    margin-bottom: 0em;
+  }
+  .card__text {
+    width: 100%;
+    height: 50%;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin: 0em;
+    padding: 7% 7% 0% 7%;
+  }
+  .card__text i {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .swiper {
+    padding-bottom: 2rem;
+  }
+  .swiper h1 {
+    color: #000000;
+    text-align: center;
+    font-size: 27px;
+    margin: 1.5rem 0rem 1rem 0rem;
+  }
+  .card {
+    width: 31%;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 0em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+    padding: 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1.5em;
+  }
+  @media only screen and (min-width: 420px) and (max-width: 600px) {
+    .card {
+      width: 31%;
+      height: 280px;
+    }
+  }
+  .card__image {
+    width: 100%;
+    height: 30%;
+    border-radius: 0%;
+    border: 5px solid var(--color);
+    padding: 0px;
+    margin-bottom: 0em;
+  }
+  .card__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    border: 5px solid var(--color);
+    padding: 0px;
+    margin-bottom: 0em;
+  }
+  .card__text {
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    margin: 0em;
+    padding: 5% 5%;
+  }
+  .card__text i {
+    display: none;
+  }
+}
