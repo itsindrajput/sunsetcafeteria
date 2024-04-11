@@ -71,6 +71,18 @@ nav.sticky {
   font-size: 1rem;
   border: none;
   border-radius: 50px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  color: black;
+  background-color: #fff6f6;
+}
+.search-input #search-icon::placeholder {
+  font-weight: 600;
+  color: #3f395e;
+  font-size: 1.1rem;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  padding-left: 9px;
 }
 .nav-drawer {
   width: 70%;

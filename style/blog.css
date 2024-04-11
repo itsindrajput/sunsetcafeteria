@@ -1,0 +1,24 @@
+#status-active {
+  border-bottom: 2px solid #ffffff;
+}
+#status-active:hover {
+  border-bottom: 2px solid transparent;
+}
+
+.search-input #search-icon::placeholder {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", sans-serif;
+  font-style: normal;
+  color: #0f0e0e;
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px;
+  padding-left: 15px;
+  word-spacing: 2px;
+}
+body {
+  background-color: #252323;
+}
+header,
+nav {
+  background-color: transparent;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sunset Cafe | Contact Us</title>
+    <title>Sunset Cafe | Blog</title>
     <meta http-equiv="author" content="Rishabh Singh" />
     <meta http-equiv="pragma" content="cache" />
 
@@ -24,10 +24,10 @@
 
     <!-- Links Of External Css -->
     <link rel="stylesheet" href="../style/signup.css" type="text/css" />
-    <link rel="stylesheet" href="../style/contact.css" type="text/css" />
+    <link rel="stylesheet" href="../style/blog.css" type="text/css" />
   </head>
-  <body style="background-color: #251a17">
-    <header style="background-color: transparent">
+  <body>
+    <header>
       <nav>
         <div class="logo-hamburger-container">
           <div class="nav-logo">
@@ -60,109 +60,23 @@
             <ul>
               <li><a href="../index.html">Home</a></li>
               <li><a href="menu.html">Menu</a></li>
-              <li id="status-active"><a href="#">Contact Us</a></li>
-              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li id="status-active"><a href="#">Blog</a></li>
             </ul>
           </div>
-          <div class="user-and-cart">
-            <a href="#" onclick="userCheck()"
-              ><i class="fa-solid fa-circle-user"></i
-            ></a>
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <div class="search-input">
+            <input
+              type="search"
+              name="search"
+              id="search-icon"
+              placeholder="Search Items"
+            />
           </div>
         </div>
       </nav>
     </header>
 
-    <main class="contact-container">
-      <div class="hero-item">
-        <h1>
-          “Your thoughts matter to us, so drop us a line and let's start a
-          conversation today."
-        </h1>
-        <section class="contact-icons">
-          <div class="card-icon">
-            <img src="../images/other-images/Address.jpg" alt="Address Icon" />
-            <h3>Address</h3>
-            <p>
-              MFC Center, Railway Station, Amazing Hotel, near Raipur, Raipur,
-              Chhattisgarh 492001
-            </p>
-          </div>
-          <div class="card-icon">
-            <img src="../images/other-images/Email.jpg" alt="Email Icon" />
-            <h3>Email</h3>
-            <p>sunset@gmail.com</p>
-          </div>
-          <div class="card-icon">
-            <img src="../images/other-images/Contact.jpg" alt="Contact Icon" />
-            <h3>Conatct No.</h3>
-            <p>+91-6254777844</p>
-          </div>
-        </section>
-        <div class="contact-icon"></div>
-      </div>
-      <hr id="horizontal-line" />
-      <form action="#" method="get" id="form">
-        <legend>Contact Us</legend>
-        <div class="input-container">
-          <div class="input-field">
-            <label for="firstName">First Name</label><br . />
-            <input
-              type="text"
-              minlength="6"
-              maxlength="20"
-              name="firstName"
-              id="firstName"
-              required
-            />
-          </div>
-          <div class="input-field">
-            <label for="lastName">Last Name</label><br . />
-            <input
-              type="text"
-              minlength="6"
-              maxlength="20"
-              name="lastName"
-              id="lastName"
-              required
-            />
-          </div>
-        </div>
-
-        <div class="input-container">
-          <div class="input-field">
-            <label for="phone">Contact Number</label><br . />
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              pattern="[0-9]{10}"
-              required
-            />
-          </div>
-          <div class="input-field">
-            <label for="emailId">Email ID</label><br . />
-            <input
-              type="email"
-              name="emailId"
-              id="emailId"
-              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-              required
-            />
-          </div>
-        </div>
-        <textarea
-          name="comment"
-          id="textArea"
-          placeholder="Your message for us....."
-          required
-        ></textarea>
-        <div id="submit-btn">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
-    </main>
+    <main class="main-blog"></main>
 
     <!-- Html code for footer section begins here -->
     <footer>
@@ -277,21 +191,10 @@
     </footer>
 
     <!-- Links Of External Js -->
-    <script src="../script/menu.js"></script>
+    <script src="../script/authentication.js"></script>
     <script
       src="https://kit.fontawesome.com/8a4fbb7cf2.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      function userCheck() {
-        let userCheckValue = localStorage.getItem("True");
-        if (userCheckValue) {
-          window.location.href = "../html/myAccount.html";
-        } else {
-          alert(`Access Denied: Please Login First 🚫
-This Page Requires You To Be Logged In.!`);
-        }
-      }
-    </script>
   </body>
 </html>
