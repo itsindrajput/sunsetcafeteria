@@ -1,10 +1,26 @@
+@media only screen and (min-width: 1424px) {
+  nav {
+    justify-content: center;
+    grid-gap: 3rem;
+    width: 102%;
+  }
+  .nav-menu-list ul,
+  .nav-user-info ul {
+    margin-right: 10rem;
+    margin-left: 8rem;
+  }
+}
+@media only screen and (min-width: 1250px) and (max-width: 1286px) {
+  .search-input #search-icon {
+    width: 89px;
+  }
+}
 #status-active {
   border-bottom: 2px solid #ffffff;
 }
 #status-active:hover {
   border-bottom: 2px solid transparent;
 }
-
 .search-input #search-icon::placeholder {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", sans-serif;
   font-style: normal;
@@ -15,10 +31,179 @@
   padding-left: 15px;
   word-spacing: 2px;
 }
+
 body {
   background-color: #252323;
 }
 header,
 nav {
   background-color: transparent;
+}
+#select-blogs {
+  display: none;
+}
+#select-blogs {
+  list-style-type: none;
+  position: absolute;
+  background-color: #0c0c0c;
+  transition: background-color 0.3s ease-in-out;
+  color: #fafafa;
+  width: auto;
+  height: auto;
+  padding: 0px 20px;
+  padding-top: 7px;
+  margin-top: 2px;
+  margin-left: 60px;
+  margin-right: 0rem;
+}
+#select-blogs li {
+  margin-bottom: 7px;
+}
+#select-blogs li a {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/*Style For Hero Image Begins Here*/
+#hero-image {
+  position: relative;
+  background: linear-gradient(0deg, rgba(12, 9, 5, 0.7), rgba(40, 27, 16, 0.7)),
+    url("../images/blog-images/hero_img.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: normal;
+  border-radius: 45px;
+  width: 81%;
+  height: 85vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  margin-bottom: 5vh;
+  color: #fafafa;
+}
+.hero-txt-left {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: rgba(250, 243, 243, 0.71);
+  mix-blend-mode: luminosity;
+  margin-left: 10%;
+}
+.hero-txt-left h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.hero-txt-left h2 {
+  font-size: 40px;
+}
+.hero-txt-right {
+  padding-right: 15%;
+}
+.hero-txt-right h1 {
+  width: 100%;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  color: #bba6a6;
+  mix-blend-mode: luminosity;
+  margin-bottom: 20px;
+  margin-top: 170px;
+}
+.hero-txt-right p {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  color: #e6d0a4;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 800px) {
+  #status-active {
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #select-blogs {
+    background-color: #0c0c0c;
+    transition: background-color 0.3s ease-in-out;
+    color: #fafafa;
+    padding: 0px 20px;
+    padding-top: 7px;
+    margin-top: 2px;
+    margin-left: 10px;
+    text-align: center;
+    margin-right: 0rem;
+    margin: 0 auto;
+  }
+  #select-blogs li a {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    color: #fafafa;
+  }
+
+  .hero-txt-left h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .hero-txt-left h2 {
+    font-size: 30px;
+  }
+  .hero-txt-right {
+    padding-right: 15%;
+  }
+  .hero-txt-right h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 130px;
+  }
+  .hero-txt-right p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 675px) {
+  .hero-txt-right h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #hero-image {
+    border-radius: 45px;
+    width: 95%;
+    height: 85vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: start;
+    margin-bottom: 5vh;
+  }
+  .hero-txt-left h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 150px;
+  }
+  .hero-txt-left h2 {
+    font-size: 25px;
+  }
+  .hero-txt-right h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 200px;
+  }
+  .hero-txt-right p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
 }
