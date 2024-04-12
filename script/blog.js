@@ -36,3 +36,20 @@ function prevSlide() {
 // Button click events
 nextBtn.addEventListener("click", nextSlide);
 prevBtn.addEventListener("click", prevSlide);
+
+//JavaScript for Recently ordered Carousel Begins Here
+const carousel1 = document.getElementById("video-carousel");
+let currentIndex1 = 0;
+
+function orderedSlide(direction) {
+  currentIndex1 += direction;
+
+  if (currentIndex1 < 0) {
+    currentIndex1 = 4;
+  } else if (currentIndex1 > 4) {
+    currentIndex1 = 0;
+  }
+
+  const translateValue = -currentIndex1 * 25.4 + "%";
+  carousel1.style.transform = "translateX(" + translateValue + ")";
+}
