@@ -1,0 +1,106 @@
+/*
+---------------------------------
+Style for the navbar begins here
+---------------------------------
+*/
+@media only screen and (min-width: 1424px) {
+  nav {
+    justify-content: center;
+    grid-gap: 3rem;
+    width: 102%;
+  }
+  .nav-menu-list ul,
+  .nav-user-info ul {
+    margin-right: 10rem;
+    margin-left: 8rem;
+  }
+}
+@media only screen and (min-width: 1250px) and (max-width: 1286px) {
+  .search-input #search-icon {
+    width: 89px;
+  }
+}
+#status-active {
+  border-bottom: 2px solid #ffffff;
+}
+#status-active:hover {
+  border-bottom: 2px solid transparent;
+}
+.search-input #search-icon::placeholder {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", sans-serif;
+  font-style: normal;
+  color: #0f0e0e;
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px;
+  padding-left: 15px;
+  word-spacing: 2px;
+}
+
+/*Style For Body Begins Here*/
+body {
+  background-color: #252323;
+}
+header,
+nav {
+  background-color: transparent;
+}
+#select-blogs {
+  display: none;
+}
+#select-blogs {
+  list-style-type: none;
+  position: absolute;
+  background-color: #0c0c0c;
+  transition: background-color 0.3s ease-in-out;
+  color: #fafafa;
+  width: auto;
+  height: auto;
+  padding: 0px 20px;
+  padding-top: 7px;
+  margin-top: 2px;
+  margin-left: 60px;
+  margin-right: 0rem;
+}
+#select-blogs li {
+  margin-bottom: 7px;
+}
+#select-blogs li a {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/*Style For Tablet Device Begins Here*/
+@media only screen and (max-width: 800px) {
+  /*Css For Navbar Begins Here*/
+  #status-active {
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #select-blogs {
+    background-color: #0c0c0c;
+    transition: background-color 0.3s ease-in-out;
+    color: #fafafa;
+    padding: 0px 20px;
+    padding-top: 7px;
+    margin-top: 2px;
+    margin-left: 10px;
+    text-align: center;
+    margin-right: 0rem;
+    margin: 0 auto;
+  }
+  #select-blogs li {
+    margin-bottom: 10px;
+  }
+
+  #select-blogs li a {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    color: #fafafa;
+  }
+}
+/*
+------------------------------
+Style for navbar ends here
+------------------------------
+*/

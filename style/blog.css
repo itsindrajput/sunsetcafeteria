@@ -697,6 +697,9 @@ nav {
   }
 
   /*Css For Featured Review Video Section Begins Here*/
+  .hr-line {
+    margin: 7vh auto 5vh auto;
+  }
   .hr-line1 {
     margin: 0vh auto 6vh auto;
   }
@@ -743,6 +746,9 @@ nav {
     line-height: 6px;
     color: #000000;
     text-decoration: none;
+  }
+  .carousel-btn {
+    top: 150px;
   }
 
   /*Css For Share Your Experience Section Begins Here*/
