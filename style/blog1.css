@@ -125,7 +125,7 @@ Style for navbar ends here
 .blog1-quote {
   background: rgba(217, 217, 217, 0.3);
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 97%;
   margin: 0 auto;
   padding: 1% 2%;
@@ -142,16 +142,20 @@ Style for navbar ends here
 }
 .blog1-hr-line {
   width: 100%;
-  height: 1.5px;
+  height: 1px;
   background-color: #d16e43;
-  opacity: 0.7;
-  margin: 5vh auto 5vh auto;
+  opacity: 0.5;
+  margin: 6vh auto 4vh auto;
 }
 
 /*Style For Newly Added Container Begins Here*/
+#slider-container {
+  display: none;
+}
 .newly-added-container {
   width: 97%;
   margin: 0 auto;
+  display: block;
 }
 .newly-added-container h1 {
   text-align: center;
@@ -184,10 +188,10 @@ Style for navbar ends here
 .item-container::after {
   position: absolute;
   content: "";
-  width: 2px;
+  width: 1px;
   height: 290px;
   background-color: #d16e43;
-  opacity: 0.7;
+  opacity: 0.5;
   left: 49%;
   top: 450px;
 }
@@ -204,6 +208,64 @@ Style for navbar ends here
   font-weight: 400;
   line-height: 30px;
   text-align: justify;
+}
+
+/*Style For The Sunset Insider Secton Begins Here*/
+.sunset-insider h1 {
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #ffaf40;
+  mix-blend-mode: luminosity;
+  font-size: 35px;
+}
+.insider-list {
+  list-style-type: disc;
+  margin-left: 40px;
+  margin-bottom: 15px;
+}
+.insider-list li em {
+  font-size: 23px;
+  color: #fdf4f4;
+}
+.insider-list li {
+  margin-top: 15px;
+  mix-blend-mode: luminosity;
+  font-size: 21px;
+  color: #edbd7a;
+}
+.sunset-insider p {
+  font-size: 21px;
+}
+
+/*Style For The WHERE WE’VE BEEN FEATURED Secton Begins Here*/
+.featured-heading {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #ffaf40;
+  mix-blend-mode: luminosity;
+}
+.featured-images {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+.featured-images img {
+  width: 25%;
+  height: 150px;
+  object-position: center;
+  object-fit: cover;
+}
+.featured-images img:hover {
+  scale: 1.05;
+  transition: scale 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1050px) {
@@ -235,6 +297,15 @@ Style for navbar ends here
     object-position: center;
     margin-top: 15%;
   }
+
+  .featured-heading {
+    font-size: 35px;
+  }
+  .featured-images {
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
 }
 @media only screen and (min-width: 1050px) and (max-width: 1281px) {
   .item-container::after {
@@ -242,5 +313,176 @@ Style for navbar ends here
     height: 350px;
     left: 49%;
     top: 470px;
+  }
+  .featured-heading {
+    font-size: 35px;
+  }
+  .featured-images {
+    width: 80%;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/*
+------------------------------
+Style for Mobile View of Newly Added Section Begins Here
+------------------------------
+*/
+@media only screen and (max-width: 800px) {
+  .blog1-heading {
+    font-size: 40px;
+    margin: 2.5rem 0rem 1.5rem 0rem;
+  }
+  .blog1-quote {
+    padding: 5% 0%;
+    border-radius: 15px;
+  }
+  .blog1-quote h2 {
+    font-weight: 700;
+    font-size: 27px;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .blog1-hr-line {
+    margin: 5vh auto 4vh auto;
+  }
+  .newly-added-container {
+    display: none;
+  }
+  #slider-container {
+    display: block;
+  }
+  #slider-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    color: #ffffff;
+    overflow: hidden;
+  }
+  #slider-container h1 {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #ffaf40;
+    mix-blend-mode: luminosity;
+    margin-bottom: 1.5rem;
+  }
+  #slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide {
+    min-width: 100%;
+    text-align: center;
+  }
+  .slide-card {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .blog-item1 {
+    margin-bottom: 1rem;
+  }
+  .blog-item1 img {
+    width: 250px;
+    height: 250px;
+    border: none;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .blog-item2 {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .blog-item2 p {
+    color: #fdf4f4;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  #prev,
+  #next {
+    position: absolute;
+    top: 49%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    user-select: none;
+    padding: 20px 10px;
+    background-color: transparent;
+  }
+  #prev:hover,
+  #next:hover,
+  #prev:active,
+  #next:active {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px 10px;
+    transform: translateY(-50%) scale(0.9);
+  }
+  #prev {
+    left: 0;
+  }
+  #next {
+    right: 0px;
+  }
+  .featured-heading {
+    font-size: 30px;
+  }
+  .featured-images {
+    width: 97%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  /*Style For The Sunset Insider Secton Begins Here*/
+  .sunset-insider h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #slider-container h1 {
+    font-size: 35px;
+  }
+  .featured-heading {
+    font-size: 26px;
+  }
+
+  /*Style For The Sunset Insider Secton Begins Here*/
+  .sunset-insider h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .insider-list {
+    list-style-type: disc;
+    margin: 0px 20px 15px 30px;
+  }
+  .insider-list li em {
+    font-size: 22px;
+  }
+  .insider-list li {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .sunset-insider p {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
