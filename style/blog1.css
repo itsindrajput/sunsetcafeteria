@@ -415,7 +415,7 @@ Style for Mobile View of Newly Added Section Begins Here
   #prev,
   #next {
     position: absolute;
-    top: 49%;
+    top: 47%;
     transform: translateY(-50%);
     font-size: 40px;
     cursor: pointer;

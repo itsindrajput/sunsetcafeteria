@@ -104,3 +104,412 @@ nav {
 Style for navbar ends here
 ------------------------------
 */
+
+/*----Style for the Blog - 2 begins here-----*/
+.blog2-hero-heading {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1.2rem;
+  width: 70%;
+  margin: 4rem auto;
+}
+.blog2-hero-heading h1 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 52px;
+  color: #ffaf40;
+  mix-blend-mode: luminosity;
+}
+.blog2-hero-txt {
+  width: 97%;
+  margin: 0 auto;
+  padding: 2% 5%;
+  background: rgba(217, 217, 217, 0.3);
+  border-radius: 10px;
+}
+.blog2-hero-txt p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: justify;
+  color: #ffaf40;
+  mix-blend-mode: exclusion;
+}
+.blog2-hr-line {
+  width: 100%;
+  height: 1px;
+  background-color: #d16e43;
+  margin: 3rem 0rem;
+  opacity: 0.7;
+}
+
+.blog2-section1 {
+  display: grid;
+  grid-template-columns: 1.6fr 0.4fr;
+  gap: 3rem;
+  width: 97%;
+  margin: 0 auto;
+}
+.item-lft h2,
+.right-item h2 {
+  background: rgba(240, 10, 10, 0.41);
+  mix-blend-mode: exclusion;
+  border-radius: 10px;
+  text-align: left;
+  color: #fafafa;
+  padding: 2%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+  color: #fff1f1;
+  margin-bottom: 2rem;
+}
+#blog2-img1,
+#blog2-img2 {
+  display: none;
+}
+.item-lft p,
+.right-item p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 38px;
+  text-align: justify;
+  color: #fdf4f4;
+  mix-blend-mode: luminosity;
+  margin-left: 4rem;
+}
+.item-right,
+.left-item {
+  display: grid;
+  align-items: center;
+}
+.item-right img,
+.left-item img {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog2-section2 {
+  display: grid;
+  grid-template-columns: 0.4fr 1.6fr;
+  gap: 3rem;
+  width: 97%;
+  margin: 0 auto;
+}
+
+.blog2-last-paragraph {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35px;
+  text-align: justify;
+  color: #fafafa;
+  background: rgba(172, 127, 127, 0.41);
+  mix-blend-mode: soft-light;
+  border-radius: 9px;
+}
+
+/*
+------------------------------
+Style for mediam range device begins here
+------------------------------
+*/
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .blog2-hero-heading {
+    gap: 1.2rem;
+    width: 90%;
+    margin: 3rem auto;
+  }
+  .blog2-hero-heading h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .blog2-hero-txt {
+    width: 98%;
+    margin: 0 auto;
+    padding: 2% 5%;
+  }
+  .blog2-hero-txt p {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .blog2-hr-line {
+    margin: 3rem 0rem;
+    opacity: 0.7;
+  }
+
+  .blog2-section1 {
+    display: grid;
+    grid-template-columns: 1.6fr 0.4fr;
+    gap: 3rem;
+    width: 98%;
+    margin: 0 auto;
+  }
+  .item-lft h2,
+  .right-item h2 {
+    border-radius: 10px;
+    padding: 2% 4%;
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 2rem;
+  }
+  .item-lft p,
+  .right-item p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 2rem;
+  }
+  .item-right,
+  .left-item {
+    display: grid;
+    align-items: center;
+  }
+  .item-right img,
+  .left-item img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .blog2-section2 {
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+    gap: 3rem;
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  .blog2-last-paragraph {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-size: 25px;
+    line-height: 35px;
+    border-radius: 10px;
+  }
+}
+
+/*
+----------------------------------------
+Style for tablet range device begins here
+-----------------------------------------
+*/
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .blog2-section2 .left-item,
+  .blog2-section1 .item-right {
+    display: none;
+  }
+  #blog2-img1,
+  #blog2-img2 {
+    display: block;
+  }
+
+  .blog2-hero-heading {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.2rem;
+    width: 95%;
+    margin: 3.5rem auto;
+    margin-bottom: 3rem;
+  }
+  .blog2-hero-heading h1 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .blog2-hero-txt {
+    width: 97%;
+    margin: 0 auto;
+    padding: 2% 5%;
+    border-radius: 20px;
+  }
+  .blog2-hero-txt p {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .blog2-hr-line {
+    margin: 2.5rem 0rem;
+    opacity: 0.7;
+  }
+
+  .blog2-section1 {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0rem;
+    width: 97%;
+    margin: 0 auto;
+  }
+  .item-lft h2,
+  .right-item h2 {
+    border-radius: 20px;
+    padding: 2% 5%;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 2rem;
+  }
+  .blog2-img1,
+  .blog2-img2 {
+    width: 250px;
+    height: 250px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+  .item-lft p,
+  .right-item p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    margin-left: 0rem;
+  }
+  .item-right,
+  .left-item {
+    display: grid;
+    align-items: center;
+  }
+
+  .blog2-section2 {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0rem;
+    width: 97%;
+    margin: 0 auto;
+  }
+  .blog2-last-paragraph {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    font-size: 22px;
+    line-height: 33px;
+    border-radius: 15px;
+  }
+}
+
+/*
+----------------------------------------
+Style for Mobile range device begins here
+-----------------------------------------
+*/
+@media only screen and (max-width: 600px) {
+  .blog2-section2 .left-item,
+  .blog2-section1 .item-right {
+    display: none;
+  }
+  #blog2-img1,
+  #blog2-img2 {
+    display: block;
+  }
+
+  .blog2-hero-heading {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5rem;
+    width: 100%;
+    margin: 3rem auto;
+    margin-bottom: 2.5rem;
+  }
+  .blog2-hero-heading h1 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .blog2-hero-txt {
+    width: 98%;
+    margin: 0 auto;
+    padding: 5%;
+    border-radius: 20px;
+  }
+  .blog2-hero-txt p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .blog2-hr-line {
+    margin: 2rem 0rem;
+    opacity: 0.7;
+  }
+
+  .blog2-section1 {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0rem;
+    width: 98%;
+    margin: 0 auto;
+  }
+  .item-lft h2,
+  .right-item h2 {
+    border-radius: 20px;
+    padding: 3% 5%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 40px;
+    margin-bottom: 2rem;
+  }
+  .blog2-img1,
+  .blog2-img2 {
+    width: 250px;
+    height: 250px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.8rem;
+  }
+  .item-lft p,
+  .right-item p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 0rem;
+  }
+  .item-right,
+  .left-item {
+    display: grid;
+    align-items: center;
+  }
+
+  .blog2-section2 {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0rem;
+    width: 98%;
+    margin: 0 auto;
+  }
+  .blog2-last-paragraph {
+    width: 98%;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    font-size: 19px;
+    line-height: 29px;
+    border-radius: 20px;
+  }
+}
