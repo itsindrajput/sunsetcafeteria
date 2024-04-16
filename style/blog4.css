@@ -104,3 +104,303 @@ nav {
 Style for navbar ends here
 ------------------------------
 */
+
+/*Styling for the Section 1 (Hero) Begins Here*/
+.section1 {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 3.5rem auto 3rem auto;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.heading h1 {
+  font-size: 45px;
+  line-height: 55px;
+}
+.hero-txt {
+  background: rgba(217, 217, 217, 0.3);
+  border-radius: 9px;
+  padding: 1% 3%;
+}
+.hero-txt p {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: justify;
+  color: #ffaf40;
+  mix-blend-mode: exclusion;
+}
+.blog4-hr-line {
+  width: 100%;
+  height: 1px;
+  opacity: 0.7;
+  background-color: #d16e43;
+}
+
+/*Styling for the Section 2 (Content) Begins Here*/
+.section2 {
+  width: 95%;
+  margin: 0 auto;
+  font-family: "Kanit", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-align: justify;
+  color: #fff0f0;
+  margin: 1.5rem auto 2.5rem auto;
+}
+.section2 h2 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 1.5rem;
+}
+.section2 p {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+/*Styling for the Section 3 Begins Here*/
+.section3 {
+  width: 90%;
+  margin: 2.5rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section3 legend {
+  font-family: "Julius Sans One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #fff5f5;
+  mix-blend-mode: exclusion;
+  opacity: 0.8;
+}
+.section3 h3,
+.section3 h3 a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 34px;
+  color: #fff5f5;
+}
+.section3 h3 a:hover {
+  color: #d16e43;
+}
+
+/*
+------------------------------
+Style for the tablet view begins here
+------------------------------
+*/
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .section1 {
+    font-weight: 600;
+    color: #ffffff;
+    margin: 2rem auto 2.5rem auto;
+  }
+  .heading {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 0rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .heading h1 {
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
+  }
+  .hero-txt {
+    border-radius: 15px;
+    padding: 2% 3%;
+  }
+  .hero-txt p {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .section2 {
+    font-weight: 600;
+    margin: 1.5rem auto 2rem auto;
+  }
+  .section2 h2 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 19px;
+  }
+  .section2 p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .section3 {
+    width: 95%;
+    margin: 2rem auto 2.5rem auto;
+    gap: 12px;
+  }
+  .section3 legend {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .section3 h3,
+  .section3 h3 a {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+    color: #fff5f5;
+  }
+}
+
+/*
+------------------------------
+Style for the mobile view begins here
+------------------------------
+*/
+@media only screen and (max-width: 600px) {
+  .section1 {
+    font-weight: 600;
+    color: #ffffff;
+    margin: 2rem auto 2.5rem auto;
+  }
+  .heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .heading h1 {
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+  }
+  .hero-txt {
+    border-radius: 15px;
+    padding: 4%;
+  }
+  .hero-txt p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .section2 {
+    font-weight: 600;
+    margin: 1.3rem auto 2rem auto;
+  }
+  .section2 h2 {
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 18px;
+  }
+  .section2 p {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+  }
+
+  .section3 {
+    width: 98%;
+    margin: 1.8rem auto 2.3rem auto;
+    gap: 12px;
+  }
+  .section3 legend {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .section3 h3,
+  .section3 h3 a {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 25px;
+    color: #fff5f5;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .section3 h3 a {
+    display: block;
+  }
+}
+
+/*
+------------------------------
+Style for the Blog - 5 Page begins here
+------------------------------
+*/
+.section2 img {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  object-position: center;
+}
+.section3 h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 34px;
+  color: #fff5f5;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .section3 h2 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .section2 img {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .section3 h2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .section2 img {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+    object-position: center;
+  }
+}
