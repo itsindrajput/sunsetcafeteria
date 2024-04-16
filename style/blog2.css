@@ -430,27 +430,29 @@ Style for Mobile range device begins here
 
   .blog2-hero-heading {
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 0.5rem;
-    width: 100%;
-    margin: 3rem auto;
+    grid-template-columns: auto;
+    gap: 0rem;
+    width: 98%;
+    margin: 2.5rem auto;
     margin-bottom: 2.5rem;
   }
   .blog2-hero-heading h1 {
     font-weight: 600;
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 27px;
+    line-height: 37px;
+    text-align: center;
   }
   .blog2-hero-txt {
-    width: 98%;
+    width: 95%;
     margin: 0 auto;
     padding: 5%;
     border-radius: 20px;
   }
   .blog2-hero-txt p {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 30px;
+    font-weight: 600;
   }
   .blog2-hr-line {
     margin: 2rem 0rem;
@@ -461,7 +463,7 @@ Style for Mobile range device begins here
     display: grid;
     grid-template-columns: auto;
     gap: 0rem;
-    width: 98%;
+    width: 95%;
     margin: 0 auto;
   }
   .item-lft h2,
@@ -500,16 +502,121 @@ Style for Mobile range device begins here
     display: grid;
     grid-template-columns: auto;
     gap: 0rem;
-    width: 98%;
+    width: 95%;
     margin: 0 auto;
   }
   .blog2-last-paragraph {
-    width: 98%;
+    width: 95%;
     font-weight: 500;
     margin: 0 auto;
     margin-bottom: 2rem;
     font-size: 19px;
     line-height: 29px;
     border-radius: 20px;
+  }
+}
+
+/*
+----------------------------------------
+Style for Blog 3 begins here
+-----------------------------------------
+*/
+.blog3-last-section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+  width: 98%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.last-first h3 {
+  background: rgba(217, 217, 217, 0.3);
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+  color: #f5e8e8;
+  margin-top: 2.5rem;
+  padding: 5%;
+}
+.last-second h2 {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  color: #fbe5e5;
+  margin-top: 3.5rem;
+}
+@media only screen and (min-width: 800px) and (max-width: 1178px) {
+  .last-second h2 {
+    margin-top: 2.5rem;
+  }
+}
+.last-third ul {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: justify;
+  color: #ffffff;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  background: rgba(19, 7, 7, 0.41);
+  mix-blend-mode: exclusion;
+}
+.third-child ul {
+  list-style-type: disc;
+  margin-left: 15px;
+  gap: 5px;
+}
+#blog3-hero-heading {
+  width: 85%;
+}
+#blog3-img1 {
+  border: none;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  #blog3-hero-heading {
+    width: 95%;
+  }
+  .blog3-last-section {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+  }
+  .last-first h3 {
+    border-radius: 10px;
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 0rem;
+    padding: 2% 1%;
+  }
+  .last-second h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 0rem;
+    padding: 2% 0%;
+  }
+  .last-third ul {
+    font-size: 15px;
+    line-height: 20px;
+    gap: 15px;
+  }
+  .third-child ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    gap: 5px;
   }
 }
