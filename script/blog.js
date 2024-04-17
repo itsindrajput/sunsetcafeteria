@@ -1,14 +1,60 @@
-let hoverElement = document.querySelector("#status-active");
+//Js for Hamburger button
+function myHamburger() {
+  let navDrawer = document.getElementById("navDrawer");
+  let body = document.body;
+
+  navDrawer.classList.toggle("open");
+  body.classList.toggle("no-scroll");
+
+  if (navDrawer.classList.contains("open")) {
+    navDrawer.style.left = "0";
+  } else {
+    navDrawer.style.left = "-100%";
+  }
+}
+
+// Add an event listener to handle scroll
+window.addEventListener("scroll", function () {
+  let navbar = document.querySelector("nav");
+
+  if (window.scrollY > 0) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+});
+
+//Js for the arrow button besides the Blog link
+let hoverElement = document.querySelector("#status-active-hover");
 let selectedElement = document.querySelector("#select-blogs");
-hoverElement.addEventListener("mouseover", function () {
-  selectedElement.style.display = "block";
-});
-hoverElement.addEventListener("mouseout", function () {
-  selectedElement.style.display = "none";
-});
-selectedElement.addEventListener("mouseout", function () {
-  selectedElement.style.display = "none";
-});
+
+if (hoverElement && selectedElement) {
+  hoverElement.addEventListener("mouseover", function () {
+    selectedElement.style.display = "block";
+    if (hoverElement.innerHTML == "▼") {
+      hoverElement.innerHTML = "&#9650;";
+    }
+  });
+
+  hoverElement.addEventListener("mouseout", function () {
+    selectedElement.style.display = "none";
+    if (hoverElement.innerHTML == "▲") {
+      hoverElement.innerHTML = "&#9660;";
+    }
+  });
+
+  selectedElement.addEventListener("mouseover", function () {
+    selectedElement.style.display = "block";
+    hoverElement.innerHTML = "&#9650;";
+  });
+
+  selectedElement.addEventListener("mouseout", function () {
+    selectedElement.style.display = "none";
+    hoverElement.innerHTML = "&#9660;";
+  });
+} else {
+  console.error("Error");
+}
 
 // JS For Latest Blog Post Begins Here
 const slider = document.getElementById("slider");
