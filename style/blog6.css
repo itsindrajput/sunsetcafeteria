@@ -207,7 +207,7 @@
     margin-bottom: 1.5rem;
     margin-left: 0rem;
     color: #ccb6b6;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .blog6-last-section {
@@ -221,10 +221,10 @@
     text-align: center;
   }
   .blog6-last-paragraph {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 500;
     line-height: 28px;
-    word-spacing: 1px;
+    word-spacing: 0px;
     text-align: justify;
   }
   .blog2-hr-line {
