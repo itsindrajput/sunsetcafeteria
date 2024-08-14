@@ -9,7 +9,7 @@ and warmth converge to create memories that linger long after you leave.
 Café Sunset is a testament to the artistry of culinary craftsmanship. Each visit is an opportunity to explore an exquisite symphony of flavors and moments,
 transforming the act of dining into a homecoming experience. Our journey began with a commitment to creating a space where every guest feels a sense of belonging.
 
-## Explore These Live Links Of Fitness Star Gym 🎉
+## Explore These Live Links Of Sunset Cafeteria 🎉
 
 - 🌏 https://sunsetcafeteria.netlify.app/
 - 🌏 https://itsindrajput.github.io/sunsetcafeteria/
